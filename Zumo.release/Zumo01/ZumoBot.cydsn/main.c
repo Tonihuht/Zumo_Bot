@@ -58,7 +58,7 @@ int main()
     UART_1_Start();
     ADC_Battery_Start();        
     int16 adcresult =0;
-    float volts = 0.0;
+    //float volts = 0.0;
     int k = 0;
     float voltage = 0;
 
@@ -133,6 +133,18 @@ int main()
             
         }
         }
+    
+        CyGlobalIntEnable; 
+        //UART_1_Start();
+    
+        unsigned int IR_val; 
+    
+        for(;;)
+        {
+        IR_val = get_IR();
+        printf("%x\r\n\n",IR_val);
+        }
+    
         /*
         motor_start();
         CyDelay(50);

@@ -1,4 +1,4 @@
-C:\Users\loone\Desktop\Laitteet\Zumo.release\Zumo01\ZumoBot.cydsn\TopDesign\TopDesign.cysch
+C:\Users\loone\Documents\GitHub\Zumo_Bot\Zumo.release\Zumo01\ZumoBot.cydsn\TopDesign\TopDesign.cysch
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cysym
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.pdf
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\PWM_v3_30\PWM_v3_30.cystate
@@ -1492,7 +1492,7 @@ D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cypri
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC5\API\aliases.h
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.c
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_pins_v2_20\PSoC5\API\pins.h
-C:\Users\loone\Desktop\Laitteet\Zumo.release\Zumo01\ZumoBot.cydsn\ZumoBot.cydwr
+C:\Users\loone\Documents\GitHub\Zumo_Bot\Zumo.release\Zumo01\ZumoBot.cydsn\ZumoBot.cydwr
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\cm3gcc.ld
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\Cm3RealView.scat
 D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\cy_boot_v5_50\PSoC5\API\Cm3Start.c
