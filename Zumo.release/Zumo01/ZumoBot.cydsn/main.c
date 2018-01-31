@@ -86,45 +86,45 @@ int main()
             while(voltage < 4){
                 
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 
                 BatteryLed_Write(1);
-                CyDelay(800);
+                CyDelay(900);
                 BatteryLed_Write(0);
-                CyDelay(800);
+                CyDelay(900);
                 BatteryLed_Write(1);
-                CyDelay(800);
+                CyDelay(900);
                 BatteryLed_Write(0);
-                CyDelay(800);
+                CyDelay(900);
                 BatteryLed_Write(1);
-                CyDelay(800);
+                CyDelay(900);
                 BatteryLed_Write(0);
-                CyDelay(800);
+                CyDelay(900);
                 
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(1);
-                CyDelay(250);
+                CyDelay(200);
                 BatteryLed_Write(0);
-                CyDelay(2000);
+                CyDelay(1500);
                 //voltage = 5;
                 adcresult = ADC_Battery_GetResult16();                // convert value to Volts
                 voltage = (adcresult/4095.0*5.0)*1.5;
