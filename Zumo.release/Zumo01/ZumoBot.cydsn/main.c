@@ -140,27 +140,25 @@ int main()
             
         }
         }
-    
-        CyGlobalIntEnable; 
-        //UART_1_Start();
-    
-        unsigned int IR_val; 
+        
     
         printf("Let's roll\n");
         motor_start();
-        motor_turn(64,56,7000);
+        motor_forward(0,0);
+        CyDelay(3000);
+        motor_turn(192,190,2133);
         motor_turn(255,20,320);
         motor_forward(0,0);
-        CyDelay(1000);
-        motor_turn(64,56,5100);
+        CyDelay(200);
+        motor_turn(192,190,1600);
         motor_turn(255,20,320);
         motor_forward(0,0);
-        CyDelay(1000);
-        motor_turn(64,56,5100);
+        CyDelay(200);
+        motor_turn(192,190,1560);
         motor_turn(255,20,360);
-        motor_turn(64,28,8300);
+        motor_turn(192,150,1900);
         motor_forward(0,0);
-        CyDelay(6000);
+        CyDelay(3000);
         /*
         motor_start();
         CyDelay(50);
