@@ -67,11 +67,18 @@ int main()
     //BatteryLed_Write(1); // Switch led on 
     BatteryLed_Write(1); // Switch led off 
     //uint8 button;
-    //button = SW1_Read(); // read SW1 on pSoC board
+    int button = SW1_Read(); // read SW1 on pSoC board
+    
+    while(button == 1) {
+        printf("While loop\n");
+        button = SW1_Read();    
+    }
 
     for(;;)
     {
+       printf("For loop\n");
        if(k==300){ 
+        printf("IF 1\n");
         motor_stop();
         k = 0;
         ADC_Battery_StartConvert();
@@ -139,12 +146,8 @@ int main()
     
         unsigned int IR_val; 
     
-        for(;;)
-        {
-        IR_val = get_IR();
-        printf("%x\r\n\n",IR_val);
-        }
-    
+        printf("Paalla\n");
+        motor_start();
         /*
         motor_start();
         CyDelay(50);
