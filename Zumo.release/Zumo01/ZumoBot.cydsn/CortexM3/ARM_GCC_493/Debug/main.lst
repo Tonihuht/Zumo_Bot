@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
   23:main.c        ****     &nbsp;IR LED <br><br><br>
   24:main.c        ****     </p>
   25:main.c        ****     
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 2
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 2
 
 
   26:main.c        ****     <p>
@@ -118,13 +118,13 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
   61:main.c        ****     //float volts = 0.0;
   62:main.c        ****     int k = 0;
   63:main.c        ****     float voltage = 0;
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 3
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 3
 
 
   64:main.c        **** 
   65:main.c        ****     printf("\nBoot\n");
   52              		.loc 1 65 0
-  53 000c 7248     		ldr	r0, .L10+8
+  53 000c 9448     		ldr	r0, .L10+8
   54 000e FFF7FEFF 		bl	puts
   55              	.LVL2:
   66:main.c        **** 
@@ -146,7 +146,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
   65              	.L3:
   73:main.c        ****         printf("While loop\n");
   66              		.loc 1 73 0
-  67 001e 6F48     		ldr	r0, .L10+12
+  67 001e 9148     		ldr	r0, .L10+12
   68              	.LVL5:
   69 0020 FFF7FEFF 		bl	puts
   70              	.LVL6:
@@ -167,9 +167,9 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
   76:main.c        **** 
   77:main.c        ****     for(;;)
   78:main.c        ****     {
-  79:main.c        ****        printf("FOr loop\n");
+  79:main.c        ****        printf("For loop\n");
   82              		.loc 1 79 0
-  83 002e 6C48     		ldr	r0, .L10+16
+  83 002e 8E48     		ldr	r0, .L10+16
   84 0030 FFF7FEFF 		bl	puts
   85              	.LVL9:
   80:main.c        ****        if(k==300){ 
@@ -178,10 +178,10 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
   88 0038 40F0C480 		bne	.L4
   81:main.c        ****         printf("IF 1\n");
   89              		.loc 1 81 0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 4
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 4
 
 
-  90 003c 6948     		ldr	r0, .L10+20
+  90 003c 8B48     		ldr	r0, .L10+20
   91 003e FFF7FEFF 		bl	puts
   92              	.LVL10:
   82:main.c        ****         motor_stop();
@@ -210,16 +210,16 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  108              		.loc 1 89 0
  109 005a FFF7FEFF 		bl	__aeabi_i2d
  110              	.LVL15:
- 111 005e 5CA3     		adr	r3, .L10
+ 111 005e 7EA3     		adr	r3, .L10
  112 0060 D3E90023 		ldrd	r2, [r3]
  113 0064 FFF7FEFF 		bl	__aeabi_ddiv
  114              	.LVL16:
  115 0068 0022     		movs	r2, #0
- 116 006a 5F4B     		ldr	r3, .L10+24
+ 116 006a 814B     		ldr	r3, .L10+24
  117 006c FFF7FEFF 		bl	__aeabi_dmul
  118              	.LVL17:
  119 0070 0022     		movs	r2, #0
- 120 0072 5E4B     		ldr	r3, .L10+28
+ 120 0072 804B     		ldr	r3, .L10+28
  121 0074 FFF7FEFF 		bl	__aeabi_dmul
  122              	.LVL18:
  123 0078 FFF7FEFF 		bl	__aeabi_d2f
@@ -234,11 +234,11 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  129              	.LVL21:
  130 0082 0246     		mov	r2, r0
  131 0084 0B46     		mov	r3, r1
- 132 0086 5A48     		ldr	r0, .L10+32
+ 132 0086 7C48     		ldr	r0, .L10+32
  133 0088 FFF7FEFF 		bl	printf
  134              	.LVL22:
   93:main.c        ****             while(voltage < 4){
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 5
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 5
 
 
  135              		.loc 1 93 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  105:main.c        ****                 BatteryLed_Write(1);
  178              		.loc 1 105 0
  179 00ca 0120     		movs	r0, #1
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 6
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 6
 
 
  180 00cc FFF7FEFF 		bl	BatteryLed_Write
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  222              		.loc 1 117 0
  223 0112 4FF46170 		mov	r0, #900
  224 0116 FFF7FEFF 		bl	CyDelay
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 7
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 7
 
 
  225              	.LVL44:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  267 015a 0020     		movs	r0, #0
  268 015c FFF7FEFF 		bl	BatteryLed_Write
  269              	.LVL55:
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 8
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 8
 
 
  130:main.c        ****                 CyDelay(200);
@@ -455,16 +455,16 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  293              		.loc 1 137 0
  294 0184 FFF7FEFF 		bl	__aeabi_i2d
  295              	.LVL62:
- 296 0188 11A3     		adr	r3, .L10
+ 296 0188 33A3     		adr	r3, .L10
  297 018a D3E90023 		ldrd	r2, [r3]
  298 018e FFF7FEFF 		bl	__aeabi_ddiv
  299              	.LVL63:
  300 0192 0022     		movs	r2, #0
- 301 0194 144B     		ldr	r3, .L10+24
+ 301 0194 364B     		ldr	r3, .L10+24
  302 0196 FFF7FEFF 		bl	__aeabi_dmul
  303              	.LVL64:
  304 019a 0022     		movs	r2, #0
- 305 019c 134B     		ldr	r3, .L10+28
+ 305 019c 354B     		ldr	r3, .L10+28
  306 019e FFF7FEFF 		bl	__aeabi_dmul
  307              	.LVL65:
  308 01a2 FFF7FEFF 		bl	__aeabi_d2f
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  315 01aa 4FF08141 		mov	r1, #1082130432
  316 01ae FFF7FEFF 		bl	__aeabi_fcmplt
  317              	.LVL68:
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 9
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 9
 
 
  318 01b2 0028     		cmp	r0, #0
@@ -511,2409 +511,2797 @@ ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 1
  146:main.c        ****     
  147:main.c        ****         unsigned int IR_val; 
  148:main.c        ****     
- 149:main.c        ****         printf("Paalla\n");
+ 149:main.c        ****         printf("Let's roll\n");
  336              		.loc 1 149 0
  337              		.thumb
- 338 01c6 0B48     		ldr	r0, .L10+36
+ 338 01c6 2D48     		ldr	r0, .L10+36
  339 01c8 FFF7FEFF 		bl	puts
  340              	.LVL72:
- 150:main.c        ****         /*
- 151:main.c        ****         motor_start();
- 152:main.c        ****         CyDelay(50);
- 153:main.c        ****         motor_turn(140,50,4000);
- 154:main.c        ****         CyDelay(50);
- 155:main.c        ****         motor_stop();
- 156:main.c        ****         CyDelay(500);
- 157:main.c        ****         motor_turn(50,140,4000);
- 158:main.c        ****         CyDelay(50);
- 159:main.c        ****         motor_stop();
- 160:main.c        ****         CyDelay(500);
- 161:main.c        ****         
- 162:main.c        ****         motor_forward(240,1000);
- 163:main.c        ****         CyDelay(1000);
- 164:main.c        ****         motor_backward(240,1000);   
- 165:main.c        ****         CyDelay(1000);
- 166:main.c        ****         motor_turn(50,140,2000);
- 167:main.c        ****         motor_stop();
- 168:main.c        ****         CyDelay(500);
- 169:main.c        ****         */
- 170:main.c        ****         k++;
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 10
-
-
- 341              		.loc 1 170 0
- 342 01cc 0134     		adds	r4, r4, #1
+ 150:main.c        ****         motor_start();
+ 341              		.loc 1 150 0
+ 342 01cc FFF7FEFF 		bl	motor_start
  343              	.LVL73:
- 344              	.LBE2:
- 171:main.c        ****         //printf("%d", k);
- 172:main.c        ****     }
- 345              		.loc 1 172 0
- 346 01ce 2EE7     		b	.L7
- 347              	.L11:
- 348              		.align	3
- 349              	.L10:
- 350 01d0 00000000 		.word	0
- 351 01d4 00FEAF40 		.word	1085275648
- 352 01d8 00000000 		.word	.LC0
- 353 01dc 08000000 		.word	.LC1
- 354 01e0 14000000 		.word	.LC2
- 355 01e4 20000000 		.word	.LC3
- 356 01e8 00001440 		.word	1075052544
- 357 01ec 0000F83F 		.word	1073217536
- 358 01f0 28000000 		.word	.LC4
- 359 01f4 2C000000 		.word	.LC5
- 360              		.cfi_endproc
- 361              	.LFE63:
- 362              		.size	main, .-main
- 363              		.section	.text._write,"ax",%progbits
- 364              		.align	2
- 365              		.global	_write
- 366              		.thumb
- 367              		.thumb_func
- 368              		.type	_write, %function
- 369              	_write:
- 370              	.LFB64:
- 173:main.c        ****  }   
- 174:main.c        **** //*/
- 175:main.c        **** 
- 176:main.c        **** 
- 177:main.c        **** /*//ultra sonic sensor//
- 178:main.c        **** int main()
- 179:main.c        **** {
- 180:main.c        ****     CyGlobalIntEnable; 
- 181:main.c        ****     UART_1_Start();
- 182:main.c        ****     Ultra_Start();                          // Ultra Sonic Start function
- 183:main.c        ****     while(1) {
- 184:main.c        ****         //If you want to print out the value  
- 185:main.c        ****         printf("distance = %5.0f\r\n", Ultra_GetDistance());
- 186:main.c        ****         CyDelay(1000);
- 187:main.c        ****     }
- 188:main.c        **** }   
- 189:main.c        **** //*/
+ 151:main.c        ****         motor_turn(64,56,7000);
+ 344              		.loc 1 151 0
+ 345 01d0 4020     		movs	r0, #64
+ 346 01d2 3821     		movs	r1, #56
+ 347 01d4 41F65832 		movw	r2, #7000
+ 348 01d8 FFF7FEFF 		bl	motor_turn
+ 349              	.LVL74:
+ 152:main.c        ****         motor_turn(255,20,320);
+ 350              		.loc 1 152 0
+ 351 01dc FF20     		movs	r0, #255
+ 352 01de 1421     		movs	r1, #20
+ 353 01e0 4FF4A072 		mov	r2, #320
+ 354 01e4 FFF7FEFF 		bl	motor_turn
+ 355              	.LVL75:
+ 153:main.c        ****         motor_forward(0,0);
+ 356              		.loc 1 153 0
+ 357 01e8 0020     		movs	r0, #0
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 10
+
+
+ 358 01ea 0146     		mov	r1, r0
+ 359 01ec FFF7FEFF 		bl	motor_forward
+ 360              	.LVL76:
+ 154:main.c        ****         CyDelay(1000);
+ 361              		.loc 1 154 0
+ 362 01f0 4FF47A70 		mov	r0, #1000
+ 363 01f4 FFF7FEFF 		bl	CyDelay
+ 364              	.LVL77:
+ 155:main.c        ****         motor_turn(64,56,5100);
+ 365              		.loc 1 155 0
+ 366 01f8 4020     		movs	r0, #64
+ 367 01fa 3821     		movs	r1, #56
+ 368 01fc 41F2EC32 		movw	r2, #5100
+ 369 0200 FFF7FEFF 		bl	motor_turn
+ 370              	.LVL78:
+ 156:main.c        ****         motor_turn(255,20,320);
+ 371              		.loc 1 156 0
+ 372 0204 FF20     		movs	r0, #255
+ 373 0206 1421     		movs	r1, #20
+ 374 0208 4FF4A072 		mov	r2, #320
+ 375 020c FFF7FEFF 		bl	motor_turn
+ 376              	.LVL79:
+ 157:main.c        ****         motor_forward(0,0);
+ 377              		.loc 1 157 0
+ 378 0210 0020     		movs	r0, #0
+ 379 0212 0146     		mov	r1, r0
+ 380 0214 FFF7FEFF 		bl	motor_forward
+ 381              	.LVL80:
+ 158:main.c        ****         CyDelay(1000);
+ 382              		.loc 1 158 0
+ 383 0218 4FF47A70 		mov	r0, #1000
+ 384 021c FFF7FEFF 		bl	CyDelay
+ 385              	.LVL81:
+ 159:main.c        ****         motor_turn(64,56,5100);
+ 386              		.loc 1 159 0
+ 387 0220 4020     		movs	r0, #64
+ 388 0222 3821     		movs	r1, #56
+ 389 0224 41F2EC32 		movw	r2, #5100
+ 390 0228 FFF7FEFF 		bl	motor_turn
+ 391              	.LVL82:
+ 160:main.c        ****         motor_turn(255,20,360);
+ 392              		.loc 1 160 0
+ 393 022c FF20     		movs	r0, #255
+ 394 022e 1421     		movs	r1, #20
+ 395 0230 4FF4B472 		mov	r2, #360
+ 396 0234 FFF7FEFF 		bl	motor_turn
+ 397              	.LVL83:
+ 161:main.c        ****         motor_turn(64,28,8300);
+ 398              		.loc 1 161 0
+ 399 0238 4020     		movs	r0, #64
+ 400 023a 1C21     		movs	r1, #28
+ 401 023c 42F26C02 		movw	r2, #8300
+ 402 0240 FFF7FEFF 		bl	motor_turn
+ 403              	.LVL84:
+ 162:main.c        ****         motor_forward(0,0);
+ 404              		.loc 1 162 0
+ 405 0244 0020     		movs	r0, #0
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 11
+
+
+ 406 0246 0146     		mov	r1, r0
+ 407 0248 FFF7FEFF 		bl	motor_forward
+ 408              	.LVL85:
+ 163:main.c        ****         CyDelay(6000);
+ 409              		.loc 1 163 0
+ 410 024c 41F27070 		movw	r0, #6000
+ 411 0250 FFF7FEFF 		bl	CyDelay
+ 412              	.LVL86:
+ 164:main.c        ****         /*
+ 165:main.c        ****         motor_start();
+ 166:main.c        ****         CyDelay(50);
+ 167:main.c        ****         motor_turn(140,50,4000);
+ 168:main.c        ****         CyDelay(50);
+ 169:main.c        ****         motor_stop();
+ 170:main.c        ****         CyDelay(500);
+ 171:main.c        ****         motor_turn(50,140,4000);
+ 172:main.c        ****         CyDelay(50);
+ 173:main.c        ****         motor_stop();
+ 174:main.c        ****         CyDelay(500);
+ 175:main.c        ****         
+ 176:main.c        ****         motor_forward(240,1000);
+ 177:main.c        ****         CyDelay(1000);
+ 178:main.c        ****         motor_backward(240,1000);   
+ 179:main.c        ****         CyDelay(1000);
+ 180:main.c        ****         motor_turn(50,140,2000);
+ 181:main.c        ****         motor_stop();
+ 182:main.c        ****         CyDelay(500);
+ 183:main.c        ****         */
+ 184:main.c        ****         k++;
+ 413              		.loc 1 184 0
+ 414 0254 0134     		adds	r4, r4, #1
+ 415              	.LVL87:
+ 416              	.LBE2:
+ 185:main.c        ****         //printf("%d", k);
+ 186:main.c        ****     }
+ 417              		.loc 1 186 0
+ 418 0256 EAE6     		b	.L7
+ 419              	.L11:
+ 420              		.align	3
+ 421              	.L10:
+ 422 0258 00000000 		.word	0
+ 423 025c 00FEAF40 		.word	1085275648
+ 424 0260 00000000 		.word	.LC0
+ 425 0264 08000000 		.word	.LC1
+ 426 0268 14000000 		.word	.LC2
+ 427 026c 20000000 		.word	.LC3
+ 428 0270 00001440 		.word	1075052544
+ 429 0274 0000F83F 		.word	1073217536
+ 430 0278 28000000 		.word	.LC4
+ 431 027c 2C000000 		.word	.LC5
+ 432              		.cfi_endproc
+ 433              	.LFE63:
+ 434              		.size	main, .-main
+ 435              		.section	.text._write,"ax",%progbits
+ 436              		.align	2
+ 437              		.global	_write
+ 438              		.thumb
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 12
+
+
+ 439              		.thumb_func
+ 440              		.type	_write, %function
+ 441              	_write:
+ 442              	.LFB64:
+ 187:main.c        ****  }   
+ 188:main.c        **** //*/
+ 189:main.c        **** 
  190:main.c        **** 
- 191:main.c        **** 
- 192:main.c        **** /*//nunchuk//
- 193:main.c        **** int main()
- 194:main.c        **** {
- 195:main.c        ****     CyGlobalIntEnable; 
- 196:main.c        ****     UART_1_Start();
- 197:main.c        ****   
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 11
-
-
- 198:main.c        ****     nunchuk_start();
- 199:main.c        ****     nunchuk_init();
- 200:main.c        ****     
- 201:main.c        ****     for(;;)
- 202:main.c        ****     {    
- 203:main.c        ****         nunchuk_read();
- 204:main.c        ****     }
- 205:main.c        **** }   
- 206:main.c        **** //*/
- 207:main.c        **** 
- 208:main.c        **** 
- 209:main.c        **** /*//IR receiver//
- 210:main.c        **** int main()
- 211:main.c        **** {
- 212:main.c        ****     CyGlobalIntEnable; 
- 213:main.c        ****     UART_1_Start();
+ 191:main.c        **** /*//ultra sonic sensor//
+ 192:main.c        **** int main()
+ 193:main.c        **** {
+ 194:main.c        ****     CyGlobalIntEnable; 
+ 195:main.c        ****     UART_1_Start();
+ 196:main.c        ****     Ultra_Start();                          // Ultra Sonic Start function
+ 197:main.c        ****     while(1) {
+ 198:main.c        ****         //If you want to print out the value  
+ 199:main.c        ****         printf("distance = %5.0f\r\n", Ultra_GetDistance());
+ 200:main.c        ****         CyDelay(1000);
+ 201:main.c        ****     }
+ 202:main.c        **** }   
+ 203:main.c        **** //*/
+ 204:main.c        **** 
+ 205:main.c        **** 
+ 206:main.c        **** /*//nunchuk//
+ 207:main.c        **** int main()
+ 208:main.c        **** {
+ 209:main.c        ****     CyGlobalIntEnable; 
+ 210:main.c        ****     UART_1_Start();
+ 211:main.c        ****   
+ 212:main.c        ****     nunchuk_start();
+ 213:main.c        ****     nunchuk_init();
  214:main.c        ****     
- 215:main.c        ****     unsigned int IR_val; 
- 216:main.c        ****     
- 217:main.c        ****     for(;;)
- 218:main.c        ****     {
- 219:main.c        ****        IR_val = get_IR();
- 220:main.c        ****        printf("%x\r\n\n",IR_val);
- 221:main.c        ****     }    
- 222:main.c        ****  }   
- 223:main.c        **** //*/
- 224:main.c        **** 
- 225:main.c        **** 
- 226:main.c        **** /*//Ambient light sensor//
- 227:main.c        **** int main()
- 228:main.c        **** {
- 229:main.c        ****     CyGlobalIntEnable; 
- 230:main.c        ****     UART_1_Start();
- 231:main.c        ****     
- 232:main.c        ****     I2C_Start();
- 233:main.c        ****     
- 234:main.c        ****     I2C_write(0x29,0x80,0x00);          // set to power down
- 235:main.c        ****     I2C_write(0x29,0x80,0x03);          // set to power on
- 236:main.c        ****     
- 237:main.c        ****     for(;;)
- 238:main.c        ****     {    
- 239:main.c        ****         uint8 Data0Low,Data0High,Data1Low,Data1High;
- 240:main.c        ****         Data0Low = I2C_read(0x29,CH0_L);
- 241:main.c        ****         Data0High = I2C_read(0x29,CH0_H);
- 242:main.c        ****         Data1Low = I2C_read(0x29,CH1_L);
- 243:main.c        ****         Data1High = I2C_read(0x29,CH1_H);
- 244:main.c        ****         
- 245:main.c        ****         uint8 CH0, CH1;
- 246:main.c        ****         CH0 = convert_raw(Data0Low,Data0High);      // combine Data0
- 247:main.c        ****         CH1 = convert_raw(Data1Low,Data1High);      // combine Data1
- 248:main.c        **** 
- 249:main.c        ****         double Ch0 = CH0;
- 250:main.c        ****         double Ch1 = CH1;
- 251:main.c        ****         
- 252:main.c        ****         double data = 0;
- 253:main.c        ****         data = getLux(Ch0,Ch1);
- 254:main.c        ****         
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 12
+ 215:main.c        ****     for(;;)
+ 216:main.c        ****     {    
+ 217:main.c        ****         nunchuk_read();
+ 218:main.c        ****     }
+ 219:main.c        **** }   
+ 220:main.c        **** //*/
+ 221:main.c        **** 
+ 222:main.c        **** 
+ 223:main.c        **** /*//IR receiver//
+ 224:main.c        **** int main()
+ 225:main.c        **** {
+ 226:main.c        ****     CyGlobalIntEnable; 
+ 227:main.c        ****     UART_1_Start();
+ 228:main.c        ****     
+ 229:main.c        ****     unsigned int IR_val; 
+ 230:main.c        ****     
+ 231:main.c        ****     for(;;)
+ 232:main.c        ****     {
+ 233:main.c        ****        IR_val = get_IR();
+ 234:main.c        ****        printf("%x\r\n\n",IR_val);
+ 235:main.c        ****     }    
+ 236:main.c        ****  }   
+ 237:main.c        **** //*/
+ 238:main.c        **** 
+ 239:main.c        **** 
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 13
 
 
- 255:main.c        ****         // If you want to print out data
- 256:main.c        ****         //printf("%lf\r\n",data);    
- 257:main.c        ****     }    
- 258:main.c        ****  }   
- 259:main.c        **** //*/
- 260:main.c        **** 
- 261:main.c        **** 
- 262:main.c        **** /*//accelerometer//
- 263:main.c        **** int main()
- 264:main.c        **** {
- 265:main.c        ****     CyGlobalIntEnable; 
- 266:main.c        ****     UART_1_Start();
- 267:main.c        ****   
- 268:main.c        ****     I2C_Start();
- 269:main.c        ****   
- 270:main.c        ****     uint8 X_L_A, X_H_A, Y_L_A, Y_H_A, Z_L_A, Z_H_A;
- 271:main.c        ****     int16 X_AXIS_A, Y_AXIS_A, Z_AXIS_A;
- 272:main.c        ****     
- 273:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL1_REG, 0x37);           // set accelerometer & magnetometer
- 274:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL7_REG, 0x22);
- 275:main.c        ****     
- 276:main.c        ****     
- 277:main.c        ****     for(;;)
- 278:main.c        ****     {
- 279:main.c        ****         //print out accelerometer output
- 280:main.c        ****         X_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_X_L_A);
- 281:main.c        ****         X_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_X_H_A);
- 282:main.c        ****         X_AXIS_A = convert_raw(X_L_A, X_H_A);
- 283:main.c        ****         
- 284:main.c        ****         Y_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_Y_L_A);
- 285:main.c        ****         Y_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_Y_H_A);
- 286:main.c        ****         Y_AXIS_A = convert_raw(Y_L_A, Y_H_A);
- 287:main.c        ****         
- 288:main.c        ****         Z_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_Z_L_A);
- 289:main.c        ****         Z_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_Z_H_A);
- 290:main.c        ****         Z_AXIS_A = convert_raw(Z_L_A, Z_H_A);
- 291:main.c        ****         
- 292:main.c        ****         printf("ACCEL: %d %d %d %d %d %d \r\n", X_L_A, X_H_A, Y_L_A, Y_H_A, Z_L_A, Z_H_A);
- 293:main.c        ****         value_convert_accel(X_AXIS_A, Y_AXIS_A, Z_AXIS_A);
- 294:main.c        ****         printf("\n");
- 295:main.c        ****         
- 296:main.c        ****         CyDelay(50);
- 297:main.c        ****     }
- 298:main.c        **** }   
- 299:main.c        **** //*/
- 300:main.c        **** 
- 301:main.c        **** 
- 302:main.c        **** /*//reflectance//
- 303:main.c        **** int main()
- 304:main.c        **** {
- 305:main.c        ****     struct sensors_ ref;
- 306:main.c        ****     struct sensors_ dig;
- 307:main.c        ****     CyGlobalIntEnable; 
- 308:main.c        ****     UART_1_Start();
- 309:main.c        ****   
- 310:main.c        ****     sensor_isr_StartEx(sensor_isr_handler);
- 311:main.c        ****     
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 13
+ 240:main.c        **** /*//Ambient light sensor//
+ 241:main.c        **** int main()
+ 242:main.c        **** {
+ 243:main.c        ****     CyGlobalIntEnable; 
+ 244:main.c        ****     UART_1_Start();
+ 245:main.c        ****     
+ 246:main.c        ****     I2C_Start();
+ 247:main.c        ****     
+ 248:main.c        ****     I2C_write(0x29,0x80,0x00);          // set to power down
+ 249:main.c        ****     I2C_write(0x29,0x80,0x03);          // set to power on
+ 250:main.c        ****     
+ 251:main.c        ****     for(;;)
+ 252:main.c        ****     {    
+ 253:main.c        ****         uint8 Data0Low,Data0High,Data1Low,Data1High;
+ 254:main.c        ****         Data0Low = I2C_read(0x29,CH0_L);
+ 255:main.c        ****         Data0High = I2C_read(0x29,CH0_H);
+ 256:main.c        ****         Data1Low = I2C_read(0x29,CH1_L);
+ 257:main.c        ****         Data1High = I2C_read(0x29,CH1_H);
+ 258:main.c        ****         
+ 259:main.c        ****         uint8 CH0, CH1;
+ 260:main.c        ****         CH0 = convert_raw(Data0Low,Data0High);      // combine Data0
+ 261:main.c        ****         CH1 = convert_raw(Data1Low,Data1High);      // combine Data1
+ 262:main.c        **** 
+ 263:main.c        ****         double Ch0 = CH0;
+ 264:main.c        ****         double Ch1 = CH1;
+ 265:main.c        ****         
+ 266:main.c        ****         double data = 0;
+ 267:main.c        ****         data = getLux(Ch0,Ch1);
+ 268:main.c        ****         
+ 269:main.c        ****         // If you want to print out data
+ 270:main.c        ****         //printf("%lf\r\n",data);    
+ 271:main.c        ****     }    
+ 272:main.c        ****  }   
+ 273:main.c        **** //*/
+ 274:main.c        **** 
+ 275:main.c        **** 
+ 276:main.c        **** /*//accelerometer//
+ 277:main.c        **** int main()
+ 278:main.c        **** {
+ 279:main.c        ****     CyGlobalIntEnable; 
+ 280:main.c        ****     UART_1_Start();
+ 281:main.c        ****   
+ 282:main.c        ****     I2C_Start();
+ 283:main.c        ****   
+ 284:main.c        ****     uint8 X_L_A, X_H_A, Y_L_A, Y_H_A, Z_L_A, Z_H_A;
+ 285:main.c        ****     int16 X_AXIS_A, Y_AXIS_A, Z_AXIS_A;
+ 286:main.c        ****     
+ 287:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL1_REG, 0x37);           // set accelerometer & magnetometer
+ 288:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL7_REG, 0x22);
+ 289:main.c        ****     
+ 290:main.c        ****     
+ 291:main.c        ****     for(;;)
+ 292:main.c        ****     {
+ 293:main.c        ****         //print out accelerometer output
+ 294:main.c        ****         X_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_X_L_A);
+ 295:main.c        ****         X_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_X_H_A);
+ 296:main.c        ****         X_AXIS_A = convert_raw(X_L_A, X_H_A);
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 14
 
 
- 312:main.c        ****     reflectance_start();
- 313:main.c        **** 
- 314:main.c        ****     IR_led_Write(1);
- 315:main.c        ****     for(;;)
- 316:main.c        ****     {
- 317:main.c        ****         reflectance_read(&ref);
- 318:main.c        ****         printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);       //print out each period o
- 319:main.c        ****         reflectance_digital(&dig);      //print out 0 or 1 according to results of reflectance peri
- 320:main.c        ****         printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);        //print out 0 or 1 accor
- 321:main.c        ****         
- 322:main.c        ****         CyDelay(500);
- 323:main.c        ****     }
- 324:main.c        **** }   
- 325:main.c        **** //*/
- 326:main.c        **** 
- 327:main.c        ****  /* //motor//
- 328:main.c        **** int main()
- 329:main.c        **** {
- 330:main.c        ****     CyGlobalIntEnable; 
- 331:main.c        ****     UART_1_Start();
- 332:main.c        **** 
- 333:main.c        ****     motor_start();              // motor start
- 334:main.c        **** 
- 335:main.c        ****     motor_forward(25,2000);     // moving forward
- 336:main.c        ****     motor_turn(200,50,2000);     // turn
- 337:main.c        ****     motor_turn(50,200,2000);     // turn
- 338:main.c        ****     motor_backward(100,2000);    // movinb backward
- 339:main.c        ****        
- 340:main.c        ****     motor_stop();               // motor stop
- 341:main.c        ****     
- 342:main.c        ****     for(;;)
- 343:main.c        ****     {
- 344:main.c        **** 
- 345:main.c        ****     }
- 346:main.c        **** }
- 347:main.c        **** //*/
- 348:main.c        ****     
- 349:main.c        **** 
- 350:main.c        **** /*//gyroscope//
- 351:main.c        **** int main()
- 352:main.c        **** {
- 353:main.c        ****     CyGlobalIntEnable; 
- 354:main.c        ****     UART_1_Start();
- 355:main.c        ****   
- 356:main.c        ****     I2C_Start();
- 357:main.c        ****   
- 358:main.c        ****     uint8 X_L_G, X_H_G, Y_L_G, Y_H_G, Z_L_G, Z_H_G;
- 359:main.c        ****     int16 X_AXIS_G, Y_AXIS_G, Z_AXIS_G;
- 360:main.c        ****     
- 361:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL1_REG, 0x0F);             // set gyroscope into active mode
- 362:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL4_REG, 0x30);             // set full scale selection to 2000dps 
- 363:main.c        ****     
- 364:main.c        ****     for(;;)
- 365:main.c        ****     {
- 366:main.c        ****         //print out gyroscope output
- 367:main.c        ****         X_L_G = I2C_read(GYRO_ADDR, OUT_X_AXIS_L);
- 368:main.c        ****         X_H_G = I2C_read(GYRO_ADDR, OUT_X_AXIS_H);
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 14
+ 297:main.c        ****         
+ 298:main.c        ****         Y_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_Y_L_A);
+ 299:main.c        ****         Y_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_Y_H_A);
+ 300:main.c        ****         Y_AXIS_A = convert_raw(Y_L_A, Y_H_A);
+ 301:main.c        ****         
+ 302:main.c        ****         Z_L_A = I2C_read(ACCEL_MAG_ADDR, OUT_Z_L_A);
+ 303:main.c        ****         Z_H_A = I2C_read(ACCEL_MAG_ADDR, OUT_Z_H_A);
+ 304:main.c        ****         Z_AXIS_A = convert_raw(Z_L_A, Z_H_A);
+ 305:main.c        ****         
+ 306:main.c        ****         printf("ACCEL: %d %d %d %d %d %d \r\n", X_L_A, X_H_A, Y_L_A, Y_H_A, Z_L_A, Z_H_A);
+ 307:main.c        ****         value_convert_accel(X_AXIS_A, Y_AXIS_A, Z_AXIS_A);
+ 308:main.c        ****         printf("\n");
+ 309:main.c        ****         
+ 310:main.c        ****         CyDelay(50);
+ 311:main.c        ****     }
+ 312:main.c        **** }   
+ 313:main.c        **** //*/
+ 314:main.c        **** 
+ 315:main.c        **** 
+ 316:main.c        **** /*//reflectance//
+ 317:main.c        **** int main()
+ 318:main.c        **** {
+ 319:main.c        ****     struct sensors_ ref;
+ 320:main.c        ****     struct sensors_ dig;
+ 321:main.c        ****     CyGlobalIntEnable; 
+ 322:main.c        ****     UART_1_Start();
+ 323:main.c        ****   
+ 324:main.c        ****     sensor_isr_StartEx(sensor_isr_handler);
+ 325:main.c        ****     
+ 326:main.c        ****     reflectance_start();
+ 327:main.c        **** 
+ 328:main.c        ****     IR_led_Write(1);
+ 329:main.c        ****     for(;;)
+ 330:main.c        ****     {
+ 331:main.c        ****         reflectance_read(&ref);
+ 332:main.c        ****         printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);       //print out each period o
+ 333:main.c        ****         reflectance_digital(&dig);      //print out 0 or 1 according to results of reflectance peri
+ 334:main.c        ****         printf("%d %d %d %d \r\n", dig.l3, dig.l1, dig.r1, dig.r3);        //print out 0 or 1 accor
+ 335:main.c        ****         
+ 336:main.c        ****         CyDelay(500);
+ 337:main.c        ****     }
+ 338:main.c        **** }   
+ 339:main.c        **** //*/
+ 340:main.c        **** 
+ 341:main.c        ****  /* //motor//
+ 342:main.c        **** int main()
+ 343:main.c        **** {
+ 344:main.c        ****     CyGlobalIntEnable; 
+ 345:main.c        ****     UART_1_Start();
+ 346:main.c        **** 
+ 347:main.c        ****     motor_start();              // motor start
+ 348:main.c        **** 
+ 349:main.c        ****     motor_forward(25,2000);     // moving forward
+ 350:main.c        ****     motor_turn(200,50,2000);     // turn
+ 351:main.c        ****     motor_turn(50,200,2000);     // turn
+ 352:main.c        ****     motor_backward(100,2000);    // movinb backward
+ 353:main.c        ****        
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 15
 
 
- 369:main.c        ****         X_AXIS_G = convert_raw(X_H_G, X_L_G);
- 370:main.c        ****         
- 371:main.c        ****         
- 372:main.c        ****         Y_L_G = I2C_read(GYRO_ADDR, OUT_Y_AXIS_L);
- 373:main.c        ****         Y_H_G = I2C_read(GYRO_ADDR, OUT_Y_AXIS_H);
- 374:main.c        ****         Y_AXIS_G = convert_raw(Y_H_G, Y_L_G);
- 375:main.c        ****         
- 376:main.c        ****         
- 377:main.c        ****         Z_L_G = I2C_read(GYRO_ADDR, OUT_Z_AXIS_L);
- 378:main.c        ****         Z_H_G = I2C_read(GYRO_ADDR, OUT_Z_AXIS_H);
- 379:main.c        ****         Z_AXIS_G = convert_raw(Z_H_G, Z_L_G);
- 380:main.c        ****      
- 381:main.c        ****         // If you want to print value
- 382:main.c        ****         printf("%d %d %d \r\n", X_AXIS_G, Y_AXIS_G, Z_AXIS_G);
- 383:main.c        ****         CyDelay(50);
- 384:main.c        ****     }
- 385:main.c        **** }   
- 386:main.c        **** //*/
- 387:main.c        **** 
- 388:main.c        **** 
- 389:main.c        **** /*//magnetometer//
- 390:main.c        **** int main()
- 391:main.c        **** {
- 392:main.c        ****     CyGlobalIntEnable; 
- 393:main.c        ****     UART_1_Start();
- 394:main.c        ****   
- 395:main.c        ****     I2C_Start();
- 396:main.c        ****    
- 397:main.c        ****     uint8 X_L_M, X_H_M, Y_L_M, Y_H_M, Z_L_M, Z_H_M;
- 398:main.c        ****     int16 X_AXIS, Y_AXIS, Z_AXIS;
- 399:main.c        ****     
- 400:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL1_REG, 0x0F);             // set gyroscope into active mode
- 401:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL4_REG, 0x30);             // set full scale selection to 2000dps
- 402:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL1_REG, 0x37);           // set accelerometer & magnetometer
- 403:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL7_REG, 0x22);
- 404:main.c        ****     
- 405:main.c        ****     
- 406:main.c        ****     for(;;)
- 407:main.c        ****     {
- 408:main.c        ****         X_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_X_L_M);
- 409:main.c        ****         X_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_X_H_M);
- 410:main.c        ****         X_AXIS = convert_raw(X_L_M, X_H_M);
- 411:main.c        ****         
- 412:main.c        ****         Y_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_Y_L_M);
- 413:main.c        ****         Y_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_Y_H_M);
- 414:main.c        ****         Y_AXIS = convert_raw(Y_L_M, Y_H_M);
- 415:main.c        ****         
- 416:main.c        ****         Z_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_Z_L_M);
- 417:main.c        ****         Z_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_Z_H_M);
- 418:main.c        ****         Z_AXIS = convert_raw(Z_L_M, Z_H_M);
- 419:main.c        ****         
- 420:main.c        ****         heading(X_AXIS, Y_AXIS);
- 421:main.c        ****         printf("MAGNET: %d %d %d %d %d %d \r\n", X_L_M, X_H_M, Y_L_M, Y_H_M, Z_L_M, Z_H_M);
- 422:main.c        ****         printf("%d %d %d \r\n", X_AXIS,Y_AXIS, Z_AXIS);
- 423:main.c        ****         CyDelay(50);      
- 424:main.c        ****     }
- 425:main.c        **** }   
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 15
+ 354:main.c        ****     motor_stop();               // motor stop
+ 355:main.c        ****     
+ 356:main.c        ****     for(;;)
+ 357:main.c        ****     {
+ 358:main.c        **** 
+ 359:main.c        ****     }
+ 360:main.c        **** }
+ 361:main.c        **** //*/
+ 362:main.c        ****     
+ 363:main.c        **** 
+ 364:main.c        **** /*//gyroscope//
+ 365:main.c        **** int main()
+ 366:main.c        **** {
+ 367:main.c        ****     CyGlobalIntEnable; 
+ 368:main.c        ****     UART_1_Start();
+ 369:main.c        ****   
+ 370:main.c        ****     I2C_Start();
+ 371:main.c        ****   
+ 372:main.c        ****     uint8 X_L_G, X_H_G, Y_L_G, Y_H_G, Z_L_G, Z_H_G;
+ 373:main.c        ****     int16 X_AXIS_G, Y_AXIS_G, Z_AXIS_G;
+ 374:main.c        ****     
+ 375:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL1_REG, 0x0F);             // set gyroscope into active mode
+ 376:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL4_REG, 0x30);             // set full scale selection to 2000dps 
+ 377:main.c        ****     
+ 378:main.c        ****     for(;;)
+ 379:main.c        ****     {
+ 380:main.c        ****         //print out gyroscope output
+ 381:main.c        ****         X_L_G = I2C_read(GYRO_ADDR, OUT_X_AXIS_L);
+ 382:main.c        ****         X_H_G = I2C_read(GYRO_ADDR, OUT_X_AXIS_H);
+ 383:main.c        ****         X_AXIS_G = convert_raw(X_H_G, X_L_G);
+ 384:main.c        ****         
+ 385:main.c        ****         
+ 386:main.c        ****         Y_L_G = I2C_read(GYRO_ADDR, OUT_Y_AXIS_L);
+ 387:main.c        ****         Y_H_G = I2C_read(GYRO_ADDR, OUT_Y_AXIS_H);
+ 388:main.c        ****         Y_AXIS_G = convert_raw(Y_H_G, Y_L_G);
+ 389:main.c        ****         
+ 390:main.c        ****         
+ 391:main.c        ****         Z_L_G = I2C_read(GYRO_ADDR, OUT_Z_AXIS_L);
+ 392:main.c        ****         Z_H_G = I2C_read(GYRO_ADDR, OUT_Z_AXIS_H);
+ 393:main.c        ****         Z_AXIS_G = convert_raw(Z_H_G, Z_L_G);
+ 394:main.c        ****      
+ 395:main.c        ****         // If you want to print value
+ 396:main.c        ****         printf("%d %d %d \r\n", X_AXIS_G, Y_AXIS_G, Z_AXIS_G);
+ 397:main.c        ****         CyDelay(50);
+ 398:main.c        ****     }
+ 399:main.c        **** }   
+ 400:main.c        **** //*/
+ 401:main.c        **** 
+ 402:main.c        **** 
+ 403:main.c        **** /*//magnetometer//
+ 404:main.c        **** int main()
+ 405:main.c        **** {
+ 406:main.c        ****     CyGlobalIntEnable; 
+ 407:main.c        ****     UART_1_Start();
+ 408:main.c        ****   
+ 409:main.c        ****     I2C_Start();
+ 410:main.c        ****    
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 16
 
 
- 426:main.c        **** //*/
- 427:main.c        **** 
- 428:main.c        **** 
- 429:main.c        **** #if 0
- 430:main.c        **** int rread(void)
- 431:main.c        **** {
- 432:main.c        ****     SC0_SetDriveMode(PIN_DM_STRONG);
- 433:main.c        ****     SC0_Write(1);
- 434:main.c        ****     CyDelayUs(10);
- 435:main.c        ****     SC0_SetDriveMode(PIN_DM_DIG_HIZ);
- 436:main.c        ****     Timer_1_Start();
- 437:main.c        ****     uint16_t start = Timer_1_ReadCounter();
- 438:main.c        ****     uint16_t end = 0;
- 439:main.c        ****     while(!(Timer_1_ReadStatusRegister() & Timer_1_STATUS_TC)) {
- 440:main.c        ****         if(SC0_Read() == 0 && end == 0) {
- 441:main.c        ****             end = Timer_1_ReadCounter();
- 442:main.c        ****         }
- 443:main.c        ****     }
- 444:main.c        ****     Timer_1_Stop();
- 445:main.c        ****     
- 446:main.c        ****     return (start - end);
- 447:main.c        **** }
- 448:main.c        **** #endif
- 449:main.c        **** 
- 450:main.c        **** /* Don't remove the functions below */
- 451:main.c        **** int _write(int file, char *ptr, int len)
- 452:main.c        **** {
- 371              		.loc 1 452 0
- 372              		.cfi_startproc
- 373              		@ args = 0, pretend = 0, frame = 0
- 374              		@ frame_needed = 0, uses_anonymous_args = 0
- 375              	.LVL74:
- 376 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 377              		.cfi_def_cfa_offset 24
- 378              		.cfi_offset 3, -24
- 379              		.cfi_offset 4, -20
- 380              		.cfi_offset 5, -16
- 381              		.cfi_offset 6, -12
- 382              		.cfi_offset 7, -8
- 383              		.cfi_offset 14, -4
- 384 0002 0C46     		mov	r4, r1
- 385 0004 1746     		mov	r7, r2
- 386              	.LVL75:
- 453:main.c        ****     (void)file; /* Parameter is not used, suppress unused argument warning */
- 454:main.c        **** 	int n;
- 455:main.c        **** 	for(n = 0; n < len; n++) {
- 387              		.loc 1 455 0
- 388 0006 0025     		movs	r5, #0
- 389 0008 0BE0     		b	.L13
- 390              	.LVL76:
- 391              	.L15:
- 456:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
- 392              		.loc 1 456 0
- 393 000a 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
- 394 000c 0A2B     		cmp	r3, #10
- 395 000e 02D1     		bne	.L14
- 396              		.loc 1 456 0 is_stmt 0 discriminator 1
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 16
+ 411:main.c        ****     uint8 X_L_M, X_H_M, Y_L_M, Y_H_M, Z_L_M, Z_H_M;
+ 412:main.c        ****     int16 X_AXIS, Y_AXIS, Z_AXIS;
+ 413:main.c        ****     
+ 414:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL1_REG, 0x0F);             // set gyroscope into active mode
+ 415:main.c        ****     I2C_write(GYRO_ADDR, GYRO_CTRL4_REG, 0x30);             // set full scale selection to 2000dps
+ 416:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL1_REG, 0x37);           // set accelerometer & magnetometer
+ 417:main.c        ****     I2C_write(ACCEL_MAG_ADDR, ACCEL_CTRL7_REG, 0x22);
+ 418:main.c        ****     
+ 419:main.c        ****     
+ 420:main.c        ****     for(;;)
+ 421:main.c        ****     {
+ 422:main.c        ****         X_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_X_L_M);
+ 423:main.c        ****         X_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_X_H_M);
+ 424:main.c        ****         X_AXIS = convert_raw(X_L_M, X_H_M);
+ 425:main.c        ****         
+ 426:main.c        ****         Y_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_Y_L_M);
+ 427:main.c        ****         Y_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_Y_H_M);
+ 428:main.c        ****         Y_AXIS = convert_raw(Y_L_M, Y_H_M);
+ 429:main.c        ****         
+ 430:main.c        ****         Z_L_M = I2C_read(ACCEL_MAG_ADDR, OUT_Z_L_M);
+ 431:main.c        ****         Z_H_M = I2C_read(ACCEL_MAG_ADDR, OUT_Z_H_M);
+ 432:main.c        ****         Z_AXIS = convert_raw(Z_L_M, Z_H_M);
+ 433:main.c        ****         
+ 434:main.c        ****         heading(X_AXIS, Y_AXIS);
+ 435:main.c        ****         printf("MAGNET: %d %d %d %d %d %d \r\n", X_L_M, X_H_M, Y_L_M, Y_H_M, Z_L_M, Z_H_M);
+ 436:main.c        ****         printf("%d %d %d \r\n", X_AXIS,Y_AXIS, Z_AXIS);
+ 437:main.c        ****         CyDelay(50);      
+ 438:main.c        ****     }
+ 439:main.c        **** }   
+ 440:main.c        **** //*/
+ 441:main.c        **** 
+ 442:main.c        **** 
+ 443:main.c        **** #if 0
+ 444:main.c        **** int rread(void)
+ 445:main.c        **** {
+ 446:main.c        ****     SC0_SetDriveMode(PIN_DM_STRONG);
+ 447:main.c        ****     SC0_Write(1);
+ 448:main.c        ****     CyDelayUs(10);
+ 449:main.c        ****     SC0_SetDriveMode(PIN_DM_DIG_HIZ);
+ 450:main.c        ****     Timer_1_Start();
+ 451:main.c        ****     uint16_t start = Timer_1_ReadCounter();
+ 452:main.c        ****     uint16_t end = 0;
+ 453:main.c        ****     while(!(Timer_1_ReadStatusRegister() & Timer_1_STATUS_TC)) {
+ 454:main.c        ****         if(SC0_Read() == 0 && end == 0) {
+ 455:main.c        ****             end = Timer_1_ReadCounter();
+ 456:main.c        ****         }
+ 457:main.c        ****     }
+ 458:main.c        ****     Timer_1_Stop();
+ 459:main.c        ****     
+ 460:main.c        ****     return (start - end);
+ 461:main.c        **** }
+ 462:main.c        **** #endif
+ 463:main.c        **** 
+ 464:main.c        **** /* Don't remove the functions below */
+ 465:main.c        **** int _write(int file, char *ptr, int len)
+ 466:main.c        **** {
+ 443              		.loc 1 466 0
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 17
 
 
- 397 0010 0D20     		movs	r0, #13
- 398 0012 FFF7FEFF 		bl	UART_1_PutChar
- 399              	.LVL77:
- 400              	.L14:
- 457:main.c        **** 		UART_1_PutChar(*ptr++);
- 401              		.loc 1 457 0 is_stmt 1 discriminator 2
- 402 0016 661C     		adds	r6, r4, #1
- 403              	.LVL78:
- 404 0018 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
- 405 001a FFF7FEFF 		bl	UART_1_PutChar
- 406              	.LVL79:
- 455:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
- 407              		.loc 1 455 0 discriminator 2
- 408 001e 0135     		adds	r5, r5, #1
- 409              	.LVL80:
- 410              		.loc 1 457 0 discriminator 2
- 411 0020 3446     		mov	r4, r6
- 412              	.LVL81:
- 413              	.L13:
- 455:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
- 414              		.loc 1 455 0 discriminator 1
- 415 0022 BD42     		cmp	r5, r7
- 416 0024 F1DB     		blt	.L15
- 458:main.c        **** 	}
- 459:main.c        **** 	return len;
- 460:main.c        **** }
- 417              		.loc 1 460 0
- 418 0026 3846     		mov	r0, r7
- 419 0028 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 420              		.cfi_endproc
- 421              	.LFE64:
- 422              		.size	_write, .-_write
- 423 002a 00BF     		.section	.text._read,"ax",%progbits
- 424              		.align	2
- 425              		.global	_read
- 426              		.thumb
- 427              		.thumb_func
- 428              		.type	_read, %function
- 429              	_read:
- 430              	.LFB65:
- 461:main.c        **** 
- 462:main.c        **** int _read (int file, char *ptr, int count)
- 463:main.c        **** {
- 431              		.loc 1 463 0
- 432              		.cfi_startproc
- 433              		@ args = 0, pretend = 0, frame = 0
- 434              		@ frame_needed = 0, uses_anonymous_args = 0
- 435              	.LVL82:
- 436 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
- 437              		.cfi_def_cfa_offset 24
- 438              		.cfi_offset 3, -24
- 439              		.cfi_offset 4, -20
- 440              		.cfi_offset 5, -16
- 441              		.cfi_offset 6, -12
- 442              		.cfi_offset 7, -8
- 443              		.cfi_offset 14, -4
- 444 0002 0F46     		mov	r7, r1
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 17
-
-
- 445 0004 1446     		mov	r4, r2
- 446              	.LVL83:
- 464:main.c        ****     int chs = 0;
- 447              		.loc 1 464 0
- 448 0006 0026     		movs	r6, #0
- 465:main.c        ****     char ch;
- 466:main.c        ****  
+ 444              		.cfi_startproc
+ 445              		@ args = 0, pretend = 0, frame = 0
+ 446              		@ frame_needed = 0, uses_anonymous_args = 0
+ 447              	.LVL88:
+ 448 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 449              		.cfi_def_cfa_offset 24
+ 450              		.cfi_offset 3, -24
+ 451              		.cfi_offset 4, -20
+ 452              		.cfi_offset 5, -16
+ 453              		.cfi_offset 6, -12
+ 454              		.cfi_offset 7, -8
+ 455              		.cfi_offset 14, -4
+ 456 0002 0C46     		mov	r4, r1
+ 457 0004 1746     		mov	r7, r2
+ 458              	.LVL89:
  467:main.c        ****     (void)file; /* Parameter is not used, suppress unused argument warning */
- 468:main.c        ****     while(count > 0) {
- 449              		.loc 1 468 0
- 450 0008 12E0     		b	.L19
- 451              	.LVL84:
- 452              	.L22:
- 469:main.c        ****         ch = UART_1_GetChar();
- 453              		.loc 1 469 0
- 454 000a FFF7FEFF 		bl	UART_1_GetChar
- 455              	.LVL85:
- 470:main.c        ****         if(ch != 0) {
- 456              		.loc 1 470 0
- 457 000e 0546     		mov	r5, r0
- 458 0010 70B1     		cbz	r0, .L19
- 471:main.c        ****             UART_1_PutChar(ch);
- 459              		.loc 1 471 0
- 460 0012 FFF7FEFF 		bl	UART_1_PutChar
- 461              	.LVL86:
- 472:main.c        ****             chs++;
- 462              		.loc 1 472 0
- 463 0016 0136     		adds	r6, r6, #1
- 464              	.LVL87:
- 473:main.c        ****             if(ch == '\r') {
- 465              		.loc 1 473 0
- 466 0018 0D2D     		cmp	r5, #13
- 467 001a 03D1     		bne	.L20
- 468              	.LVL88:
- 474:main.c        ****                 ch = '\n';
- 475:main.c        ****                 UART_1_PutChar(ch);
- 469              		.loc 1 475 0
- 470 001c 0A20     		movs	r0, #10
- 471 001e FFF7FEFF 		bl	UART_1_PutChar
- 472              	.LVL89:
- 474:main.c        ****                 ch = '\n';
- 473              		.loc 1 474 0
- 474 0022 0A25     		movs	r5, #10
- 475              	.LVL90:
- 476              	.L20:
- 476:main.c        ****             }
- 477:main.c        ****             *ptr++ = ch;
- 477              		.loc 1 477 0
- 478 0024 7B1C     		adds	r3, r7, #1
- 479              	.LVL91:
- 480 0026 3D70     		strb	r5, [r7]
- 478:main.c        ****             count--;
- 481              		.loc 1 478 0
- 482 0028 013C     		subs	r4, r4, #1
- 483              	.LVL92:
- 479:main.c        ****             if(ch == '\n') break;
- 484              		.loc 1 479 0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 18
-
-
- 485 002a 0A2D     		cmp	r5, #10
- 486 002c 02D0     		beq	.L21
- 477:main.c        ****             count--;
- 487              		.loc 1 477 0
- 488 002e 1F46     		mov	r7, r3
- 489              	.LVL93:
- 490              	.L19:
- 468:main.c        ****         ch = UART_1_GetChar();
- 491              		.loc 1 468 0
- 492 0030 002C     		cmp	r4, #0
- 493 0032 EADC     		bgt	.L22
- 494              	.LVL94:
- 495              	.L21:
- 480:main.c        ****         }
- 481:main.c        ****     }
- 482:main.c        ****     return chs;
- 483:main.c        **** }
- 496              		.loc 1 483 0
- 497 0034 3046     		mov	r0, r6
- 498 0036 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
- 499              		.cfi_endproc
- 500              	.LFE65:
- 501              		.size	_read, .-_read
- 502              		.section	.rodata.str1.4,"aMS",%progbits,1
- 503              		.align	2
- 504              	.LC0:
- 505 0000 0A426F6F 		.ascii	"\012Boot\000"
- 505      7400
- 506 0006 0000     		.space	2
- 507              	.LC1:
- 508 0008 5768696C 		.ascii	"While loop\000"
- 508      65206C6F 
- 508      6F7000
- 509 0013 00       		.space	1
- 510              	.LC2:
- 511 0014 464F7220 		.ascii	"FOr loop\000"
- 511      6C6F6F70 
- 511      00
- 512 001d 000000   		.space	3
- 513              	.LC3:
- 514 0020 49462031 		.ascii	"IF 1\000"
- 514      00
- 515 0025 000000   		.space	3
- 516              	.LC4:
- 517 0028 25660A00 		.ascii	"%f\012\000"
- 518              	.LC5:
- 519 002c 5061616C 		.ascii	"Paalla\000"
- 519      6C6100
- 520 0033 00       		.text
- 521              	.Letext0:
- 522              		.file 2 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
- 523              		.file 3 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
- 524              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
- 525              		.file 5 "Generated_Source\\PSoC5/ADC_Battery.h"
- 526              		.file 6 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
- 527              		.file 7 "Generated_Source\\PSoC5/BatteryLed.h"
- 528              		.file 8 "Generated_Source\\PSoC5/CyLib.h"
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 19
-
-
- 529              		.file 9 "Generated_Source\\PSoC5/UART_1.h"
- 530              		.file 10 "Generated_Source\\PSoC5/SW1.h"
- 531              		.file 11 "Generated_Source\\PSoC5/core_cm3.h"
- 532              		.file 12 "<built-in>"
- 533              		.file 13 ".\\ZumoLibrary/Motor.h"
- 534              		.section	.debug_info,"",%progbits
- 535              	.Ldebug_info0:
- 536 0000 0C070000 		.4byte	0x70c
- 537 0004 0400     		.2byte	0x4
- 538 0006 00000000 		.4byte	.Ldebug_abbrev0
- 539 000a 04       		.byte	0x4
- 540 000b 01       		.uleb128 0x1
- 541 000c FF000000 		.4byte	.LASF37
- 542 0010 01       		.byte	0x1
- 543 0011 3E020000 		.4byte	.LASF38
- 544 0015 97000000 		.4byte	.LASF39
- 545 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 546 001d 00000000 		.4byte	0
- 547 0021 00000000 		.4byte	.Ldebug_line0
- 548 0025 02       		.uleb128 0x2
- 549 0026 01       		.byte	0x1
- 550 0027 06       		.byte	0x6
- 551 0028 8F020000 		.4byte	.LASF0
- 552 002c 02       		.uleb128 0x2
- 553 002d 01       		.byte	0x1
- 554 002e 08       		.byte	0x8
- 555 002f 55000000 		.4byte	.LASF1
- 556 0033 02       		.uleb128 0x2
- 557 0034 02       		.byte	0x2
- 558 0035 05       		.byte	0x5
- 559 0036 61020000 		.4byte	.LASF2
- 560 003a 02       		.uleb128 0x2
- 561 003b 02       		.byte	0x2
- 562 003c 07       		.byte	0x7
- 563 003d 29000000 		.4byte	.LASF3
- 564 0041 03       		.uleb128 0x3
- 565 0042 0D000000 		.4byte	.LASF9
- 566 0046 02       		.byte	0x2
- 567 0047 3F       		.byte	0x3f
- 568 0048 4C000000 		.4byte	0x4c
- 569 004c 02       		.uleb128 0x2
- 570 004d 04       		.byte	0x4
- 571 004e 05       		.byte	0x5
- 572 004f 7A020000 		.4byte	.LASF4
- 573 0053 02       		.uleb128 0x2
- 574 0054 04       		.byte	0x4
- 575 0055 07       		.byte	0x7
- 576 0056 70000000 		.4byte	.LASF5
- 577 005a 02       		.uleb128 0x2
- 578 005b 08       		.byte	0x8
- 579 005c 05       		.byte	0x5
- 580 005d 1F020000 		.4byte	.LASF6
- 581 0061 02       		.uleb128 0x2
- 582 0062 08       		.byte	0x8
- 583 0063 07       		.byte	0x7
- 584 0064 C1010000 		.4byte	.LASF7
- 585 0068 04       		.uleb128 0x4
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 20
-
-
- 586 0069 04       		.byte	0x4
- 587 006a 05       		.byte	0x5
- 588 006b 696E7400 		.ascii	"int\000"
- 589 006f 02       		.uleb128 0x2
- 590 0070 04       		.byte	0x4
- 591 0071 07       		.byte	0x7
- 592 0072 9C010000 		.4byte	.LASF8
- 593 0076 03       		.uleb128 0x3
- 594 0077 3C000000 		.4byte	.LASF10
- 595 007b 03       		.byte	0x3
- 596 007c 2C       		.byte	0x2c
- 597 007d 41000000 		.4byte	0x41
- 598 0081 05       		.uleb128 0x5
- 599 0082 6B020000 		.4byte	.LASF11
- 600 0086 04       		.byte	0x4
- 601 0087 9201     		.2byte	0x192
- 602 0089 2C000000 		.4byte	0x2c
- 603 008d 05       		.uleb128 0x5
- 604 008e F8000000 		.4byte	.LASF12
- 605 0092 04       		.byte	0x4
- 606 0093 9401     		.2byte	0x194
- 607 0095 53000000 		.4byte	0x53
- 608 0099 05       		.uleb128 0x5
- 609 009a 6A000000 		.4byte	.LASF13
- 610 009e 04       		.byte	0x4
- 611 009f 9601     		.2byte	0x196
- 612 00a1 33000000 		.4byte	0x33
- 613 00a5 02       		.uleb128 0x2
- 614 00a6 04       		.byte	0x4
- 615 00a7 04       		.byte	0x4
- 616 00a8 4A000000 		.4byte	.LASF14
- 617 00ac 02       		.uleb128 0x2
- 618 00ad 08       		.byte	0x8
- 619 00ae 04       		.byte	0x4
- 620 00af E1000000 		.4byte	.LASF15
- 621 00b3 02       		.uleb128 0x2
- 622 00b4 01       		.byte	0x1
- 623 00b5 08       		.byte	0x8
- 624 00b6 45020000 		.4byte	.LASF16
- 625 00ba 02       		.uleb128 0x2
- 626 00bb 04       		.byte	0x4
- 627 00bc 07       		.byte	0x7
- 628 00bd 16020000 		.4byte	.LASF17
- 629 00c1 06       		.uleb128 0x6
- 630 00c2 04       		.byte	0x4
- 631 00c3 B3000000 		.4byte	0xb3
- 632 00c7 06       		.uleb128 0x6
- 633 00c8 04       		.byte	0x4
- 634 00c9 CD000000 		.4byte	0xcd
- 635 00cd 07       		.uleb128 0x7
- 636 00ce B3000000 		.4byte	0xb3
- 637 00d2 02       		.uleb128 0x2
- 638 00d3 08       		.byte	0x8
- 639 00d4 04       		.byte	0x4
- 640 00d5 03020000 		.4byte	.LASF18
- 641 00d9 08       		.uleb128 0x8
- 642 00da F3000000 		.4byte	.LASF40
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 21
-
-
- 643 00de 01       		.byte	0x1
- 644 00df 37       		.byte	0x37
- 645 00e0 68000000 		.4byte	0x68
- 646 00e4 00000000 		.4byte	.LFB63
- 647 00e8 F8010000 		.4byte	.LFE63-.LFB63
- 648 00ec 01       		.uleb128 0x1
- 649 00ed 9C       		.byte	0x9c
- 650 00ee 39050000 		.4byte	0x539
- 651 00f2 09       		.uleb128 0x9
- 652 00f3 4A020000 		.4byte	.LASF19
- 653 00f7 01       		.byte	0x1
- 654 00f8 3C       		.byte	0x3c
- 655 00f9 99000000 		.4byte	0x99
- 656 00fd 00000000 		.4byte	.LLST0
- 657 0101 0A       		.uleb128 0xa
- 658 0102 6B00     		.ascii	"k\000"
- 659 0104 01       		.byte	0x1
- 660 0105 3E       		.byte	0x3e
- 661 0106 68000000 		.4byte	0x68
- 662 010a 2A000000 		.4byte	.LLST1
- 663 010e 09       		.uleb128 0x9
- 664 010f 82000000 		.4byte	.LASF20
- 665 0113 01       		.byte	0x1
- 666 0114 3F       		.byte	0x3f
- 667 0115 A5000000 		.4byte	0xa5
- 668 0119 60000000 		.4byte	.LLST2
- 669 011d 09       		.uleb128 0x9
- 670 011e 83020000 		.4byte	.LASF21
- 671 0122 01       		.byte	0x1
- 672 0123 46       		.byte	0x46
- 673 0124 68000000 		.4byte	0x68
- 674 0128 8E000000 		.4byte	.LLST3
- 675 012c 0B       		.uleb128 0xb
- 676 012d 2E000000 		.4byte	.LBB2
- 677 0131 A0010000 		.4byte	.LBE2-.LBB2
- 678 0135 D3040000 		.4byte	0x4d3
- 679 0139 0C       		.uleb128 0xc
- 680 013a 63000000 		.4byte	.LASF41
- 681 013e 01       		.byte	0x1
- 682 013f 93       		.byte	0x93
- 683 0140 6F000000 		.4byte	0x6f
- 684 0144 0D       		.uleb128 0xd
- 685 0145 34000000 		.4byte	.LVL9
- 686 0149 55060000 		.4byte	0x655
- 687 014d 5B010000 		.4byte	0x15b
- 688 0151 0E       		.uleb128 0xe
- 689 0152 01       		.uleb128 0x1
- 690 0153 50       		.byte	0x50
- 691 0154 05       		.uleb128 0x5
- 692 0155 03       		.byte	0x3
- 693 0156 14000000 		.4byte	.LC2
- 694 015a 00       		.byte	0
- 695 015b 0D       		.uleb128 0xd
- 696 015c 42000000 		.4byte	.LVL10
- 697 0160 55060000 		.4byte	0x655
- 698 0164 72010000 		.4byte	0x172
- 699 0168 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 22
-
-
- 700 0169 01       		.uleb128 0x1
- 701 016a 50       		.byte	0x50
- 702 016b 05       		.uleb128 0x5
- 703 016c 03       		.byte	0x3
- 704 016d 20000000 		.4byte	.LC3
- 705 0171 00       		.byte	0
- 706 0172 0F       		.uleb128 0xf
- 707 0173 46000000 		.4byte	.LVL11
- 708 0177 6E060000 		.4byte	0x66e
- 709 017b 0F       		.uleb128 0xf
- 710 017c 4A000000 		.4byte	.LVL12
- 711 0180 7B060000 		.4byte	0x67b
- 712 0184 0D       		.uleb128 0xd
- 713 0185 50000000 		.4byte	.LVL13
- 714 0189 82060000 		.4byte	0x682
- 715 018d 97010000 		.4byte	0x197
- 716 0191 0E       		.uleb128 0xe
- 717 0192 01       		.uleb128 0x1
- 718 0193 50       		.byte	0x50
- 719 0194 01       		.uleb128 0x1
- 720 0195 30       		.byte	0x30
- 721 0196 00       		.byte	0
- 722 0197 0F       		.uleb128 0xf
- 723 0198 5A000000 		.4byte	.LVL14
- 724 019c 97060000 		.4byte	0x697
- 725 01a0 0D       		.uleb128 0xd
- 726 01a1 8C000000 		.4byte	.LVL22
- 727 01a5 A2060000 		.4byte	0x6a2
- 728 01a9 B7010000 		.4byte	0x1b7
- 729 01ad 0E       		.uleb128 0xe
- 730 01ae 01       		.uleb128 0x1
- 731 01af 50       		.byte	0x50
- 732 01b0 05       		.uleb128 0x5
- 733 01b1 03       		.byte	0x3
- 734 01b2 28000000 		.4byte	.LC4
- 735 01b6 00       		.byte	0
- 736 01b7 0D       		.uleb128 0xd
- 737 01b8 94000000 		.4byte	.LVL23
- 738 01bc B8060000 		.4byte	0x6b8
- 739 01c0 CA010000 		.4byte	0x1ca
- 740 01c4 0E       		.uleb128 0xe
- 741 01c5 01       		.uleb128 0x1
- 742 01c6 50       		.byte	0x50
- 743 01c7 01       		.uleb128 0x1
- 744 01c8 30       		.byte	0x30
- 745 01c9 00       		.byte	0
- 746 01ca 0D       		.uleb128 0xd
- 747 01cb 9A000000 		.4byte	.LVL24
- 748 01cf C9060000 		.4byte	0x6c9
- 749 01d3 DE010000 		.4byte	0x1de
- 750 01d7 0E       		.uleb128 0xe
- 751 01d8 01       		.uleb128 0x1
- 752 01d9 50       		.byte	0x50
- 753 01da 02       		.uleb128 0x2
- 754 01db 08       		.byte	0x8
- 755 01dc C8       		.byte	0xc8
- 756 01dd 00       		.byte	0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 23
-
-
- 757 01de 0D       		.uleb128 0xd
- 758 01df A0000000 		.4byte	.LVL25
- 759 01e3 B8060000 		.4byte	0x6b8
- 760 01e7 F1010000 		.4byte	0x1f1
- 761 01eb 0E       		.uleb128 0xe
- 762 01ec 01       		.uleb128 0x1
- 763 01ed 50       		.byte	0x50
- 764 01ee 01       		.uleb128 0x1
- 765 01ef 31       		.byte	0x31
- 766 01f0 00       		.byte	0
- 767 01f1 0D       		.uleb128 0xd
- 768 01f2 A6000000 		.4byte	.LVL26
- 769 01f6 C9060000 		.4byte	0x6c9
- 770 01fa 05020000 		.4byte	0x205
- 771 01fe 0E       		.uleb128 0xe
- 772 01ff 01       		.uleb128 0x1
- 773 0200 50       		.byte	0x50
- 774 0201 02       		.uleb128 0x2
- 775 0202 08       		.byte	0x8
- 776 0203 C8       		.byte	0xc8
- 777 0204 00       		.byte	0
- 778 0205 0D       		.uleb128 0xd
- 779 0206 AC000000 		.4byte	.LVL27
- 780 020a B8060000 		.4byte	0x6b8
- 781 020e 18020000 		.4byte	0x218
- 782 0212 0E       		.uleb128 0xe
- 783 0213 01       		.uleb128 0x1
- 784 0214 50       		.byte	0x50
- 785 0215 01       		.uleb128 0x1
- 786 0216 30       		.byte	0x30
- 787 0217 00       		.byte	0
- 788 0218 0D       		.uleb128 0xd
- 789 0219 B2000000 		.4byte	.LVL28
- 790 021d C9060000 		.4byte	0x6c9
- 791 0221 2C020000 		.4byte	0x22c
- 792 0225 0E       		.uleb128 0xe
- 793 0226 01       		.uleb128 0x1
- 794 0227 50       		.byte	0x50
- 795 0228 02       		.uleb128 0x2
- 796 0229 08       		.byte	0x8
- 797 022a C8       		.byte	0xc8
- 798 022b 00       		.byte	0
- 799 022c 0D       		.uleb128 0xd
- 800 022d B8000000 		.4byte	.LVL29
- 801 0231 B8060000 		.4byte	0x6b8
- 802 0235 3F020000 		.4byte	0x23f
- 803 0239 0E       		.uleb128 0xe
- 804 023a 01       		.uleb128 0x1
- 805 023b 50       		.byte	0x50
- 806 023c 01       		.uleb128 0x1
- 807 023d 31       		.byte	0x31
- 808 023e 00       		.byte	0
- 809 023f 0D       		.uleb128 0xd
- 810 0240 BE000000 		.4byte	.LVL30
- 811 0244 C9060000 		.4byte	0x6c9
- 812 0248 53020000 		.4byte	0x253
- 813 024c 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 24
-
-
- 814 024d 01       		.uleb128 0x1
- 815 024e 50       		.byte	0x50
- 816 024f 02       		.uleb128 0x2
- 817 0250 08       		.byte	0x8
- 818 0251 C8       		.byte	0xc8
- 819 0252 00       		.byte	0
- 820 0253 0D       		.uleb128 0xd
- 821 0254 C4000000 		.4byte	.LVL31
- 822 0258 B8060000 		.4byte	0x6b8
- 823 025c 66020000 		.4byte	0x266
- 824 0260 0E       		.uleb128 0xe
- 825 0261 01       		.uleb128 0x1
- 826 0262 50       		.byte	0x50
- 827 0263 01       		.uleb128 0x1
- 828 0264 30       		.byte	0x30
- 829 0265 00       		.byte	0
- 830 0266 0D       		.uleb128 0xd
- 831 0267 CA000000 		.4byte	.LVL32
- 832 026b C9060000 		.4byte	0x6c9
- 833 026f 7A020000 		.4byte	0x27a
- 834 0273 0E       		.uleb128 0xe
- 835 0274 01       		.uleb128 0x1
- 836 0275 50       		.byte	0x50
- 837 0276 02       		.uleb128 0x2
- 838 0277 08       		.byte	0x8
- 839 0278 C8       		.byte	0xc8
- 840 0279 00       		.byte	0
- 841 027a 0D       		.uleb128 0xd
- 842 027b D0000000 		.4byte	.LVL33
- 843 027f B8060000 		.4byte	0x6b8
- 844 0283 8D020000 		.4byte	0x28d
- 845 0287 0E       		.uleb128 0xe
- 846 0288 01       		.uleb128 0x1
- 847 0289 50       		.byte	0x50
- 848 028a 01       		.uleb128 0x1
- 849 028b 31       		.byte	0x31
- 850 028c 00       		.byte	0
- 851 028d 0D       		.uleb128 0xd
- 852 028e D6000000 		.4byte	.LVL34
- 853 0292 C9060000 		.4byte	0x6c9
- 854 0296 A1020000 		.4byte	0x2a1
- 855 029a 0E       		.uleb128 0xe
- 856 029b 01       		.uleb128 0x1
- 857 029c 50       		.byte	0x50
- 858 029d 02       		.uleb128 0x2
- 859 029e 08       		.byte	0x8
- 860 029f C8       		.byte	0xc8
- 861 02a0 00       		.byte	0
- 862 02a1 0D       		.uleb128 0xd
- 863 02a2 DC000000 		.4byte	.LVL35
- 864 02a6 B8060000 		.4byte	0x6b8
- 865 02aa B4020000 		.4byte	0x2b4
- 866 02ae 0E       		.uleb128 0xe
- 867 02af 01       		.uleb128 0x1
- 868 02b0 50       		.byte	0x50
- 869 02b1 01       		.uleb128 0x1
- 870 02b2 30       		.byte	0x30
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 25
-
-
- 871 02b3 00       		.byte	0
- 872 02b4 0D       		.uleb128 0xd
- 873 02b5 E2000000 		.4byte	.LVL36
- 874 02b9 C9060000 		.4byte	0x6c9
- 875 02bd C8020000 		.4byte	0x2c8
- 876 02c1 0E       		.uleb128 0xe
- 877 02c2 01       		.uleb128 0x1
- 878 02c3 50       		.byte	0x50
- 879 02c4 02       		.uleb128 0x2
- 880 02c5 08       		.byte	0x8
- 881 02c6 C8       		.byte	0xc8
- 882 02c7 00       		.byte	0
- 883 02c8 0D       		.uleb128 0xd
- 884 02c9 E8000000 		.4byte	.LVL37
- 885 02cd B8060000 		.4byte	0x6b8
- 886 02d1 DB020000 		.4byte	0x2db
- 887 02d5 0E       		.uleb128 0xe
- 888 02d6 01       		.uleb128 0x1
- 889 02d7 50       		.byte	0x50
- 890 02d8 01       		.uleb128 0x1
- 891 02d9 31       		.byte	0x31
- 892 02da 00       		.byte	0
- 893 02db 0D       		.uleb128 0xd
- 894 02dc F0000000 		.4byte	.LVL38
- 895 02e0 C9060000 		.4byte	0x6c9
- 896 02e4 F0020000 		.4byte	0x2f0
- 897 02e8 0E       		.uleb128 0xe
- 898 02e9 01       		.uleb128 0x1
- 899 02ea 50       		.byte	0x50
- 900 02eb 03       		.uleb128 0x3
- 901 02ec 0A       		.byte	0xa
- 902 02ed 8403     		.2byte	0x384
- 903 02ef 00       		.byte	0
- 904 02f0 0D       		.uleb128 0xd
- 905 02f1 F6000000 		.4byte	.LVL39
- 906 02f5 B8060000 		.4byte	0x6b8
- 907 02f9 03030000 		.4byte	0x303
- 908 02fd 0E       		.uleb128 0xe
- 909 02fe 01       		.uleb128 0x1
- 910 02ff 50       		.byte	0x50
- 911 0300 01       		.uleb128 0x1
- 912 0301 30       		.byte	0x30
- 913 0302 00       		.byte	0
- 914 0303 0D       		.uleb128 0xd
- 915 0304 FE000000 		.4byte	.LVL40
- 916 0308 C9060000 		.4byte	0x6c9
- 917 030c 18030000 		.4byte	0x318
- 918 0310 0E       		.uleb128 0xe
- 919 0311 01       		.uleb128 0x1
- 920 0312 50       		.byte	0x50
- 921 0313 03       		.uleb128 0x3
- 922 0314 0A       		.byte	0xa
- 923 0315 8403     		.2byte	0x384
- 924 0317 00       		.byte	0
- 925 0318 0D       		.uleb128 0xd
- 926 0319 04010000 		.4byte	.LVL41
- 927 031d B8060000 		.4byte	0x6b8
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 26
-
-
- 928 0321 2B030000 		.4byte	0x32b
- 929 0325 0E       		.uleb128 0xe
- 930 0326 01       		.uleb128 0x1
- 931 0327 50       		.byte	0x50
- 932 0328 01       		.uleb128 0x1
- 933 0329 31       		.byte	0x31
- 934 032a 00       		.byte	0
- 935 032b 0D       		.uleb128 0xd
- 936 032c 0C010000 		.4byte	.LVL42
- 937 0330 C9060000 		.4byte	0x6c9
- 938 0334 40030000 		.4byte	0x340
- 939 0338 0E       		.uleb128 0xe
- 940 0339 01       		.uleb128 0x1
- 941 033a 50       		.byte	0x50
- 942 033b 03       		.uleb128 0x3
- 943 033c 0A       		.byte	0xa
- 944 033d 8403     		.2byte	0x384
- 945 033f 00       		.byte	0
- 946 0340 0D       		.uleb128 0xd
- 947 0341 12010000 		.4byte	.LVL43
- 948 0345 B8060000 		.4byte	0x6b8
- 949 0349 53030000 		.4byte	0x353
- 950 034d 0E       		.uleb128 0xe
- 951 034e 01       		.uleb128 0x1
- 952 034f 50       		.byte	0x50
- 953 0350 01       		.uleb128 0x1
- 954 0351 30       		.byte	0x30
- 955 0352 00       		.byte	0
- 956 0353 0D       		.uleb128 0xd
- 957 0354 1A010000 		.4byte	.LVL44
- 958 0358 C9060000 		.4byte	0x6c9
- 959 035c 68030000 		.4byte	0x368
- 960 0360 0E       		.uleb128 0xe
- 961 0361 01       		.uleb128 0x1
- 962 0362 50       		.byte	0x50
- 963 0363 03       		.uleb128 0x3
- 964 0364 0A       		.byte	0xa
- 965 0365 8403     		.2byte	0x384
- 966 0367 00       		.byte	0
- 967 0368 0D       		.uleb128 0xd
- 968 0369 20010000 		.4byte	.LVL45
- 969 036d B8060000 		.4byte	0x6b8
- 970 0371 7B030000 		.4byte	0x37b
- 971 0375 0E       		.uleb128 0xe
- 972 0376 01       		.uleb128 0x1
- 973 0377 50       		.byte	0x50
- 974 0378 01       		.uleb128 0x1
- 975 0379 31       		.byte	0x31
- 976 037a 00       		.byte	0
- 977 037b 0D       		.uleb128 0xd
- 978 037c 28010000 		.4byte	.LVL46
- 979 0380 C9060000 		.4byte	0x6c9
- 980 0384 90030000 		.4byte	0x390
- 981 0388 0E       		.uleb128 0xe
- 982 0389 01       		.uleb128 0x1
- 983 038a 50       		.byte	0x50
- 984 038b 03       		.uleb128 0x3
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 27
-
-
- 985 038c 0A       		.byte	0xa
- 986 038d 8403     		.2byte	0x384
- 987 038f 00       		.byte	0
- 988 0390 0D       		.uleb128 0xd
- 989 0391 2E010000 		.4byte	.LVL47
- 990 0395 B8060000 		.4byte	0x6b8
- 991 0399 A3030000 		.4byte	0x3a3
- 992 039d 0E       		.uleb128 0xe
- 993 039e 01       		.uleb128 0x1
- 994 039f 50       		.byte	0x50
- 995 03a0 01       		.uleb128 0x1
- 996 03a1 30       		.byte	0x30
- 997 03a2 00       		.byte	0
- 998 03a3 0D       		.uleb128 0xd
- 999 03a4 36010000 		.4byte	.LVL48
- 1000 03a8 C9060000 		.4byte	0x6c9
- 1001 03ac B8030000 		.4byte	0x3b8
- 1002 03b0 0E       		.uleb128 0xe
- 1003 03b1 01       		.uleb128 0x1
- 1004 03b2 50       		.byte	0x50
- 1005 03b3 03       		.uleb128 0x3
- 1006 03b4 0A       		.byte	0xa
- 1007 03b5 8403     		.2byte	0x384
- 1008 03b7 00       		.byte	0
- 1009 03b8 0D       		.uleb128 0xd
- 1010 03b9 3C010000 		.4byte	.LVL49
- 1011 03bd B8060000 		.4byte	0x6b8
- 1012 03c1 CB030000 		.4byte	0x3cb
- 1013 03c5 0E       		.uleb128 0xe
- 1014 03c6 01       		.uleb128 0x1
- 1015 03c7 50       		.byte	0x50
- 1016 03c8 01       		.uleb128 0x1
- 1017 03c9 31       		.byte	0x31
- 1018 03ca 00       		.byte	0
- 1019 03cb 0D       		.uleb128 0xd
- 1020 03cc 42010000 		.4byte	.LVL50
- 1021 03d0 C9060000 		.4byte	0x6c9
- 1022 03d4 DF030000 		.4byte	0x3df
- 1023 03d8 0E       		.uleb128 0xe
- 1024 03d9 01       		.uleb128 0x1
- 1025 03da 50       		.byte	0x50
- 1026 03db 02       		.uleb128 0x2
- 1027 03dc 08       		.byte	0x8
- 1028 03dd C8       		.byte	0xc8
- 1029 03de 00       		.byte	0
- 1030 03df 0D       		.uleb128 0xd
- 1031 03e0 48010000 		.4byte	.LVL51
- 1032 03e4 B8060000 		.4byte	0x6b8
- 1033 03e8 F2030000 		.4byte	0x3f2
- 1034 03ec 0E       		.uleb128 0xe
- 1035 03ed 01       		.uleb128 0x1
- 1036 03ee 50       		.byte	0x50
- 1037 03ef 01       		.uleb128 0x1
- 1038 03f0 30       		.byte	0x30
- 1039 03f1 00       		.byte	0
- 1040 03f2 0D       		.uleb128 0xd
- 1041 03f3 4E010000 		.4byte	.LVL52
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 28
-
-
- 1042 03f7 C9060000 		.4byte	0x6c9
- 1043 03fb 06040000 		.4byte	0x406
- 1044 03ff 0E       		.uleb128 0xe
- 1045 0400 01       		.uleb128 0x1
- 1046 0401 50       		.byte	0x50
- 1047 0402 02       		.uleb128 0x2
- 1048 0403 08       		.byte	0x8
- 1049 0404 C8       		.byte	0xc8
- 1050 0405 00       		.byte	0
- 1051 0406 0D       		.uleb128 0xd
- 1052 0407 54010000 		.4byte	.LVL53
- 1053 040b B8060000 		.4byte	0x6b8
- 1054 040f 19040000 		.4byte	0x419
- 1055 0413 0E       		.uleb128 0xe
- 1056 0414 01       		.uleb128 0x1
- 1057 0415 50       		.byte	0x50
- 1058 0416 01       		.uleb128 0x1
- 1059 0417 31       		.byte	0x31
- 1060 0418 00       		.byte	0
- 1061 0419 0D       		.uleb128 0xd
- 1062 041a 5A010000 		.4byte	.LVL54
- 1063 041e C9060000 		.4byte	0x6c9
- 1064 0422 2D040000 		.4byte	0x42d
- 1065 0426 0E       		.uleb128 0xe
- 1066 0427 01       		.uleb128 0x1
- 1067 0428 50       		.byte	0x50
- 1068 0429 02       		.uleb128 0x2
- 1069 042a 08       		.byte	0x8
- 1070 042b C8       		.byte	0xc8
- 1071 042c 00       		.byte	0
- 1072 042d 0D       		.uleb128 0xd
- 1073 042e 60010000 		.4byte	.LVL55
- 1074 0432 B8060000 		.4byte	0x6b8
- 1075 0436 40040000 		.4byte	0x440
- 1076 043a 0E       		.uleb128 0xe
- 1077 043b 01       		.uleb128 0x1
- 1078 043c 50       		.byte	0x50
- 1079 043d 01       		.uleb128 0x1
- 1080 043e 30       		.byte	0x30
- 1081 043f 00       		.byte	0
- 1082 0440 0D       		.uleb128 0xd
- 1083 0441 66010000 		.4byte	.LVL56
- 1084 0445 C9060000 		.4byte	0x6c9
- 1085 0449 54040000 		.4byte	0x454
- 1086 044d 0E       		.uleb128 0xe
- 1087 044e 01       		.uleb128 0x1
- 1088 044f 50       		.byte	0x50
- 1089 0450 02       		.uleb128 0x2
- 1090 0451 08       		.byte	0x8
- 1091 0452 C8       		.byte	0xc8
- 1092 0453 00       		.byte	0
- 1093 0454 0D       		.uleb128 0xd
- 1094 0455 6C010000 		.4byte	.LVL57
- 1095 0459 B8060000 		.4byte	0x6b8
- 1096 045d 67040000 		.4byte	0x467
- 1097 0461 0E       		.uleb128 0xe
- 1098 0462 01       		.uleb128 0x1
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 29
-
-
- 1099 0463 50       		.byte	0x50
- 1100 0464 01       		.uleb128 0x1
- 1101 0465 31       		.byte	0x31
- 1102 0466 00       		.byte	0
- 1103 0467 0D       		.uleb128 0xd
- 1104 0468 72010000 		.4byte	.LVL58
- 1105 046c C9060000 		.4byte	0x6c9
- 1106 0470 7B040000 		.4byte	0x47b
- 1107 0474 0E       		.uleb128 0xe
- 1108 0475 01       		.uleb128 0x1
- 1109 0476 50       		.byte	0x50
- 1110 0477 02       		.uleb128 0x2
- 1111 0478 08       		.byte	0x8
- 1112 0479 C8       		.byte	0xc8
- 1113 047a 00       		.byte	0
- 1114 047b 0D       		.uleb128 0xd
- 1115 047c 78010000 		.4byte	.LVL59
- 1116 0480 B8060000 		.4byte	0x6b8
- 1117 0484 8E040000 		.4byte	0x48e
- 1118 0488 0E       		.uleb128 0xe
- 1119 0489 01       		.uleb128 0x1
- 1120 048a 50       		.byte	0x50
- 1121 048b 01       		.uleb128 0x1
- 1122 048c 30       		.byte	0x30
- 1123 048d 00       		.byte	0
- 1124 048e 0D       		.uleb128 0xd
- 1125 048f 80010000 		.4byte	.LVL60
- 1126 0493 C9060000 		.4byte	0x6c9
- 1127 0497 A3040000 		.4byte	0x4a3
- 1128 049b 0E       		.uleb128 0xe
- 1129 049c 01       		.uleb128 0x1
- 1130 049d 50       		.byte	0x50
- 1131 049e 03       		.uleb128 0x3
- 1132 049f 0A       		.byte	0xa
- 1133 04a0 DC05     		.2byte	0x5dc
- 1134 04a2 00       		.byte	0
- 1135 04a3 0F       		.uleb128 0xf
- 1136 04a4 84010000 		.4byte	.LVL61
- 1137 04a8 97060000 		.4byte	0x697
- 1138 04ac 0D       		.uleb128 0xd
- 1139 04ad BE010000 		.4byte	.LVL69
- 1140 04b1 B8060000 		.4byte	0x6b8
- 1141 04b5 BF040000 		.4byte	0x4bf
- 1142 04b9 0E       		.uleb128 0xe
- 1143 04ba 01       		.uleb128 0x1
- 1144 04bb 50       		.byte	0x50
- 1145 04bc 01       		.uleb128 0x1
- 1146 04bd 31       		.byte	0x31
- 1147 04be 00       		.byte	0
- 1148 04bf 10       		.uleb128 0x10
- 1149 04c0 CC010000 		.4byte	.LVL72
- 1150 04c4 55060000 		.4byte	0x655
- 1151 04c8 0E       		.uleb128 0xe
- 1152 04c9 01       		.uleb128 0x1
- 1153 04ca 50       		.byte	0x50
- 1154 04cb 05       		.uleb128 0x5
- 1155 04cc 03       		.byte	0x3
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 30
-
-
- 1156 04cd 2C000000 		.4byte	.LC5
- 1157 04d1 00       		.byte	0
- 1158 04d2 00       		.byte	0
- 1159 04d3 0F       		.uleb128 0xf
- 1160 04d4 08000000 		.4byte	.LVL0
- 1161 04d8 DA060000 		.4byte	0x6da
- 1162 04dc 0F       		.uleb128 0xf
- 1163 04dd 0C000000 		.4byte	.LVL1
- 1164 04e1 E1060000 		.4byte	0x6e1
- 1165 04e5 0D       		.uleb128 0xd
- 1166 04e6 12000000 		.4byte	.LVL2
- 1167 04ea 55060000 		.4byte	0x655
- 1168 04ee FC040000 		.4byte	0x4fc
- 1169 04f2 0E       		.uleb128 0xe
- 1170 04f3 01       		.uleb128 0x1
- 1171 04f4 50       		.byte	0x50
- 1172 04f5 05       		.uleb128 0x5
- 1173 04f6 03       		.byte	0x3
- 1174 04f7 00000000 		.4byte	.LC0
- 1175 04fb 00       		.byte	0
- 1176 04fc 0D       		.uleb128 0xd
- 1177 04fd 18000000 		.4byte	.LVL3
- 1178 0501 B8060000 		.4byte	0x6b8
- 1179 0505 0F050000 		.4byte	0x50f
- 1180 0509 0E       		.uleb128 0xe
- 1181 050a 01       		.uleb128 0x1
- 1182 050b 50       		.byte	0x50
- 1183 050c 01       		.uleb128 0x1
- 1184 050d 31       		.byte	0x31
- 1185 050e 00       		.byte	0
- 1186 050f 0F       		.uleb128 0xf
- 1187 0510 1C000000 		.4byte	.LVL4
- 1188 0514 E8060000 		.4byte	0x6e8
- 1189 0518 0D       		.uleb128 0xd
- 1190 0519 24000000 		.4byte	.LVL6
- 1191 051d 55060000 		.4byte	0x655
- 1192 0521 2F050000 		.4byte	0x52f
- 1193 0525 0E       		.uleb128 0xe
- 1194 0526 01       		.uleb128 0x1
- 1195 0527 50       		.byte	0x50
- 1196 0528 05       		.uleb128 0x5
- 1197 0529 03       		.byte	0x3
- 1198 052a 08000000 		.4byte	.LC1
- 1199 052e 00       		.byte	0
- 1200 052f 0F       		.uleb128 0xf
- 1201 0530 28000000 		.4byte	.LVL7
- 1202 0534 E8060000 		.4byte	0x6e8
- 1203 0538 00       		.byte	0
- 1204 0539 11       		.uleb128 0x11
- 1205 053a 0F020000 		.4byte	.LASF23
- 1206 053e 01       		.byte	0x1
- 1207 053f C301     		.2byte	0x1c3
- 1208 0541 68000000 		.4byte	0x68
- 1209 0545 00000000 		.4byte	.LFB64
- 1210 0549 2A000000 		.4byte	.LFE64-.LFB64
- 1211 054d 01       		.uleb128 0x1
- 1212 054e 9C       		.byte	0x9c
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 31
-
-
- 1213 054f AE050000 		.4byte	0x5ae
- 1214 0553 12       		.uleb128 0x12
- 1215 0554 50000000 		.4byte	.LASF22
- 1216 0558 01       		.byte	0x1
- 1217 0559 C301     		.2byte	0x1c3
- 1218 055b 68000000 		.4byte	0x68
- 1219 055f AC000000 		.4byte	.LLST4
- 1220 0563 13       		.uleb128 0x13
- 1221 0564 70747200 		.ascii	"ptr\000"
- 1222 0568 01       		.byte	0x1
- 1223 0569 C301     		.2byte	0x1c3
- 1224 056b C1000000 		.4byte	0xc1
- 1225 056f CD000000 		.4byte	.LLST5
- 1226 0573 13       		.uleb128 0x13
- 1227 0574 6C656E00 		.ascii	"len\000"
- 1228 0578 01       		.byte	0x1
- 1229 0579 C301     		.2byte	0x1c3
- 1230 057b 68000000 		.4byte	0x68
- 1231 057f 01010000 		.4byte	.LLST6
- 1232 0583 14       		.uleb128 0x14
- 1233 0584 6E00     		.ascii	"n\000"
- 1234 0586 01       		.byte	0x1
- 1235 0587 C601     		.2byte	0x1c6
- 1236 0589 68000000 		.4byte	0x68
- 1237 058d 1F010000 		.4byte	.LLST7
- 1238 0591 0D       		.uleb128 0xd
- 1239 0592 16000000 		.4byte	.LVL77
- 1240 0596 F3060000 		.4byte	0x6f3
- 1241 059a A4050000 		.4byte	0x5a4
- 1242 059e 0E       		.uleb128 0xe
- 1243 059f 01       		.uleb128 0x1
- 1244 05a0 50       		.byte	0x50
- 1245 05a1 01       		.uleb128 0x1
- 1246 05a2 3D       		.byte	0x3d
- 1247 05a3 00       		.byte	0
- 1248 05a4 0F       		.uleb128 0xf
- 1249 05a5 1E000000 		.4byte	.LVL79
- 1250 05a9 F3060000 		.4byte	0x6f3
- 1251 05ad 00       		.byte	0
- 1252 05ae 11       		.uleb128 0x11
- 1253 05af 44000000 		.4byte	.LASF24
- 1254 05b3 01       		.byte	0x1
- 1255 05b4 CE01     		.2byte	0x1ce
- 1256 05b6 68000000 		.4byte	0x68
- 1257 05ba 00000000 		.4byte	.LFB65
- 1258 05be 38000000 		.4byte	.LFE65-.LFB65
- 1259 05c2 01       		.uleb128 0x1
- 1260 05c3 9C       		.byte	0x9c
- 1261 05c4 44060000 		.4byte	0x644
- 1262 05c8 12       		.uleb128 0x12
- 1263 05c9 50000000 		.4byte	.LASF22
- 1264 05cd 01       		.byte	0x1
- 1265 05ce CE01     		.2byte	0x1ce
- 1266 05d0 68000000 		.4byte	0x68
- 1267 05d4 3E010000 		.4byte	.LLST8
- 1268 05d8 13       		.uleb128 0x13
- 1269 05d9 70747200 		.ascii	"ptr\000"
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 32
-
-
- 1270 05dd 01       		.byte	0x1
- 1271 05de CE01     		.2byte	0x1ce
- 1272 05e0 C1000000 		.4byte	0xc1
- 1273 05e4 5F010000 		.4byte	.LLST9
- 1274 05e8 12       		.uleb128 0x12
- 1275 05e9 5B020000 		.4byte	.LASF25
- 1276 05ed 01       		.byte	0x1
- 1277 05ee CE01     		.2byte	0x1ce
- 1278 05f0 68000000 		.4byte	0x68
- 1279 05f4 93010000 		.4byte	.LLST10
- 1280 05f8 14       		.uleb128 0x14
- 1281 05f9 63687300 		.ascii	"chs\000"
- 1282 05fd 01       		.byte	0x1
- 1283 05fe D001     		.2byte	0x1d0
- 1284 0600 68000000 		.4byte	0x68
- 1285 0604 B1010000 		.4byte	.LLST11
- 1286 0608 14       		.uleb128 0x14
- 1287 0609 636800   		.ascii	"ch\000"
- 1288 060c 01       		.byte	0x1
- 1289 060d D101     		.2byte	0x1d1
- 1290 060f B3000000 		.4byte	0xb3
- 1291 0613 D0010000 		.4byte	.LLST12
- 1292 0617 0F       		.uleb128 0xf
- 1293 0618 0E000000 		.4byte	.LVL85
- 1294 061c 04070000 		.4byte	0x704
- 1295 0620 0D       		.uleb128 0xd
- 1296 0621 16000000 		.4byte	.LVL86
- 1297 0625 F3060000 		.4byte	0x6f3
- 1298 0629 34060000 		.4byte	0x634
- 1299 062d 0E       		.uleb128 0xe
- 1300 062e 01       		.uleb128 0x1
- 1301 062f 50       		.byte	0x50
- 1302 0630 02       		.uleb128 0x2
- 1303 0631 75       		.byte	0x75
- 1304 0632 00       		.sleb128 0
- 1305 0633 00       		.byte	0
- 1306 0634 10       		.uleb128 0x10
- 1307 0635 22000000 		.4byte	.LVL89
- 1308 0639 F3060000 		.4byte	0x6f3
- 1309 063d 0E       		.uleb128 0xe
- 1310 063e 01       		.uleb128 0x1
- 1311 063f 50       		.byte	0x50
- 1312 0640 01       		.uleb128 0x1
- 1313 0641 3A       		.byte	0x3a
- 1314 0642 00       		.byte	0
- 1315 0643 00       		.byte	0
- 1316 0644 15       		.uleb128 0x15
- 1317 0645 8A000000 		.4byte	.LASF42
- 1318 0649 0B       		.byte	0xb
- 1319 064a 9606     		.2byte	0x696
- 1320 064c 50060000 		.4byte	0x650
- 1321 0650 16       		.uleb128 0x16
- 1322 0651 76000000 		.4byte	0x76
- 1323 0655 17       		.uleb128 0x17
- 1324 0656 F4010000 		.4byte	.LASF43
- 1325 065a 0C       		.byte	0xc
- 1326 065b 00       		.byte	0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 33
-
-
- 1327 065c 8A020000 		.4byte	.LASF44
- 1328 0660 68000000 		.4byte	0x68
- 1329 0664 6E060000 		.4byte	0x66e
- 1330 0668 18       		.uleb128 0x18
- 1331 0669 C7000000 		.4byte	0xc7
- 1332 066d 00       		.byte	0
- 1333 066e 19       		.uleb128 0x19
- 1334 066f E8000000 		.4byte	.LASF45
- 1335 0673 0D       		.byte	0xd
- 1336 0674 0C       		.byte	0xc
- 1337 0675 7B060000 		.4byte	0x67b
- 1338 0679 1A       		.uleb128 0x1a
- 1339 067a 00       		.byte	0
- 1340 067b 1B       		.uleb128 0x1b
- 1341 067c 9B020000 		.4byte	.LASF30
- 1342 0680 05       		.byte	0x5
- 1343 0681 D1       		.byte	0xd1
- 1344 0682 1C       		.uleb128 0x1c
- 1345 0683 D8010000 		.4byte	.LASF26
- 1346 0687 05       		.byte	0x5
- 1347 0688 39       		.byte	0x39
- 1348 0689 81000000 		.4byte	0x81
- 1349 068d 97060000 		.4byte	0x697
- 1350 0691 18       		.uleb128 0x18
- 1351 0692 81000000 		.4byte	0x81
- 1352 0696 00       		.byte	0
- 1353 0697 1D       		.uleb128 0x1d
- 1354 0698 A9010000 		.4byte	.LASF33
- 1355 069c 05       		.byte	0x5
- 1356 069d 3B       		.byte	0x3b
- 1357 069e 99000000 		.4byte	0x99
- 1358 06a2 1C       		.uleb128 0x1c
- 1359 06a3 54020000 		.4byte	.LASF27
- 1360 06a7 06       		.byte	0x6
- 1361 06a8 B2       		.byte	0xb2
- 1362 06a9 68000000 		.4byte	0x68
- 1363 06ad B8060000 		.4byte	0x6b8
- 1364 06b1 18       		.uleb128 0x18
- 1365 06b2 C7000000 		.4byte	0xc7
- 1366 06b6 1A       		.uleb128 0x1a
- 1367 06b7 00       		.byte	0
- 1368 06b8 1E       		.uleb128 0x1e
- 1369 06b9 2D020000 		.4byte	.LASF28
- 1370 06bd 07       		.byte	0x7
- 1371 06be 26       		.byte	0x26
- 1372 06bf C9060000 		.4byte	0x6c9
- 1373 06c3 18       		.uleb128 0x18
- 1374 06c4 81000000 		.4byte	0x81
- 1375 06c8 00       		.byte	0
- 1376 06c9 1E       		.uleb128 0x1e
- 1377 06ca B4020000 		.4byte	.LASF29
- 1378 06ce 08       		.byte	0x8
- 1379 06cf 76       		.byte	0x76
- 1380 06d0 DA060000 		.4byte	0x6da
- 1381 06d4 18       		.uleb128 0x18
- 1382 06d5 8D000000 		.4byte	0x8d
- 1383 06d9 00       		.byte	0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 34
-
-
- 1384 06da 1B       		.uleb128 0x1b
- 1385 06db 00000000 		.4byte	.LASF31
- 1386 06df 09       		.byte	0x9
- 1387 06e0 54       		.byte	0x54
- 1388 06e1 1B       		.uleb128 0x1b
- 1389 06e2 17000000 		.4byte	.LASF32
- 1390 06e6 05       		.byte	0x5
- 1391 06e7 34       		.byte	0x34
- 1392 06e8 1D       		.uleb128 0x1d
- 1393 06e9 71020000 		.4byte	.LASF34
- 1394 06ed 0A       		.byte	0xa
- 1395 06ee 29       		.byte	0x29
- 1396 06ef 81000000 		.4byte	0x81
- 1397 06f3 1E       		.uleb128 0x1e
- 1398 06f4 8D010000 		.4byte	.LASF35
- 1399 06f8 09       		.byte	0x9
- 1400 06f9 8A       		.byte	0x8a
- 1401 06fa 04070000 		.4byte	0x704
- 1402 06fe 18       		.uleb128 0x18
- 1403 06ff 81000000 		.4byte	0x81
- 1404 0703 00       		.byte	0
- 1405 0704 1D       		.uleb128 0x1d
- 1406 0705 BC020000 		.4byte	.LASF36
- 1407 0709 09       		.byte	0x9
- 1408 070a 71       		.byte	0x71
- 1409 070b 81000000 		.4byte	0x81
- 1410 070f 00       		.byte	0
- 1411              		.section	.debug_abbrev,"",%progbits
- 1412              	.Ldebug_abbrev0:
- 1413 0000 01       		.uleb128 0x1
- 1414 0001 11       		.uleb128 0x11
- 1415 0002 01       		.byte	0x1
- 1416 0003 25       		.uleb128 0x25
- 1417 0004 0E       		.uleb128 0xe
- 1418 0005 13       		.uleb128 0x13
- 1419 0006 0B       		.uleb128 0xb
- 1420 0007 03       		.uleb128 0x3
- 1421 0008 0E       		.uleb128 0xe
- 1422 0009 1B       		.uleb128 0x1b
- 1423 000a 0E       		.uleb128 0xe
- 1424 000b 55       		.uleb128 0x55
- 1425 000c 17       		.uleb128 0x17
- 1426 000d 11       		.uleb128 0x11
- 1427 000e 01       		.uleb128 0x1
- 1428 000f 10       		.uleb128 0x10
- 1429 0010 17       		.uleb128 0x17
- 1430 0011 00       		.byte	0
- 1431 0012 00       		.byte	0
- 1432 0013 02       		.uleb128 0x2
- 1433 0014 24       		.uleb128 0x24
- 1434 0015 00       		.byte	0
- 1435 0016 0B       		.uleb128 0xb
- 1436 0017 0B       		.uleb128 0xb
- 1437 0018 3E       		.uleb128 0x3e
- 1438 0019 0B       		.uleb128 0xb
- 1439 001a 03       		.uleb128 0x3
- 1440 001b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 35
-
-
- 1441 001c 00       		.byte	0
- 1442 001d 00       		.byte	0
- 1443 001e 03       		.uleb128 0x3
- 1444 001f 16       		.uleb128 0x16
- 1445 0020 00       		.byte	0
- 1446 0021 03       		.uleb128 0x3
- 1447 0022 0E       		.uleb128 0xe
- 1448 0023 3A       		.uleb128 0x3a
- 1449 0024 0B       		.uleb128 0xb
- 1450 0025 3B       		.uleb128 0x3b
- 1451 0026 0B       		.uleb128 0xb
- 1452 0027 49       		.uleb128 0x49
- 1453 0028 13       		.uleb128 0x13
- 1454 0029 00       		.byte	0
- 1455 002a 00       		.byte	0
- 1456 002b 04       		.uleb128 0x4
- 1457 002c 24       		.uleb128 0x24
- 1458 002d 00       		.byte	0
- 1459 002e 0B       		.uleb128 0xb
- 1460 002f 0B       		.uleb128 0xb
- 1461 0030 3E       		.uleb128 0x3e
- 1462 0031 0B       		.uleb128 0xb
- 1463 0032 03       		.uleb128 0x3
- 1464 0033 08       		.uleb128 0x8
- 1465 0034 00       		.byte	0
- 1466 0035 00       		.byte	0
- 1467 0036 05       		.uleb128 0x5
- 1468 0037 16       		.uleb128 0x16
- 1469 0038 00       		.byte	0
- 1470 0039 03       		.uleb128 0x3
- 1471 003a 0E       		.uleb128 0xe
- 1472 003b 3A       		.uleb128 0x3a
- 1473 003c 0B       		.uleb128 0xb
- 1474 003d 3B       		.uleb128 0x3b
- 1475 003e 05       		.uleb128 0x5
- 1476 003f 49       		.uleb128 0x49
- 1477 0040 13       		.uleb128 0x13
- 1478 0041 00       		.byte	0
- 1479 0042 00       		.byte	0
- 1480 0043 06       		.uleb128 0x6
- 1481 0044 0F       		.uleb128 0xf
- 1482 0045 00       		.byte	0
- 1483 0046 0B       		.uleb128 0xb
- 1484 0047 0B       		.uleb128 0xb
- 1485 0048 49       		.uleb128 0x49
- 1486 0049 13       		.uleb128 0x13
- 1487 004a 00       		.byte	0
- 1488 004b 00       		.byte	0
- 1489 004c 07       		.uleb128 0x7
- 1490 004d 26       		.uleb128 0x26
- 1491 004e 00       		.byte	0
- 1492 004f 49       		.uleb128 0x49
- 1493 0050 13       		.uleb128 0x13
- 1494 0051 00       		.byte	0
- 1495 0052 00       		.byte	0
- 1496 0053 08       		.uleb128 0x8
- 1497 0054 2E       		.uleb128 0x2e
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 36
-
-
- 1498 0055 01       		.byte	0x1
- 1499 0056 3F       		.uleb128 0x3f
- 1500 0057 19       		.uleb128 0x19
- 1501 0058 03       		.uleb128 0x3
- 1502 0059 0E       		.uleb128 0xe
- 1503 005a 3A       		.uleb128 0x3a
- 1504 005b 0B       		.uleb128 0xb
- 1505 005c 3B       		.uleb128 0x3b
- 1506 005d 0B       		.uleb128 0xb
- 1507 005e 49       		.uleb128 0x49
- 1508 005f 13       		.uleb128 0x13
- 1509 0060 11       		.uleb128 0x11
- 1510 0061 01       		.uleb128 0x1
- 1511 0062 12       		.uleb128 0x12
- 1512 0063 06       		.uleb128 0x6
- 1513 0064 40       		.uleb128 0x40
- 1514 0065 18       		.uleb128 0x18
- 1515 0066 9642     		.uleb128 0x2116
- 1516 0068 19       		.uleb128 0x19
- 1517 0069 01       		.uleb128 0x1
- 1518 006a 13       		.uleb128 0x13
- 1519 006b 00       		.byte	0
- 1520 006c 00       		.byte	0
- 1521 006d 09       		.uleb128 0x9
- 1522 006e 34       		.uleb128 0x34
- 1523 006f 00       		.byte	0
- 1524 0070 03       		.uleb128 0x3
- 1525 0071 0E       		.uleb128 0xe
- 1526 0072 3A       		.uleb128 0x3a
- 1527 0073 0B       		.uleb128 0xb
- 1528 0074 3B       		.uleb128 0x3b
- 1529 0075 0B       		.uleb128 0xb
- 1530 0076 49       		.uleb128 0x49
- 1531 0077 13       		.uleb128 0x13
- 1532 0078 02       		.uleb128 0x2
- 1533 0079 17       		.uleb128 0x17
- 1534 007a 00       		.byte	0
- 1535 007b 00       		.byte	0
- 1536 007c 0A       		.uleb128 0xa
- 1537 007d 34       		.uleb128 0x34
- 1538 007e 00       		.byte	0
- 1539 007f 03       		.uleb128 0x3
- 1540 0080 08       		.uleb128 0x8
- 1541 0081 3A       		.uleb128 0x3a
- 1542 0082 0B       		.uleb128 0xb
- 1543 0083 3B       		.uleb128 0x3b
- 1544 0084 0B       		.uleb128 0xb
- 1545 0085 49       		.uleb128 0x49
- 1546 0086 13       		.uleb128 0x13
- 1547 0087 02       		.uleb128 0x2
- 1548 0088 17       		.uleb128 0x17
- 1549 0089 00       		.byte	0
- 1550 008a 00       		.byte	0
- 1551 008b 0B       		.uleb128 0xb
- 1552 008c 0B       		.uleb128 0xb
- 1553 008d 01       		.byte	0x1
- 1554 008e 11       		.uleb128 0x11
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 37
-
-
- 1555 008f 01       		.uleb128 0x1
- 1556 0090 12       		.uleb128 0x12
- 1557 0091 06       		.uleb128 0x6
- 1558 0092 01       		.uleb128 0x1
- 1559 0093 13       		.uleb128 0x13
- 1560 0094 00       		.byte	0
- 1561 0095 00       		.byte	0
- 1562 0096 0C       		.uleb128 0xc
- 1563 0097 34       		.uleb128 0x34
- 1564 0098 00       		.byte	0
- 1565 0099 03       		.uleb128 0x3
- 1566 009a 0E       		.uleb128 0xe
- 1567 009b 3A       		.uleb128 0x3a
- 1568 009c 0B       		.uleb128 0xb
- 1569 009d 3B       		.uleb128 0x3b
- 1570 009e 0B       		.uleb128 0xb
- 1571 009f 49       		.uleb128 0x49
- 1572 00a0 13       		.uleb128 0x13
- 1573 00a1 00       		.byte	0
- 1574 00a2 00       		.byte	0
- 1575 00a3 0D       		.uleb128 0xd
- 1576 00a4 898201   		.uleb128 0x4109
- 1577 00a7 01       		.byte	0x1
- 1578 00a8 11       		.uleb128 0x11
- 1579 00a9 01       		.uleb128 0x1
- 1580 00aa 31       		.uleb128 0x31
- 1581 00ab 13       		.uleb128 0x13
- 1582 00ac 01       		.uleb128 0x1
- 1583 00ad 13       		.uleb128 0x13
- 1584 00ae 00       		.byte	0
- 1585 00af 00       		.byte	0
- 1586 00b0 0E       		.uleb128 0xe
- 1587 00b1 8A8201   		.uleb128 0x410a
- 1588 00b4 00       		.byte	0
- 1589 00b5 02       		.uleb128 0x2
- 1590 00b6 18       		.uleb128 0x18
- 1591 00b7 9142     		.uleb128 0x2111
- 1592 00b9 18       		.uleb128 0x18
- 1593 00ba 00       		.byte	0
- 1594 00bb 00       		.byte	0
- 1595 00bc 0F       		.uleb128 0xf
- 1596 00bd 898201   		.uleb128 0x4109
- 1597 00c0 00       		.byte	0
- 1598 00c1 11       		.uleb128 0x11
- 1599 00c2 01       		.uleb128 0x1
- 1600 00c3 31       		.uleb128 0x31
- 1601 00c4 13       		.uleb128 0x13
- 1602 00c5 00       		.byte	0
- 1603 00c6 00       		.byte	0
- 1604 00c7 10       		.uleb128 0x10
- 1605 00c8 898201   		.uleb128 0x4109
- 1606 00cb 01       		.byte	0x1
- 1607 00cc 11       		.uleb128 0x11
- 1608 00cd 01       		.uleb128 0x1
- 1609 00ce 31       		.uleb128 0x31
- 1610 00cf 13       		.uleb128 0x13
- 1611 00d0 00       		.byte	0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 38
-
-
- 1612 00d1 00       		.byte	0
- 1613 00d2 11       		.uleb128 0x11
- 1614 00d3 2E       		.uleb128 0x2e
- 1615 00d4 01       		.byte	0x1
- 1616 00d5 3F       		.uleb128 0x3f
- 1617 00d6 19       		.uleb128 0x19
- 1618 00d7 03       		.uleb128 0x3
- 1619 00d8 0E       		.uleb128 0xe
- 1620 00d9 3A       		.uleb128 0x3a
- 1621 00da 0B       		.uleb128 0xb
- 1622 00db 3B       		.uleb128 0x3b
- 1623 00dc 05       		.uleb128 0x5
- 1624 00dd 27       		.uleb128 0x27
- 1625 00de 19       		.uleb128 0x19
- 1626 00df 49       		.uleb128 0x49
- 1627 00e0 13       		.uleb128 0x13
- 1628 00e1 11       		.uleb128 0x11
- 1629 00e2 01       		.uleb128 0x1
- 1630 00e3 12       		.uleb128 0x12
- 1631 00e4 06       		.uleb128 0x6
- 1632 00e5 40       		.uleb128 0x40
- 1633 00e6 18       		.uleb128 0x18
- 1634 00e7 9742     		.uleb128 0x2117
- 1635 00e9 19       		.uleb128 0x19
- 1636 00ea 01       		.uleb128 0x1
- 1637 00eb 13       		.uleb128 0x13
- 1638 00ec 00       		.byte	0
- 1639 00ed 00       		.byte	0
- 1640 00ee 12       		.uleb128 0x12
- 1641 00ef 05       		.uleb128 0x5
- 1642 00f0 00       		.byte	0
- 1643 00f1 03       		.uleb128 0x3
- 1644 00f2 0E       		.uleb128 0xe
- 1645 00f3 3A       		.uleb128 0x3a
- 1646 00f4 0B       		.uleb128 0xb
- 1647 00f5 3B       		.uleb128 0x3b
- 1648 00f6 05       		.uleb128 0x5
- 1649 00f7 49       		.uleb128 0x49
- 1650 00f8 13       		.uleb128 0x13
- 1651 00f9 02       		.uleb128 0x2
- 1652 00fa 17       		.uleb128 0x17
- 1653 00fb 00       		.byte	0
- 1654 00fc 00       		.byte	0
- 1655 00fd 13       		.uleb128 0x13
- 1656 00fe 05       		.uleb128 0x5
- 1657 00ff 00       		.byte	0
- 1658 0100 03       		.uleb128 0x3
- 1659 0101 08       		.uleb128 0x8
- 1660 0102 3A       		.uleb128 0x3a
- 1661 0103 0B       		.uleb128 0xb
- 1662 0104 3B       		.uleb128 0x3b
- 1663 0105 05       		.uleb128 0x5
- 1664 0106 49       		.uleb128 0x49
- 1665 0107 13       		.uleb128 0x13
- 1666 0108 02       		.uleb128 0x2
- 1667 0109 17       		.uleb128 0x17
- 1668 010a 00       		.byte	0
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 39
-
-
- 1669 010b 00       		.byte	0
- 1670 010c 14       		.uleb128 0x14
- 1671 010d 34       		.uleb128 0x34
- 1672 010e 00       		.byte	0
- 1673 010f 03       		.uleb128 0x3
- 1674 0110 08       		.uleb128 0x8
- 1675 0111 3A       		.uleb128 0x3a
- 1676 0112 0B       		.uleb128 0xb
- 1677 0113 3B       		.uleb128 0x3b
- 1678 0114 05       		.uleb128 0x5
- 1679 0115 49       		.uleb128 0x49
- 1680 0116 13       		.uleb128 0x13
- 1681 0117 02       		.uleb128 0x2
- 1682 0118 17       		.uleb128 0x17
- 1683 0119 00       		.byte	0
- 1684 011a 00       		.byte	0
- 1685 011b 15       		.uleb128 0x15
- 1686 011c 34       		.uleb128 0x34
- 1687 011d 00       		.byte	0
- 1688 011e 03       		.uleb128 0x3
- 1689 011f 0E       		.uleb128 0xe
- 1690 0120 3A       		.uleb128 0x3a
- 1691 0121 0B       		.uleb128 0xb
- 1692 0122 3B       		.uleb128 0x3b
- 1693 0123 05       		.uleb128 0x5
- 1694 0124 49       		.uleb128 0x49
- 1695 0125 13       		.uleb128 0x13
- 1696 0126 3F       		.uleb128 0x3f
- 1697 0127 19       		.uleb128 0x19
- 1698 0128 3C       		.uleb128 0x3c
- 1699 0129 19       		.uleb128 0x19
- 1700 012a 00       		.byte	0
- 1701 012b 00       		.byte	0
- 1702 012c 16       		.uleb128 0x16
- 1703 012d 35       		.uleb128 0x35
- 1704 012e 00       		.byte	0
- 1705 012f 49       		.uleb128 0x49
- 1706 0130 13       		.uleb128 0x13
- 1707 0131 00       		.byte	0
- 1708 0132 00       		.byte	0
- 1709 0133 17       		.uleb128 0x17
- 1710 0134 2E       		.uleb128 0x2e
- 1711 0135 01       		.byte	0x1
- 1712 0136 3F       		.uleb128 0x3f
- 1713 0137 19       		.uleb128 0x19
- 1714 0138 03       		.uleb128 0x3
- 1715 0139 0E       		.uleb128 0xe
- 1716 013a 3A       		.uleb128 0x3a
- 1717 013b 0B       		.uleb128 0xb
- 1718 013c 3B       		.uleb128 0x3b
- 1719 013d 0B       		.uleb128 0xb
- 1720 013e 6E       		.uleb128 0x6e
- 1721 013f 0E       		.uleb128 0xe
- 1722 0140 27       		.uleb128 0x27
- 1723 0141 19       		.uleb128 0x19
- 1724 0142 49       		.uleb128 0x49
- 1725 0143 13       		.uleb128 0x13
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 40
-
-
- 1726 0144 3C       		.uleb128 0x3c
- 1727 0145 19       		.uleb128 0x19
- 1728 0146 01       		.uleb128 0x1
- 1729 0147 13       		.uleb128 0x13
- 1730 0148 00       		.byte	0
- 1731 0149 00       		.byte	0
- 1732 014a 18       		.uleb128 0x18
- 1733 014b 05       		.uleb128 0x5
- 1734 014c 00       		.byte	0
- 1735 014d 49       		.uleb128 0x49
- 1736 014e 13       		.uleb128 0x13
- 1737 014f 00       		.byte	0
- 1738 0150 00       		.byte	0
- 1739 0151 19       		.uleb128 0x19
- 1740 0152 2E       		.uleb128 0x2e
- 1741 0153 01       		.byte	0x1
- 1742 0154 3F       		.uleb128 0x3f
- 1743 0155 19       		.uleb128 0x19
- 1744 0156 03       		.uleb128 0x3
- 1745 0157 0E       		.uleb128 0xe
- 1746 0158 3A       		.uleb128 0x3a
- 1747 0159 0B       		.uleb128 0xb
- 1748 015a 3B       		.uleb128 0x3b
- 1749 015b 0B       		.uleb128 0xb
- 1750 015c 3C       		.uleb128 0x3c
- 1751 015d 19       		.uleb128 0x19
- 1752 015e 01       		.uleb128 0x1
- 1753 015f 13       		.uleb128 0x13
- 1754 0160 00       		.byte	0
- 1755 0161 00       		.byte	0
- 1756 0162 1A       		.uleb128 0x1a
- 1757 0163 18       		.uleb128 0x18
- 1758 0164 00       		.byte	0
- 1759 0165 00       		.byte	0
- 1760 0166 00       		.byte	0
- 1761 0167 1B       		.uleb128 0x1b
- 1762 0168 2E       		.uleb128 0x2e
- 1763 0169 00       		.byte	0
- 1764 016a 3F       		.uleb128 0x3f
- 1765 016b 19       		.uleb128 0x19
- 1766 016c 03       		.uleb128 0x3
- 1767 016d 0E       		.uleb128 0xe
- 1768 016e 3A       		.uleb128 0x3a
- 1769 016f 0B       		.uleb128 0xb
- 1770 0170 3B       		.uleb128 0x3b
- 1771 0171 0B       		.uleb128 0xb
- 1772 0172 27       		.uleb128 0x27
- 1773 0173 19       		.uleb128 0x19
- 1774 0174 3C       		.uleb128 0x3c
- 1775 0175 19       		.uleb128 0x19
- 1776 0176 00       		.byte	0
- 1777 0177 00       		.byte	0
- 1778 0178 1C       		.uleb128 0x1c
- 1779 0179 2E       		.uleb128 0x2e
- 1780 017a 01       		.byte	0x1
- 1781 017b 3F       		.uleb128 0x3f
- 1782 017c 19       		.uleb128 0x19
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 41
-
-
- 1783 017d 03       		.uleb128 0x3
- 1784 017e 0E       		.uleb128 0xe
- 1785 017f 3A       		.uleb128 0x3a
- 1786 0180 0B       		.uleb128 0xb
- 1787 0181 3B       		.uleb128 0x3b
- 1788 0182 0B       		.uleb128 0xb
- 1789 0183 27       		.uleb128 0x27
- 1790 0184 19       		.uleb128 0x19
- 1791 0185 49       		.uleb128 0x49
- 1792 0186 13       		.uleb128 0x13
- 1793 0187 3C       		.uleb128 0x3c
- 1794 0188 19       		.uleb128 0x19
- 1795 0189 01       		.uleb128 0x1
- 1796 018a 13       		.uleb128 0x13
- 1797 018b 00       		.byte	0
- 1798 018c 00       		.byte	0
- 1799 018d 1D       		.uleb128 0x1d
- 1800 018e 2E       		.uleb128 0x2e
- 1801 018f 00       		.byte	0
- 1802 0190 3F       		.uleb128 0x3f
- 1803 0191 19       		.uleb128 0x19
- 1804 0192 03       		.uleb128 0x3
- 1805 0193 0E       		.uleb128 0xe
- 1806 0194 3A       		.uleb128 0x3a
- 1807 0195 0B       		.uleb128 0xb
- 1808 0196 3B       		.uleb128 0x3b
- 1809 0197 0B       		.uleb128 0xb
- 1810 0198 27       		.uleb128 0x27
- 1811 0199 19       		.uleb128 0x19
- 1812 019a 49       		.uleb128 0x49
- 1813 019b 13       		.uleb128 0x13
- 1814 019c 3C       		.uleb128 0x3c
- 1815 019d 19       		.uleb128 0x19
- 1816 019e 00       		.byte	0
- 1817 019f 00       		.byte	0
- 1818 01a0 1E       		.uleb128 0x1e
- 1819 01a1 2E       		.uleb128 0x2e
- 1820 01a2 01       		.byte	0x1
- 1821 01a3 3F       		.uleb128 0x3f
- 1822 01a4 19       		.uleb128 0x19
- 1823 01a5 03       		.uleb128 0x3
- 1824 01a6 0E       		.uleb128 0xe
- 1825 01a7 3A       		.uleb128 0x3a
- 1826 01a8 0B       		.uleb128 0xb
- 1827 01a9 3B       		.uleb128 0x3b
- 1828 01aa 0B       		.uleb128 0xb
- 1829 01ab 27       		.uleb128 0x27
- 1830 01ac 19       		.uleb128 0x19
- 1831 01ad 3C       		.uleb128 0x3c
- 1832 01ae 19       		.uleb128 0x19
- 1833 01af 01       		.uleb128 0x1
- 1834 01b0 13       		.uleb128 0x13
- 1835 01b1 00       		.byte	0
- 1836 01b2 00       		.byte	0
- 1837 01b3 00       		.byte	0
- 1838              		.section	.debug_loc,"",%progbits
- 1839              	.Ldebug_loc0:
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 42
-
-
- 1840              	.LLST0:
- 1841 0000 0C000000 		.4byte	.LVL1
- 1842 0004 2E000000 		.4byte	.LVL8
- 1843 0008 0200     		.2byte	0x2
- 1844 000a 30       		.byte	0x30
- 1845 000b 9F       		.byte	0x9f
- 1846 000c 5A000000 		.4byte	.LVL14
- 1847 0010 5D000000 		.4byte	.LVL15-1
- 1848 0014 0100     		.2byte	0x1
- 1849 0016 50       		.byte	0x50
- 1850 0017 84010000 		.4byte	.LVL61
- 1851 001b 87010000 		.4byte	.LVL62-1
- 1852 001f 0100     		.2byte	0x1
- 1853 0021 50       		.byte	0x50
- 1854 0022 00000000 		.4byte	0
- 1855 0026 00000000 		.4byte	0
- 1856              	.LLST1:
- 1857 002a 0C000000 		.4byte	.LVL1
- 1858 002e 2E000000 		.4byte	.LVL8
- 1859 0032 0200     		.2byte	0x2
- 1860 0034 30       		.byte	0x30
- 1861 0035 9F       		.byte	0x9f
- 1862 0036 2E000000 		.4byte	.LVL8
- 1863 003a 46000000 		.4byte	.LVL11
- 1864 003e 0100     		.2byte	0x1
- 1865 0040 54       		.byte	0x54
- 1866 0041 46000000 		.4byte	.LVL11
- 1867 0045 C4010000 		.4byte	.LVL71
- 1868 0049 0200     		.2byte	0x2
- 1869 004b 30       		.byte	0x30
- 1870 004c 9F       		.byte	0x9f
- 1871 004d C4010000 		.4byte	.LVL71
- 1872 0051 F8010000 		.4byte	.LFE63
- 1873 0055 0100     		.2byte	0x1
- 1874 0057 54       		.byte	0x54
- 1875 0058 00000000 		.4byte	0
- 1876 005c 00000000 		.4byte	0
- 1877              	.LLST2:
- 1878 0060 0C000000 		.4byte	.LVL1
- 1879 0064 2E000000 		.4byte	.LVL8
- 1880 0068 0600     		.2byte	0x6
- 1881 006a 9E       		.byte	0x9e
- 1882 006b 04       		.uleb128 0x4
- 1883 006c 00000000 		.4byte	0
- 1884 0070 7E000000 		.4byte	.LVL20
- 1885 0074 81000000 		.4byte	.LVL21-1
- 1886 0078 0100     		.2byte	0x1
- 1887 007a 50       		.byte	0x50
- 1888 007b 81000000 		.4byte	.LVL21-1
- 1889 007f C0010000 		.4byte	.LVL70
- 1890 0083 0100     		.2byte	0x1
- 1891 0085 54       		.byte	0x54
- 1892 0086 00000000 		.4byte	0
- 1893 008a 00000000 		.4byte	0
- 1894              	.LLST3:
- 1895 008e 1C000000 		.4byte	.LVL4
- 1896 0092 20000000 		.4byte	.LVL5
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 43
-
-
- 1897 0096 0100     		.2byte	0x1
- 1898 0098 50       		.byte	0x50
- 1899 0099 28000000 		.4byte	.LVL7
- 1900 009d 2E000000 		.4byte	.LVL8
- 1901 00a1 0100     		.2byte	0x1
- 1902 00a3 50       		.byte	0x50
- 1903 00a4 00000000 		.4byte	0
- 1904 00a8 00000000 		.4byte	0
- 1905              	.LLST4:
- 1906 00ac 00000000 		.4byte	.LVL74
- 1907 00b0 0A000000 		.4byte	.LVL76
- 1908 00b4 0100     		.2byte	0x1
- 1909 00b6 50       		.byte	0x50
- 1910 00b7 0A000000 		.4byte	.LVL76
- 1911 00bb 2A000000 		.4byte	.LFE64
- 1912 00bf 0400     		.2byte	0x4
- 1913 00c1 F3       		.byte	0xf3
- 1914 00c2 01       		.uleb128 0x1
- 1915 00c3 50       		.byte	0x50
- 1916 00c4 9F       		.byte	0x9f
- 1917 00c5 00000000 		.4byte	0
- 1918 00c9 00000000 		.4byte	0
- 1919              	.LLST5:
- 1920 00cd 00000000 		.4byte	.LVL74
- 1921 00d1 0A000000 		.4byte	.LVL76
- 1922 00d5 0100     		.2byte	0x1
- 1923 00d7 51       		.byte	0x51
- 1924 00d8 0A000000 		.4byte	.LVL76
- 1925 00dc 18000000 		.4byte	.LVL78
- 1926 00e0 0100     		.2byte	0x1
- 1927 00e2 54       		.byte	0x54
- 1928 00e3 18000000 		.4byte	.LVL78
- 1929 00e7 22000000 		.4byte	.LVL81
- 1930 00eb 0100     		.2byte	0x1
- 1931 00ed 56       		.byte	0x56
- 1932 00ee 22000000 		.4byte	.LVL81
- 1933 00f2 2A000000 		.4byte	.LFE64
- 1934 00f6 0100     		.2byte	0x1
- 1935 00f8 54       		.byte	0x54
- 1936 00f9 00000000 		.4byte	0
- 1937 00fd 00000000 		.4byte	0
- 1938              	.LLST6:
- 1939 0101 00000000 		.4byte	.LVL74
- 1940 0105 0A000000 		.4byte	.LVL76
- 1941 0109 0100     		.2byte	0x1
- 1942 010b 52       		.byte	0x52
- 1943 010c 0A000000 		.4byte	.LVL76
- 1944 0110 2A000000 		.4byte	.LFE64
- 1945 0114 0100     		.2byte	0x1
- 1946 0116 57       		.byte	0x57
- 1947 0117 00000000 		.4byte	0
- 1948 011b 00000000 		.4byte	0
- 1949              	.LLST7:
- 1950 011f 06000000 		.4byte	.LVL75
- 1951 0123 0A000000 		.4byte	.LVL76
- 1952 0127 0200     		.2byte	0x2
- 1953 0129 30       		.byte	0x30
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 44
-
-
- 1954 012a 9F       		.byte	0x9f
- 1955 012b 0A000000 		.4byte	.LVL76
- 1956 012f 2A000000 		.4byte	.LFE64
- 1957 0133 0100     		.2byte	0x1
- 1958 0135 55       		.byte	0x55
- 1959 0136 00000000 		.4byte	0
- 1960 013a 00000000 		.4byte	0
- 1961              	.LLST8:
- 1962 013e 00000000 		.4byte	.LVL82
- 1963 0142 0A000000 		.4byte	.LVL84
- 1964 0146 0100     		.2byte	0x1
- 1965 0148 50       		.byte	0x50
- 1966 0149 0A000000 		.4byte	.LVL84
- 1967 014d 38000000 		.4byte	.LFE65
- 1968 0151 0400     		.2byte	0x4
- 1969 0153 F3       		.byte	0xf3
- 1970 0154 01       		.uleb128 0x1
- 1971 0155 50       		.byte	0x50
- 1972 0156 9F       		.byte	0x9f
- 1973 0157 00000000 		.4byte	0
- 1974 015b 00000000 		.4byte	0
- 1975              	.LLST9:
- 1976 015f 00000000 		.4byte	.LVL82
- 1977 0163 0A000000 		.4byte	.LVL84
- 1978 0167 0100     		.2byte	0x1
- 1979 0169 51       		.byte	0x51
- 1980 016a 0A000000 		.4byte	.LVL84
- 1981 016e 26000000 		.4byte	.LVL91
- 1982 0172 0100     		.2byte	0x1
- 1983 0174 57       		.byte	0x57
- 1984 0175 26000000 		.4byte	.LVL91
- 1985 0179 30000000 		.4byte	.LVL93
- 1986 017d 0100     		.2byte	0x1
- 1987 017f 53       		.byte	0x53
- 1988 0180 30000000 		.4byte	.LVL93
- 1989 0184 34000000 		.4byte	.LVL94
- 1990 0188 0100     		.2byte	0x1
- 1991 018a 57       		.byte	0x57
- 1992 018b 00000000 		.4byte	0
- 1993 018f 00000000 		.4byte	0
- 1994              	.LLST10:
- 1995 0193 00000000 		.4byte	.LVL82
- 1996 0197 0A000000 		.4byte	.LVL84
- 1997 019b 0100     		.2byte	0x1
- 1998 019d 52       		.byte	0x52
- 1999 019e 0A000000 		.4byte	.LVL84
- 2000 01a2 38000000 		.4byte	.LFE65
- 2001 01a6 0100     		.2byte	0x1
- 2002 01a8 54       		.byte	0x54
- 2003 01a9 00000000 		.4byte	0
- 2004 01ad 00000000 		.4byte	0
- 2005              	.LLST11:
- 2006 01b1 06000000 		.4byte	.LVL83
- 2007 01b5 0A000000 		.4byte	.LVL84
- 2008 01b9 0200     		.2byte	0x2
- 2009 01bb 30       		.byte	0x30
- 2010 01bc 9F       		.byte	0x9f
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 45
-
-
- 2011 01bd 0A000000 		.4byte	.LVL84
- 2012 01c1 38000000 		.4byte	.LFE65
- 2013 01c5 0100     		.2byte	0x1
- 2014 01c7 56       		.byte	0x56
- 2015 01c8 00000000 		.4byte	0
- 2016 01cc 00000000 		.4byte	0
- 2017              	.LLST12:
- 2018 01d0 0E000000 		.4byte	.LVL85
- 2019 01d4 15000000 		.4byte	.LVL86-1
- 2020 01d8 0100     		.2byte	0x1
- 2021 01da 50       		.byte	0x50
- 2022 01db 1C000000 		.4byte	.LVL88
- 2023 01df 24000000 		.4byte	.LVL90
- 2024 01e3 0200     		.2byte	0x2
- 2025 01e5 3A       		.byte	0x3a
- 2026 01e6 9F       		.byte	0x9f
- 2027 01e7 24000000 		.4byte	.LVL90
- 2028 01eb 30000000 		.4byte	.LVL93
- 2029 01ef 0100     		.2byte	0x1
- 2030 01f1 55       		.byte	0x55
- 2031 01f2 00000000 		.4byte	0
- 2032 01f6 00000000 		.4byte	0
- 2033              		.section	.debug_aranges,"",%progbits
- 2034 0000 2C000000 		.4byte	0x2c
- 2035 0004 0200     		.2byte	0x2
- 2036 0006 00000000 		.4byte	.Ldebug_info0
- 2037 000a 04       		.byte	0x4
- 2038 000b 00       		.byte	0
- 2039 000c 0000     		.2byte	0
- 2040 000e 0000     		.2byte	0
- 2041 0010 00000000 		.4byte	.LFB63
- 2042 0014 F8010000 		.4byte	.LFE63-.LFB63
- 2043 0018 00000000 		.4byte	.LFB64
- 2044 001c 2A000000 		.4byte	.LFE64-.LFB64
- 2045 0020 00000000 		.4byte	.LFB65
- 2046 0024 38000000 		.4byte	.LFE65-.LFB65
- 2047 0028 00000000 		.4byte	0
- 2048 002c 00000000 		.4byte	0
- 2049              		.section	.debug_ranges,"",%progbits
- 2050              	.Ldebug_ranges0:
- 2051 0000 00000000 		.4byte	.LFB63
- 2052 0004 F8010000 		.4byte	.LFE63
- 2053 0008 00000000 		.4byte	.LFB64
- 2054 000c 2A000000 		.4byte	.LFE64
- 2055 0010 00000000 		.4byte	.LFB65
- 2056 0014 38000000 		.4byte	.LFE65
- 2057 0018 00000000 		.4byte	0
- 2058 001c 00000000 		.4byte	0
- 2059              		.section	.debug_line,"",%progbits
- 2060              	.Ldebug_line0:
- 2061 0000 5F020000 		.section	.debug_str,"MS",%progbits,1
- 2061      0200AA01 
- 2061      00000201 
- 2061      FB0E0D00 
- 2061      01010101 
- 2062              	.LASF31:
- 2063 0000 55415254 		.ascii	"UART_1_Start\000"
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 46
-
-
- 2063      5F315F53 
- 2063      74617274 
- 2063      00
- 2064              	.LASF9:
- 2065 000d 5F5F696E 		.ascii	"__int32_t\000"
- 2065      7433325F 
- 2065      7400
- 2066              	.LASF32:
- 2067 0017 4144435F 		.ascii	"ADC_Battery_Start\000"
- 2067      42617474 
- 2067      6572795F 
- 2067      53746172 
- 2067      7400
- 2068              	.LASF3:
- 2069 0029 73686F72 		.ascii	"short unsigned int\000"
- 2069      7420756E 
- 2069      7369676E 
- 2069      65642069 
- 2069      6E7400
- 2070              	.LASF10:
- 2071 003c 696E7433 		.ascii	"int32_t\000"
- 2071      325F7400 
- 2072              	.LASF24:
- 2073 0044 5F726561 		.ascii	"_read\000"
- 2073      6400
- 2074              	.LASF14:
- 2075 004a 666C6F61 		.ascii	"float\000"
- 2075      7400
- 2076              	.LASF22:
- 2077 0050 66696C65 		.ascii	"file\000"
- 2077      00
- 2078              	.LASF1:
- 2079 0055 756E7369 		.ascii	"unsigned char\000"
- 2079      676E6564 
- 2079      20636861 
- 2079      7200
- 2080              	.LASF41:
- 2081 0063 49525F76 		.ascii	"IR_val\000"
- 2081      616C00
- 2082              	.LASF13:
- 2083 006a 696E7431 		.ascii	"int16\000"
- 2083      3600
- 2084              	.LASF5:
- 2085 0070 6C6F6E67 		.ascii	"long unsigned int\000"
- 2085      20756E73 
- 2085      69676E65 
- 2085      6420696E 
- 2085      7400
- 2086              	.LASF20:
- 2087 0082 766F6C74 		.ascii	"voltage\000"
- 2087      61676500 
- 2088              	.LASF42:
- 2089 008a 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 2089      52784275 
- 2089      66666572 
- 2089      00
- 2090              	.LASF39:
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 47
-
-
- 2091 0097 433A5C55 		.ascii	"C:\\Users\\Nike\\Documents\\GitHub\\Zumo_Bot\\Zumo."
- 2091      73657273 
- 2091      5C4E696B 
- 2091      655C446F 
- 2091      63756D65 
- 2092 00c4 72656C65 		.ascii	"release\\Zumo01\\ZumoBot.cydsn\000"
- 2092      6173655C 
- 2092      5A756D6F 
- 2092      30315C5A 
- 2092      756D6F42 
- 2093              	.LASF15:
- 2094 00e1 646F7562 		.ascii	"double\000"
- 2094      6C6500
- 2095              	.LASF45:
- 2096 00e8 6D6F746F 		.ascii	"motor_stop\000"
- 2096      725F7374 
- 2096      6F7000
- 2097              	.LASF40:
- 2098 00f3 6D61696E 		.ascii	"main\000"
- 2098      00
- 2099              	.LASF12:
- 2100 00f8 75696E74 		.ascii	"uint32\000"
- 2100      333200
- 2101              	.LASF37:
- 2102 00ff 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 2102      4320342E 
- 2102      392E3320 
- 2102      32303135 
- 2102      30333033 
- 2103 0132 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 2103      20726576 
- 2103      6973696F 
- 2103      6E203232 
- 2103      31323230 
- 2104 0165 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2104      66756E63 
- 2104      74696F6E 
- 2104      2D736563 
- 2104      74696F6E 
- 2105              	.LASF35:
- 2106 018d 55415254 		.ascii	"UART_1_PutChar\000"
- 2106      5F315F50 
- 2106      75744368 
- 2106      617200
- 2107              	.LASF8:
- 2108 019c 756E7369 		.ascii	"unsigned int\000"
- 2108      676E6564 
- 2108      20696E74 
- 2108      00
- 2109              	.LASF33:
- 2110 01a9 4144435F 		.ascii	"ADC_Battery_GetResult16\000"
- 2110      42617474 
- 2110      6572795F 
- 2110      47657452 
- 2110      6573756C 
- 2111              	.LASF7:
- 2112 01c1 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 48
-
-
- 2112      206C6F6E 
- 2112      6720756E 
- 2112      7369676E 
- 2112      65642069 
- 2113              	.LASF26:
- 2114 01d8 4144435F 		.ascii	"ADC_Battery_IsEndConversion\000"
- 2114      42617474 
- 2114      6572795F 
- 2114      4973456E 
- 2114      64436F6E 
- 2115              	.LASF43:
- 2116 01f4 5F5F6275 		.ascii	"__builtin_puts\000"
- 2116      696C7469 
- 2116      6E5F7075 
- 2116      747300
- 2117              	.LASF18:
- 2118 0203 6C6F6E67 		.ascii	"long double\000"
- 2118      20646F75 
- 2118      626C6500 
- 2119              	.LASF23:
- 2120 020f 5F777269 		.ascii	"_write\000"
- 2120      746500
- 2121              	.LASF17:
- 2122 0216 73697A65 		.ascii	"sizetype\000"
- 2122      74797065 
- 2122      00
- 2123              	.LASF6:
- 2124 021f 6C6F6E67 		.ascii	"long long int\000"
- 2124      206C6F6E 
- 2124      6720696E 
- 2124      7400
- 2125              	.LASF28:
- 2126 022d 42617474 		.ascii	"BatteryLed_Write\000"
- 2126      6572794C 
- 2126      65645F57 
- 2126      72697465 
- 2126      00
- 2127              	.LASF38:
- 2128 023e 6D61696E 		.ascii	"main.c\000"
- 2128      2E6300
- 2129              	.LASF16:
- 2130 0245 63686172 		.ascii	"char\000"
- 2130      00
- 2131              	.LASF19:
- 2132 024a 61646372 		.ascii	"adcresult\000"
- 2132      6573756C 
- 2132      7400
- 2133              	.LASF27:
- 2134 0254 7072696E 		.ascii	"printf\000"
- 2134      746600
- 2135              	.LASF25:
- 2136 025b 636F756E 		.ascii	"count\000"
- 2136      7400
- 2137              	.LASF2:
- 2138 0261 73686F72 		.ascii	"short int\000"
- 2138      7420696E 
- 2138      7400
-ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc7Ibivq.s 			page 49
-
-
- 2139              	.LASF11:
- 2140 026b 75696E74 		.ascii	"uint8\000"
- 2140      3800
- 2141              	.LASF34:
- 2142 0271 5357315F 		.ascii	"SW1_Read\000"
- 2142      52656164 
- 2142      00
- 2143              	.LASF4:
- 2144 027a 6C6F6E67 		.ascii	"long int\000"
- 2144      20696E74 
- 2144      00
- 2145              	.LASF21:
- 2146 0283 62757474 		.ascii	"button\000"
- 2146      6F6E00
- 2147              	.LASF44:
- 2148 028a 70757473 		.ascii	"puts\000"
- 2148      00
- 2149              	.LASF0:
- 2150 028f 7369676E 		.ascii	"signed char\000"
- 2150      65642063 
- 2150      68617200 
- 2151              	.LASF30:
- 2152 029b 4144435F 		.ascii	"ADC_Battery_StartConvert\000"
- 2152      42617474 
- 2152      6572795F 
- 2152      53746172 
- 2152      74436F6E 
- 2153              	.LASF29:
- 2154 02b4 43794465 		.ascii	"CyDelay\000"
- 2154      6C617900 
- 2155              	.LASF36:
- 2156 02bc 55415254 		.ascii	"UART_1_GetChar\000"
- 2156      5F315F47 
- 2156      65744368 
- 2156      617200
- 2157              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 468:main.c        **** 	int n;
+ 469:main.c        **** 	for(n = 0; n < len; n++) {
+ 459              		.loc 1 469 0
+ 460 0006 0025     		movs	r5, #0
+ 461 0008 0BE0     		b	.L13
+ 462              	.LVL90:
+ 463              	.L15:
+ 470:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
+ 464              		.loc 1 470 0
+ 465 000a 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
+ 466 000c 0A2B     		cmp	r3, #10
+ 467 000e 02D1     		bne	.L14
+ 468              		.loc 1 470 0 is_stmt 0 discriminator 1
+ 469 0010 0D20     		movs	r0, #13
+ 470 0012 FFF7FEFF 		bl	UART_1_PutChar
+ 471              	.LVL91:
+ 472              	.L14:
+ 471:main.c        **** 		UART_1_PutChar(*ptr++);
+ 473              		.loc 1 471 0 is_stmt 1 discriminator 2
+ 474 0016 661C     		adds	r6, r4, #1
+ 475              	.LVL92:
+ 476 0018 2078     		ldrb	r0, [r4]	@ zero_extendqisi2
+ 477 001a FFF7FEFF 		bl	UART_1_PutChar
+ 478              	.LVL93:
+ 469:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
+ 479              		.loc 1 469 0 discriminator 2
+ 480 001e 0135     		adds	r5, r5, #1
+ 481              	.LVL94:
+ 482              		.loc 1 471 0 discriminator 2
+ 483 0020 3446     		mov	r4, r6
+ 484              	.LVL95:
+ 485              	.L13:
+ 469:main.c        ****         if(*ptr == '\n') UART_1_PutChar('\r');
+ 486              		.loc 1 469 0 discriminator 1
+ 487 0022 BD42     		cmp	r5, r7
+ 488 0024 F1DB     		blt	.L15
+ 472:main.c        **** 	}
+ 473:main.c        **** 	return len;
+ 474:main.c        **** }
+ 489              		.loc 1 474 0
+ 490 0026 3846     		mov	r0, r7
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 18
+
+
+ 491 0028 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 492              		.cfi_endproc
+ 493              	.LFE64:
+ 494              		.size	_write, .-_write
+ 495 002a 00BF     		.section	.text._read,"ax",%progbits
+ 496              		.align	2
+ 497              		.global	_read
+ 498              		.thumb
+ 499              		.thumb_func
+ 500              		.type	_read, %function
+ 501              	_read:
+ 502              	.LFB65:
+ 475:main.c        **** 
+ 476:main.c        **** int _read (int file, char *ptr, int count)
+ 477:main.c        **** {
+ 503              		.loc 1 477 0
+ 504              		.cfi_startproc
+ 505              		@ args = 0, pretend = 0, frame = 0
+ 506              		@ frame_needed = 0, uses_anonymous_args = 0
+ 507              	.LVL96:
+ 508 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 509              		.cfi_def_cfa_offset 24
+ 510              		.cfi_offset 3, -24
+ 511              		.cfi_offset 4, -20
+ 512              		.cfi_offset 5, -16
+ 513              		.cfi_offset 6, -12
+ 514              		.cfi_offset 7, -8
+ 515              		.cfi_offset 14, -4
+ 516 0002 0F46     		mov	r7, r1
+ 517 0004 1446     		mov	r4, r2
+ 518              	.LVL97:
+ 478:main.c        ****     int chs = 0;
+ 519              		.loc 1 478 0
+ 520 0006 0026     		movs	r6, #0
+ 479:main.c        ****     char ch;
+ 480:main.c        ****  
+ 481:main.c        ****     (void)file; /* Parameter is not used, suppress unused argument warning */
+ 482:main.c        ****     while(count > 0) {
+ 521              		.loc 1 482 0
+ 522 0008 12E0     		b	.L19
+ 523              	.LVL98:
+ 524              	.L22:
+ 483:main.c        ****         ch = UART_1_GetChar();
+ 525              		.loc 1 483 0
+ 526 000a FFF7FEFF 		bl	UART_1_GetChar
+ 527              	.LVL99:
+ 484:main.c        ****         if(ch != 0) {
+ 528              		.loc 1 484 0
+ 529 000e 0546     		mov	r5, r0
+ 530 0010 70B1     		cbz	r0, .L19
+ 485:main.c        ****             UART_1_PutChar(ch);
+ 531              		.loc 1 485 0
+ 532 0012 FFF7FEFF 		bl	UART_1_PutChar
+ 533              	.LVL100:
+ 486:main.c        ****             chs++;
+ 534              		.loc 1 486 0
+ 535 0016 0136     		adds	r6, r6, #1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 19
+
+
+ 536              	.LVL101:
+ 487:main.c        ****             if(ch == '\r') {
+ 537              		.loc 1 487 0
+ 538 0018 0D2D     		cmp	r5, #13
+ 539 001a 03D1     		bne	.L20
+ 540              	.LVL102:
+ 488:main.c        ****                 ch = '\n';
+ 489:main.c        ****                 UART_1_PutChar(ch);
+ 541              		.loc 1 489 0
+ 542 001c 0A20     		movs	r0, #10
+ 543 001e FFF7FEFF 		bl	UART_1_PutChar
+ 544              	.LVL103:
+ 488:main.c        ****                 ch = '\n';
+ 545              		.loc 1 488 0
+ 546 0022 0A25     		movs	r5, #10
+ 547              	.LVL104:
+ 548              	.L20:
+ 490:main.c        ****             }
+ 491:main.c        ****             *ptr++ = ch;
+ 549              		.loc 1 491 0
+ 550 0024 7B1C     		adds	r3, r7, #1
+ 551              	.LVL105:
+ 552 0026 3D70     		strb	r5, [r7]
+ 492:main.c        ****             count--;
+ 553              		.loc 1 492 0
+ 554 0028 013C     		subs	r4, r4, #1
+ 555              	.LVL106:
+ 493:main.c        ****             if(ch == '\n') break;
+ 556              		.loc 1 493 0
+ 557 002a 0A2D     		cmp	r5, #10
+ 558 002c 02D0     		beq	.L21
+ 491:main.c        ****             count--;
+ 559              		.loc 1 491 0
+ 560 002e 1F46     		mov	r7, r3
+ 561              	.LVL107:
+ 562              	.L19:
+ 482:main.c        ****         ch = UART_1_GetChar();
+ 563              		.loc 1 482 0
+ 564 0030 002C     		cmp	r4, #0
+ 565 0032 EADC     		bgt	.L22
+ 566              	.LVL108:
+ 567              	.L21:
+ 494:main.c        ****         }
+ 495:main.c        ****     }
+ 496:main.c        ****     return chs;
+ 497:main.c        **** }
+ 568              		.loc 1 497 0
+ 569 0034 3046     		mov	r0, r6
+ 570 0036 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 571              		.cfi_endproc
+ 572              	.LFE65:
+ 573              		.size	_read, .-_read
+ 574              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 575              		.align	2
+ 576              	.LC0:
+ 577 0000 0A426F6F 		.ascii	"\012Boot\000"
+ 577      7400
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 20
+
+
+ 578 0006 0000     		.space	2
+ 579              	.LC1:
+ 580 0008 5768696C 		.ascii	"While loop\000"
+ 580      65206C6F 
+ 580      6F7000
+ 581 0013 00       		.space	1
+ 582              	.LC2:
+ 583 0014 466F7220 		.ascii	"For loop\000"
+ 583      6C6F6F70 
+ 583      00
+ 584 001d 000000   		.space	3
+ 585              	.LC3:
+ 586 0020 49462031 		.ascii	"IF 1\000"
+ 586      00
+ 587 0025 000000   		.space	3
+ 588              	.LC4:
+ 589 0028 25660A00 		.ascii	"%f\012\000"
+ 590              	.LC5:
+ 591 002c 4C657427 		.ascii	"Let's roll\000"
+ 591      7320726F 
+ 591      6C6C00
+ 592 0037 00       		.text
+ 593              	.Letext0:
+ 594              		.file 2 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
+ 595              		.file 3 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
+ 596              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 597              		.file 5 "Generated_Source\\PSoC5/ADC_Battery.h"
+ 598              		.file 6 "c:\\program files (x86)\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.3\\arm-no
+ 599              		.file 7 "Generated_Source\\PSoC5/BatteryLed.h"
+ 600              		.file 8 "Generated_Source\\PSoC5/CyLib.h"
+ 601              		.file 9 ".\\ZumoLibrary/Motor.h"
+ 602              		.file 10 "Generated_Source\\PSoC5/UART_1.h"
+ 603              		.file 11 "Generated_Source\\PSoC5/SW1.h"
+ 604              		.file 12 "Generated_Source\\PSoC5/core_cm3.h"
+ 605              		.file 13 "<built-in>"
+ 606              		.section	.debug_info,"",%progbits
+ 607              	.Ldebug_info0:
+ 608 0000 BD080000 		.4byte	0x8bd
+ 609 0004 0400     		.2byte	0x4
+ 610 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 611 000a 04       		.byte	0x4
+ 612 000b 01       		.uleb128 0x1
+ 613 000c 0D010000 		.4byte	.LASF41
+ 614 0010 01       		.byte	0x1
+ 615 0011 58020000 		.4byte	.LASF42
+ 616 0015 A5000000 		.4byte	.LASF43
+ 617 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 618 001d 00000000 		.4byte	0
+ 619 0021 00000000 		.4byte	.Ldebug_line0
+ 620 0025 02       		.uleb128 0x2
+ 621 0026 01       		.byte	0x1
+ 622 0027 06       		.byte	0x6
+ 623 0028 6E020000 		.4byte	.LASF0
+ 624 002c 02       		.uleb128 0x2
+ 625 002d 01       		.byte	0x1
+ 626 002e 08       		.byte	0x8
+ 627 002f 55000000 		.4byte	.LASF1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 21
+
+
+ 628 0033 02       		.uleb128 0x2
+ 629 0034 02       		.byte	0x2
+ 630 0035 05       		.byte	0x5
+ 631 0036 87020000 		.4byte	.LASF2
+ 632 003a 02       		.uleb128 0x2
+ 633 003b 02       		.byte	0x2
+ 634 003c 07       		.byte	0x7
+ 635 003d 29000000 		.4byte	.LASF3
+ 636 0041 03       		.uleb128 0x3
+ 637 0042 0D000000 		.4byte	.LASF9
+ 638 0046 02       		.byte	0x2
+ 639 0047 3F       		.byte	0x3f
+ 640 0048 4C000000 		.4byte	0x4c
+ 641 004c 02       		.uleb128 0x2
+ 642 004d 04       		.byte	0x4
+ 643 004e 05       		.byte	0x5
+ 644 004f A0020000 		.4byte	.LASF4
+ 645 0053 02       		.uleb128 0x2
+ 646 0054 04       		.byte	0x4
+ 647 0055 07       		.byte	0x7
+ 648 0056 70000000 		.4byte	.LASF5
+ 649 005a 02       		.uleb128 0x2
+ 650 005b 08       		.byte	0x8
+ 651 005c 05       		.byte	0x5
+ 652 005d 39020000 		.4byte	.LASF6
+ 653 0061 02       		.uleb128 0x2
+ 654 0062 08       		.byte	0x8
+ 655 0063 07       		.byte	0x7
+ 656 0064 CF010000 		.4byte	.LASF7
+ 657 0068 04       		.uleb128 0x4
+ 658 0069 04       		.byte	0x4
+ 659 006a 05       		.byte	0x5
+ 660 006b 696E7400 		.ascii	"int\000"
+ 661 006f 02       		.uleb128 0x2
+ 662 0070 04       		.byte	0x4
+ 663 0071 07       		.byte	0x7
+ 664 0072 AA010000 		.4byte	.LASF8
+ 665 0076 03       		.uleb128 0x3
+ 666 0077 3C000000 		.4byte	.LASF10
+ 667 007b 03       		.byte	0x3
+ 668 007c 2C       		.byte	0x2c
+ 669 007d 41000000 		.4byte	0x41
+ 670 0081 05       		.uleb128 0x5
+ 671 0082 91020000 		.4byte	.LASF11
+ 672 0086 04       		.byte	0x4
+ 673 0087 9201     		.2byte	0x192
+ 674 0089 2C000000 		.4byte	0x2c
+ 675 008d 05       		.uleb128 0x5
+ 676 008e 06010000 		.4byte	.LASF12
+ 677 0092 04       		.byte	0x4
+ 678 0093 9401     		.2byte	0x194
+ 679 0095 53000000 		.4byte	0x53
+ 680 0099 05       		.uleb128 0x5
+ 681 009a 6A000000 		.4byte	.LASF13
+ 682 009e 04       		.byte	0x4
+ 683 009f 9601     		.2byte	0x196
+ 684 00a1 33000000 		.4byte	0x33
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 22
+
+
+ 685 00a5 02       		.uleb128 0x2
+ 686 00a6 04       		.byte	0x4
+ 687 00a7 04       		.byte	0x4
+ 688 00a8 4A000000 		.4byte	.LASF14
+ 689 00ac 02       		.uleb128 0x2
+ 690 00ad 08       		.byte	0x8
+ 691 00ae 04       		.byte	0x4
+ 692 00af EF000000 		.4byte	.LASF15
+ 693 00b3 02       		.uleb128 0x2
+ 694 00b4 01       		.byte	0x1
+ 695 00b5 08       		.byte	0x8
+ 696 00b6 5F020000 		.4byte	.LASF16
+ 697 00ba 02       		.uleb128 0x2
+ 698 00bb 04       		.byte	0x4
+ 699 00bc 07       		.byte	0x7
+ 700 00bd 30020000 		.4byte	.LASF17
+ 701 00c1 06       		.uleb128 0x6
+ 702 00c2 04       		.byte	0x4
+ 703 00c3 B3000000 		.4byte	0xb3
+ 704 00c7 06       		.uleb128 0x6
+ 705 00c8 04       		.byte	0x4
+ 706 00c9 CD000000 		.4byte	0xcd
+ 707 00cd 07       		.uleb128 0x7
+ 708 00ce B3000000 		.4byte	0xb3
+ 709 00d2 02       		.uleb128 0x2
+ 710 00d3 08       		.byte	0x8
+ 711 00d4 04       		.byte	0x4
+ 712 00d5 1D020000 		.4byte	.LASF18
+ 713 00d9 08       		.uleb128 0x8
+ 714 00da 01010000 		.4byte	.LASF44
+ 715 00de 01       		.byte	0x1
+ 716 00df 37       		.byte	0x37
+ 717 00e0 68000000 		.4byte	0x68
+ 718 00e4 00000000 		.4byte	.LFB63
+ 719 00e8 80020000 		.4byte	.LFE63-.LFB63
+ 720 00ec 01       		.uleb128 0x1
+ 721 00ed 9C       		.byte	0x9c
+ 722 00ee AC060000 		.4byte	0x6ac
+ 723 00f2 09       		.uleb128 0x9
+ 724 00f3 64020000 		.4byte	.LASF19
+ 725 00f7 01       		.byte	0x1
+ 726 00f8 3C       		.byte	0x3c
+ 727 00f9 99000000 		.4byte	0x99
+ 728 00fd 00000000 		.4byte	.LLST0
+ 729 0101 0A       		.uleb128 0xa
+ 730 0102 6B00     		.ascii	"k\000"
+ 731 0104 01       		.byte	0x1
+ 732 0105 3E       		.byte	0x3e
+ 733 0106 68000000 		.4byte	0x68
+ 734 010a 2A000000 		.4byte	.LLST1
+ 735 010e 09       		.uleb128 0x9
+ 736 010f 82000000 		.4byte	.LASF20
+ 737 0113 01       		.byte	0x1
+ 738 0114 3F       		.byte	0x3f
+ 739 0115 A5000000 		.4byte	0xa5
+ 740 0119 60000000 		.4byte	.LLST2
+ 741 011d 09       		.uleb128 0x9
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 23
+
+
+ 742 011e A9020000 		.4byte	.LASF21
+ 743 0122 01       		.byte	0x1
+ 744 0123 46       		.byte	0x46
+ 745 0124 68000000 		.4byte	0x68
+ 746 0128 8E000000 		.4byte	.LLST3
+ 747 012c 0B       		.uleb128 0xb
+ 748 012d 2E000000 		.4byte	.LBB2
+ 749 0131 28020000 		.4byte	.LBE2-.LBB2
+ 750 0135 46060000 		.4byte	0x646
+ 751 0139 0C       		.uleb128 0xc
+ 752 013a 63000000 		.4byte	.LASF45
+ 753 013e 01       		.byte	0x1
+ 754 013f 93       		.byte	0x93
+ 755 0140 6F000000 		.4byte	0x6f
+ 756 0144 0D       		.uleb128 0xd
+ 757 0145 34000000 		.4byte	.LVL9
+ 758 0149 C8070000 		.4byte	0x7c8
+ 759 014d 5B010000 		.4byte	0x15b
+ 760 0151 0E       		.uleb128 0xe
+ 761 0152 01       		.uleb128 0x1
+ 762 0153 50       		.byte	0x50
+ 763 0154 05       		.uleb128 0x5
+ 764 0155 03       		.byte	0x3
+ 765 0156 14000000 		.4byte	.LC2
+ 766 015a 00       		.byte	0
+ 767 015b 0D       		.uleb128 0xd
+ 768 015c 42000000 		.4byte	.LVL10
+ 769 0160 C8070000 		.4byte	0x7c8
+ 770 0164 72010000 		.4byte	0x172
+ 771 0168 0E       		.uleb128 0xe
+ 772 0169 01       		.uleb128 0x1
+ 773 016a 50       		.byte	0x50
+ 774 016b 05       		.uleb128 0x5
+ 775 016c 03       		.byte	0x3
+ 776 016d 20000000 		.4byte	.LC3
+ 777 0171 00       		.byte	0
+ 778 0172 0F       		.uleb128 0xf
+ 779 0173 46000000 		.4byte	.LVL11
+ 780 0177 E1070000 		.4byte	0x7e1
+ 781 017b 0F       		.uleb128 0xf
+ 782 017c 4A000000 		.4byte	.LVL12
+ 783 0180 EE070000 		.4byte	0x7ee
+ 784 0184 0D       		.uleb128 0xd
+ 785 0185 50000000 		.4byte	.LVL13
+ 786 0189 F5070000 		.4byte	0x7f5
+ 787 018d 97010000 		.4byte	0x197
+ 788 0191 0E       		.uleb128 0xe
+ 789 0192 01       		.uleb128 0x1
+ 790 0193 50       		.byte	0x50
+ 791 0194 01       		.uleb128 0x1
+ 792 0195 30       		.byte	0x30
+ 793 0196 00       		.byte	0
+ 794 0197 0F       		.uleb128 0xf
+ 795 0198 5A000000 		.4byte	.LVL14
+ 796 019c 0A080000 		.4byte	0x80a
+ 797 01a0 0D       		.uleb128 0xd
+ 798 01a1 8C000000 		.4byte	.LVL22
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 24
+
+
+ 799 01a5 15080000 		.4byte	0x815
+ 800 01a9 B7010000 		.4byte	0x1b7
+ 801 01ad 0E       		.uleb128 0xe
+ 802 01ae 01       		.uleb128 0x1
+ 803 01af 50       		.byte	0x50
+ 804 01b0 05       		.uleb128 0x5
+ 805 01b1 03       		.byte	0x3
+ 806 01b2 28000000 		.4byte	.LC4
+ 807 01b6 00       		.byte	0
+ 808 01b7 0D       		.uleb128 0xd
+ 809 01b8 94000000 		.4byte	.LVL23
+ 810 01bc 2B080000 		.4byte	0x82b
+ 811 01c0 CA010000 		.4byte	0x1ca
+ 812 01c4 0E       		.uleb128 0xe
+ 813 01c5 01       		.uleb128 0x1
+ 814 01c6 50       		.byte	0x50
+ 815 01c7 01       		.uleb128 0x1
+ 816 01c8 30       		.byte	0x30
+ 817 01c9 00       		.byte	0
+ 818 01ca 0D       		.uleb128 0xd
+ 819 01cb 9A000000 		.4byte	.LVL24
+ 820 01cf 3C080000 		.4byte	0x83c
+ 821 01d3 DE010000 		.4byte	0x1de
+ 822 01d7 0E       		.uleb128 0xe
+ 823 01d8 01       		.uleb128 0x1
+ 824 01d9 50       		.byte	0x50
+ 825 01da 02       		.uleb128 0x2
+ 826 01db 08       		.byte	0x8
+ 827 01dc C8       		.byte	0xc8
+ 828 01dd 00       		.byte	0
+ 829 01de 0D       		.uleb128 0xd
+ 830 01df A0000000 		.4byte	.LVL25
+ 831 01e3 2B080000 		.4byte	0x82b
+ 832 01e7 F1010000 		.4byte	0x1f1
+ 833 01eb 0E       		.uleb128 0xe
+ 834 01ec 01       		.uleb128 0x1
+ 835 01ed 50       		.byte	0x50
+ 836 01ee 01       		.uleb128 0x1
+ 837 01ef 31       		.byte	0x31
+ 838 01f0 00       		.byte	0
+ 839 01f1 0D       		.uleb128 0xd
+ 840 01f2 A6000000 		.4byte	.LVL26
+ 841 01f6 3C080000 		.4byte	0x83c
+ 842 01fa 05020000 		.4byte	0x205
+ 843 01fe 0E       		.uleb128 0xe
+ 844 01ff 01       		.uleb128 0x1
+ 845 0200 50       		.byte	0x50
+ 846 0201 02       		.uleb128 0x2
+ 847 0202 08       		.byte	0x8
+ 848 0203 C8       		.byte	0xc8
+ 849 0204 00       		.byte	0
+ 850 0205 0D       		.uleb128 0xd
+ 851 0206 AC000000 		.4byte	.LVL27
+ 852 020a 2B080000 		.4byte	0x82b
+ 853 020e 18020000 		.4byte	0x218
+ 854 0212 0E       		.uleb128 0xe
+ 855 0213 01       		.uleb128 0x1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 25
+
+
+ 856 0214 50       		.byte	0x50
+ 857 0215 01       		.uleb128 0x1
+ 858 0216 30       		.byte	0x30
+ 859 0217 00       		.byte	0
+ 860 0218 0D       		.uleb128 0xd
+ 861 0219 B2000000 		.4byte	.LVL28
+ 862 021d 3C080000 		.4byte	0x83c
+ 863 0221 2C020000 		.4byte	0x22c
+ 864 0225 0E       		.uleb128 0xe
+ 865 0226 01       		.uleb128 0x1
+ 866 0227 50       		.byte	0x50
+ 867 0228 02       		.uleb128 0x2
+ 868 0229 08       		.byte	0x8
+ 869 022a C8       		.byte	0xc8
+ 870 022b 00       		.byte	0
+ 871 022c 0D       		.uleb128 0xd
+ 872 022d B8000000 		.4byte	.LVL29
+ 873 0231 2B080000 		.4byte	0x82b
+ 874 0235 3F020000 		.4byte	0x23f
+ 875 0239 0E       		.uleb128 0xe
+ 876 023a 01       		.uleb128 0x1
+ 877 023b 50       		.byte	0x50
+ 878 023c 01       		.uleb128 0x1
+ 879 023d 31       		.byte	0x31
+ 880 023e 00       		.byte	0
+ 881 023f 0D       		.uleb128 0xd
+ 882 0240 BE000000 		.4byte	.LVL30
+ 883 0244 3C080000 		.4byte	0x83c
+ 884 0248 53020000 		.4byte	0x253
+ 885 024c 0E       		.uleb128 0xe
+ 886 024d 01       		.uleb128 0x1
+ 887 024e 50       		.byte	0x50
+ 888 024f 02       		.uleb128 0x2
+ 889 0250 08       		.byte	0x8
+ 890 0251 C8       		.byte	0xc8
+ 891 0252 00       		.byte	0
+ 892 0253 0D       		.uleb128 0xd
+ 893 0254 C4000000 		.4byte	.LVL31
+ 894 0258 2B080000 		.4byte	0x82b
+ 895 025c 66020000 		.4byte	0x266
+ 896 0260 0E       		.uleb128 0xe
+ 897 0261 01       		.uleb128 0x1
+ 898 0262 50       		.byte	0x50
+ 899 0263 01       		.uleb128 0x1
+ 900 0264 30       		.byte	0x30
+ 901 0265 00       		.byte	0
+ 902 0266 0D       		.uleb128 0xd
+ 903 0267 CA000000 		.4byte	.LVL32
+ 904 026b 3C080000 		.4byte	0x83c
+ 905 026f 7A020000 		.4byte	0x27a
+ 906 0273 0E       		.uleb128 0xe
+ 907 0274 01       		.uleb128 0x1
+ 908 0275 50       		.byte	0x50
+ 909 0276 02       		.uleb128 0x2
+ 910 0277 08       		.byte	0x8
+ 911 0278 C8       		.byte	0xc8
+ 912 0279 00       		.byte	0
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 26
+
+
+ 913 027a 0D       		.uleb128 0xd
+ 914 027b D0000000 		.4byte	.LVL33
+ 915 027f 2B080000 		.4byte	0x82b
+ 916 0283 8D020000 		.4byte	0x28d
+ 917 0287 0E       		.uleb128 0xe
+ 918 0288 01       		.uleb128 0x1
+ 919 0289 50       		.byte	0x50
+ 920 028a 01       		.uleb128 0x1
+ 921 028b 31       		.byte	0x31
+ 922 028c 00       		.byte	0
+ 923 028d 0D       		.uleb128 0xd
+ 924 028e D6000000 		.4byte	.LVL34
+ 925 0292 3C080000 		.4byte	0x83c
+ 926 0296 A1020000 		.4byte	0x2a1
+ 927 029a 0E       		.uleb128 0xe
+ 928 029b 01       		.uleb128 0x1
+ 929 029c 50       		.byte	0x50
+ 930 029d 02       		.uleb128 0x2
+ 931 029e 08       		.byte	0x8
+ 932 029f C8       		.byte	0xc8
+ 933 02a0 00       		.byte	0
+ 934 02a1 0D       		.uleb128 0xd
+ 935 02a2 DC000000 		.4byte	.LVL35
+ 936 02a6 2B080000 		.4byte	0x82b
+ 937 02aa B4020000 		.4byte	0x2b4
+ 938 02ae 0E       		.uleb128 0xe
+ 939 02af 01       		.uleb128 0x1
+ 940 02b0 50       		.byte	0x50
+ 941 02b1 01       		.uleb128 0x1
+ 942 02b2 30       		.byte	0x30
+ 943 02b3 00       		.byte	0
+ 944 02b4 0D       		.uleb128 0xd
+ 945 02b5 E2000000 		.4byte	.LVL36
+ 946 02b9 3C080000 		.4byte	0x83c
+ 947 02bd C8020000 		.4byte	0x2c8
+ 948 02c1 0E       		.uleb128 0xe
+ 949 02c2 01       		.uleb128 0x1
+ 950 02c3 50       		.byte	0x50
+ 951 02c4 02       		.uleb128 0x2
+ 952 02c5 08       		.byte	0x8
+ 953 02c6 C8       		.byte	0xc8
+ 954 02c7 00       		.byte	0
+ 955 02c8 0D       		.uleb128 0xd
+ 956 02c9 E8000000 		.4byte	.LVL37
+ 957 02cd 2B080000 		.4byte	0x82b
+ 958 02d1 DB020000 		.4byte	0x2db
+ 959 02d5 0E       		.uleb128 0xe
+ 960 02d6 01       		.uleb128 0x1
+ 961 02d7 50       		.byte	0x50
+ 962 02d8 01       		.uleb128 0x1
+ 963 02d9 31       		.byte	0x31
+ 964 02da 00       		.byte	0
+ 965 02db 0D       		.uleb128 0xd
+ 966 02dc F0000000 		.4byte	.LVL38
+ 967 02e0 3C080000 		.4byte	0x83c
+ 968 02e4 F0020000 		.4byte	0x2f0
+ 969 02e8 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 27
+
+
+ 970 02e9 01       		.uleb128 0x1
+ 971 02ea 50       		.byte	0x50
+ 972 02eb 03       		.uleb128 0x3
+ 973 02ec 0A       		.byte	0xa
+ 974 02ed 8403     		.2byte	0x384
+ 975 02ef 00       		.byte	0
+ 976 02f0 0D       		.uleb128 0xd
+ 977 02f1 F6000000 		.4byte	.LVL39
+ 978 02f5 2B080000 		.4byte	0x82b
+ 979 02f9 03030000 		.4byte	0x303
+ 980 02fd 0E       		.uleb128 0xe
+ 981 02fe 01       		.uleb128 0x1
+ 982 02ff 50       		.byte	0x50
+ 983 0300 01       		.uleb128 0x1
+ 984 0301 30       		.byte	0x30
+ 985 0302 00       		.byte	0
+ 986 0303 0D       		.uleb128 0xd
+ 987 0304 FE000000 		.4byte	.LVL40
+ 988 0308 3C080000 		.4byte	0x83c
+ 989 030c 18030000 		.4byte	0x318
+ 990 0310 0E       		.uleb128 0xe
+ 991 0311 01       		.uleb128 0x1
+ 992 0312 50       		.byte	0x50
+ 993 0313 03       		.uleb128 0x3
+ 994 0314 0A       		.byte	0xa
+ 995 0315 8403     		.2byte	0x384
+ 996 0317 00       		.byte	0
+ 997 0318 0D       		.uleb128 0xd
+ 998 0319 04010000 		.4byte	.LVL41
+ 999 031d 2B080000 		.4byte	0x82b
+ 1000 0321 2B030000 		.4byte	0x32b
+ 1001 0325 0E       		.uleb128 0xe
+ 1002 0326 01       		.uleb128 0x1
+ 1003 0327 50       		.byte	0x50
+ 1004 0328 01       		.uleb128 0x1
+ 1005 0329 31       		.byte	0x31
+ 1006 032a 00       		.byte	0
+ 1007 032b 0D       		.uleb128 0xd
+ 1008 032c 0C010000 		.4byte	.LVL42
+ 1009 0330 3C080000 		.4byte	0x83c
+ 1010 0334 40030000 		.4byte	0x340
+ 1011 0338 0E       		.uleb128 0xe
+ 1012 0339 01       		.uleb128 0x1
+ 1013 033a 50       		.byte	0x50
+ 1014 033b 03       		.uleb128 0x3
+ 1015 033c 0A       		.byte	0xa
+ 1016 033d 8403     		.2byte	0x384
+ 1017 033f 00       		.byte	0
+ 1018 0340 0D       		.uleb128 0xd
+ 1019 0341 12010000 		.4byte	.LVL43
+ 1020 0345 2B080000 		.4byte	0x82b
+ 1021 0349 53030000 		.4byte	0x353
+ 1022 034d 0E       		.uleb128 0xe
+ 1023 034e 01       		.uleb128 0x1
+ 1024 034f 50       		.byte	0x50
+ 1025 0350 01       		.uleb128 0x1
+ 1026 0351 30       		.byte	0x30
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 28
+
+
+ 1027 0352 00       		.byte	0
+ 1028 0353 0D       		.uleb128 0xd
+ 1029 0354 1A010000 		.4byte	.LVL44
+ 1030 0358 3C080000 		.4byte	0x83c
+ 1031 035c 68030000 		.4byte	0x368
+ 1032 0360 0E       		.uleb128 0xe
+ 1033 0361 01       		.uleb128 0x1
+ 1034 0362 50       		.byte	0x50
+ 1035 0363 03       		.uleb128 0x3
+ 1036 0364 0A       		.byte	0xa
+ 1037 0365 8403     		.2byte	0x384
+ 1038 0367 00       		.byte	0
+ 1039 0368 0D       		.uleb128 0xd
+ 1040 0369 20010000 		.4byte	.LVL45
+ 1041 036d 2B080000 		.4byte	0x82b
+ 1042 0371 7B030000 		.4byte	0x37b
+ 1043 0375 0E       		.uleb128 0xe
+ 1044 0376 01       		.uleb128 0x1
+ 1045 0377 50       		.byte	0x50
+ 1046 0378 01       		.uleb128 0x1
+ 1047 0379 31       		.byte	0x31
+ 1048 037a 00       		.byte	0
+ 1049 037b 0D       		.uleb128 0xd
+ 1050 037c 28010000 		.4byte	.LVL46
+ 1051 0380 3C080000 		.4byte	0x83c
+ 1052 0384 90030000 		.4byte	0x390
+ 1053 0388 0E       		.uleb128 0xe
+ 1054 0389 01       		.uleb128 0x1
+ 1055 038a 50       		.byte	0x50
+ 1056 038b 03       		.uleb128 0x3
+ 1057 038c 0A       		.byte	0xa
+ 1058 038d 8403     		.2byte	0x384
+ 1059 038f 00       		.byte	0
+ 1060 0390 0D       		.uleb128 0xd
+ 1061 0391 2E010000 		.4byte	.LVL47
+ 1062 0395 2B080000 		.4byte	0x82b
+ 1063 0399 A3030000 		.4byte	0x3a3
+ 1064 039d 0E       		.uleb128 0xe
+ 1065 039e 01       		.uleb128 0x1
+ 1066 039f 50       		.byte	0x50
+ 1067 03a0 01       		.uleb128 0x1
+ 1068 03a1 30       		.byte	0x30
+ 1069 03a2 00       		.byte	0
+ 1070 03a3 0D       		.uleb128 0xd
+ 1071 03a4 36010000 		.4byte	.LVL48
+ 1072 03a8 3C080000 		.4byte	0x83c
+ 1073 03ac B8030000 		.4byte	0x3b8
+ 1074 03b0 0E       		.uleb128 0xe
+ 1075 03b1 01       		.uleb128 0x1
+ 1076 03b2 50       		.byte	0x50
+ 1077 03b3 03       		.uleb128 0x3
+ 1078 03b4 0A       		.byte	0xa
+ 1079 03b5 8403     		.2byte	0x384
+ 1080 03b7 00       		.byte	0
+ 1081 03b8 0D       		.uleb128 0xd
+ 1082 03b9 3C010000 		.4byte	.LVL49
+ 1083 03bd 2B080000 		.4byte	0x82b
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 29
+
+
+ 1084 03c1 CB030000 		.4byte	0x3cb
+ 1085 03c5 0E       		.uleb128 0xe
+ 1086 03c6 01       		.uleb128 0x1
+ 1087 03c7 50       		.byte	0x50
+ 1088 03c8 01       		.uleb128 0x1
+ 1089 03c9 31       		.byte	0x31
+ 1090 03ca 00       		.byte	0
+ 1091 03cb 0D       		.uleb128 0xd
+ 1092 03cc 42010000 		.4byte	.LVL50
+ 1093 03d0 3C080000 		.4byte	0x83c
+ 1094 03d4 DF030000 		.4byte	0x3df
+ 1095 03d8 0E       		.uleb128 0xe
+ 1096 03d9 01       		.uleb128 0x1
+ 1097 03da 50       		.byte	0x50
+ 1098 03db 02       		.uleb128 0x2
+ 1099 03dc 08       		.byte	0x8
+ 1100 03dd C8       		.byte	0xc8
+ 1101 03de 00       		.byte	0
+ 1102 03df 0D       		.uleb128 0xd
+ 1103 03e0 48010000 		.4byte	.LVL51
+ 1104 03e4 2B080000 		.4byte	0x82b
+ 1105 03e8 F2030000 		.4byte	0x3f2
+ 1106 03ec 0E       		.uleb128 0xe
+ 1107 03ed 01       		.uleb128 0x1
+ 1108 03ee 50       		.byte	0x50
+ 1109 03ef 01       		.uleb128 0x1
+ 1110 03f0 30       		.byte	0x30
+ 1111 03f1 00       		.byte	0
+ 1112 03f2 0D       		.uleb128 0xd
+ 1113 03f3 4E010000 		.4byte	.LVL52
+ 1114 03f7 3C080000 		.4byte	0x83c
+ 1115 03fb 06040000 		.4byte	0x406
+ 1116 03ff 0E       		.uleb128 0xe
+ 1117 0400 01       		.uleb128 0x1
+ 1118 0401 50       		.byte	0x50
+ 1119 0402 02       		.uleb128 0x2
+ 1120 0403 08       		.byte	0x8
+ 1121 0404 C8       		.byte	0xc8
+ 1122 0405 00       		.byte	0
+ 1123 0406 0D       		.uleb128 0xd
+ 1124 0407 54010000 		.4byte	.LVL53
+ 1125 040b 2B080000 		.4byte	0x82b
+ 1126 040f 19040000 		.4byte	0x419
+ 1127 0413 0E       		.uleb128 0xe
+ 1128 0414 01       		.uleb128 0x1
+ 1129 0415 50       		.byte	0x50
+ 1130 0416 01       		.uleb128 0x1
+ 1131 0417 31       		.byte	0x31
+ 1132 0418 00       		.byte	0
+ 1133 0419 0D       		.uleb128 0xd
+ 1134 041a 5A010000 		.4byte	.LVL54
+ 1135 041e 3C080000 		.4byte	0x83c
+ 1136 0422 2D040000 		.4byte	0x42d
+ 1137 0426 0E       		.uleb128 0xe
+ 1138 0427 01       		.uleb128 0x1
+ 1139 0428 50       		.byte	0x50
+ 1140 0429 02       		.uleb128 0x2
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 30
+
+
+ 1141 042a 08       		.byte	0x8
+ 1142 042b C8       		.byte	0xc8
+ 1143 042c 00       		.byte	0
+ 1144 042d 0D       		.uleb128 0xd
+ 1145 042e 60010000 		.4byte	.LVL55
+ 1146 0432 2B080000 		.4byte	0x82b
+ 1147 0436 40040000 		.4byte	0x440
+ 1148 043a 0E       		.uleb128 0xe
+ 1149 043b 01       		.uleb128 0x1
+ 1150 043c 50       		.byte	0x50
+ 1151 043d 01       		.uleb128 0x1
+ 1152 043e 30       		.byte	0x30
+ 1153 043f 00       		.byte	0
+ 1154 0440 0D       		.uleb128 0xd
+ 1155 0441 66010000 		.4byte	.LVL56
+ 1156 0445 3C080000 		.4byte	0x83c
+ 1157 0449 54040000 		.4byte	0x454
+ 1158 044d 0E       		.uleb128 0xe
+ 1159 044e 01       		.uleb128 0x1
+ 1160 044f 50       		.byte	0x50
+ 1161 0450 02       		.uleb128 0x2
+ 1162 0451 08       		.byte	0x8
+ 1163 0452 C8       		.byte	0xc8
+ 1164 0453 00       		.byte	0
+ 1165 0454 0D       		.uleb128 0xd
+ 1166 0455 6C010000 		.4byte	.LVL57
+ 1167 0459 2B080000 		.4byte	0x82b
+ 1168 045d 67040000 		.4byte	0x467
+ 1169 0461 0E       		.uleb128 0xe
+ 1170 0462 01       		.uleb128 0x1
+ 1171 0463 50       		.byte	0x50
+ 1172 0464 01       		.uleb128 0x1
+ 1173 0465 31       		.byte	0x31
+ 1174 0466 00       		.byte	0
+ 1175 0467 0D       		.uleb128 0xd
+ 1176 0468 72010000 		.4byte	.LVL58
+ 1177 046c 3C080000 		.4byte	0x83c
+ 1178 0470 7B040000 		.4byte	0x47b
+ 1179 0474 0E       		.uleb128 0xe
+ 1180 0475 01       		.uleb128 0x1
+ 1181 0476 50       		.byte	0x50
+ 1182 0477 02       		.uleb128 0x2
+ 1183 0478 08       		.byte	0x8
+ 1184 0479 C8       		.byte	0xc8
+ 1185 047a 00       		.byte	0
+ 1186 047b 0D       		.uleb128 0xd
+ 1187 047c 78010000 		.4byte	.LVL59
+ 1188 0480 2B080000 		.4byte	0x82b
+ 1189 0484 8E040000 		.4byte	0x48e
+ 1190 0488 0E       		.uleb128 0xe
+ 1191 0489 01       		.uleb128 0x1
+ 1192 048a 50       		.byte	0x50
+ 1193 048b 01       		.uleb128 0x1
+ 1194 048c 30       		.byte	0x30
+ 1195 048d 00       		.byte	0
+ 1196 048e 0D       		.uleb128 0xd
+ 1197 048f 80010000 		.4byte	.LVL60
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 31
+
+
+ 1198 0493 3C080000 		.4byte	0x83c
+ 1199 0497 A3040000 		.4byte	0x4a3
+ 1200 049b 0E       		.uleb128 0xe
+ 1201 049c 01       		.uleb128 0x1
+ 1202 049d 50       		.byte	0x50
+ 1203 049e 03       		.uleb128 0x3
+ 1204 049f 0A       		.byte	0xa
+ 1205 04a0 DC05     		.2byte	0x5dc
+ 1206 04a2 00       		.byte	0
+ 1207 04a3 0F       		.uleb128 0xf
+ 1208 04a4 84010000 		.4byte	.LVL61
+ 1209 04a8 0A080000 		.4byte	0x80a
+ 1210 04ac 0D       		.uleb128 0xd
+ 1211 04ad BE010000 		.4byte	.LVL69
+ 1212 04b1 2B080000 		.4byte	0x82b
+ 1213 04b5 BF040000 		.4byte	0x4bf
+ 1214 04b9 0E       		.uleb128 0xe
+ 1215 04ba 01       		.uleb128 0x1
+ 1216 04bb 50       		.byte	0x50
+ 1217 04bc 01       		.uleb128 0x1
+ 1218 04bd 31       		.byte	0x31
+ 1219 04be 00       		.byte	0
+ 1220 04bf 0D       		.uleb128 0xd
+ 1221 04c0 CC010000 		.4byte	.LVL72
+ 1222 04c4 C8070000 		.4byte	0x7c8
+ 1223 04c8 D6040000 		.4byte	0x4d6
+ 1224 04cc 0E       		.uleb128 0xe
+ 1225 04cd 01       		.uleb128 0x1
+ 1226 04ce 50       		.byte	0x50
+ 1227 04cf 05       		.uleb128 0x5
+ 1228 04d0 03       		.byte	0x3
+ 1229 04d1 2C000000 		.4byte	.LC5
+ 1230 04d5 00       		.byte	0
+ 1231 04d6 0F       		.uleb128 0xf
+ 1232 04d7 D0010000 		.4byte	.LVL73
+ 1233 04db 4D080000 		.4byte	0x84d
+ 1234 04df 0D       		.uleb128 0xd
+ 1235 04e0 DC010000 		.4byte	.LVL74
+ 1236 04e4 5A080000 		.4byte	0x85a
+ 1237 04e8 00050000 		.4byte	0x500
+ 1238 04ec 0E       		.uleb128 0xe
+ 1239 04ed 01       		.uleb128 0x1
+ 1240 04ee 52       		.byte	0x52
+ 1241 04ef 03       		.uleb128 0x3
+ 1242 04f0 0A       		.byte	0xa
+ 1243 04f1 581B     		.2byte	0x1b58
+ 1244 04f3 0E       		.uleb128 0xe
+ 1245 04f4 01       		.uleb128 0x1
+ 1246 04f5 51       		.byte	0x51
+ 1247 04f6 02       		.uleb128 0x2
+ 1248 04f7 08       		.byte	0x8
+ 1249 04f8 38       		.byte	0x38
+ 1250 04f9 0E       		.uleb128 0xe
+ 1251 04fa 01       		.uleb128 0x1
+ 1252 04fb 50       		.byte	0x50
+ 1253 04fc 02       		.uleb128 0x2
+ 1254 04fd 08       		.byte	0x8
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 32
+
+
+ 1255 04fe 40       		.byte	0x40
+ 1256 04ff 00       		.byte	0
+ 1257 0500 0D       		.uleb128 0xd
+ 1258 0501 E8010000 		.4byte	.LVL75
+ 1259 0505 5A080000 		.4byte	0x85a
+ 1260 0509 20050000 		.4byte	0x520
+ 1261 050d 0E       		.uleb128 0xe
+ 1262 050e 01       		.uleb128 0x1
+ 1263 050f 52       		.byte	0x52
+ 1264 0510 03       		.uleb128 0x3
+ 1265 0511 0A       		.byte	0xa
+ 1266 0512 4001     		.2byte	0x140
+ 1267 0514 0E       		.uleb128 0xe
+ 1268 0515 01       		.uleb128 0x1
+ 1269 0516 51       		.byte	0x51
+ 1270 0517 01       		.uleb128 0x1
+ 1271 0518 44       		.byte	0x44
+ 1272 0519 0E       		.uleb128 0xe
+ 1273 051a 01       		.uleb128 0x1
+ 1274 051b 50       		.byte	0x50
+ 1275 051c 02       		.uleb128 0x2
+ 1276 051d 09       		.byte	0x9
+ 1277 051e FF       		.byte	0xff
+ 1278 051f 00       		.byte	0
+ 1279 0520 0D       		.uleb128 0xd
+ 1280 0521 F0010000 		.4byte	.LVL76
+ 1281 0525 75080000 		.4byte	0x875
+ 1282 0529 38050000 		.4byte	0x538
+ 1283 052d 0E       		.uleb128 0xe
+ 1284 052e 01       		.uleb128 0x1
+ 1285 052f 51       		.byte	0x51
+ 1286 0530 01       		.uleb128 0x1
+ 1287 0531 30       		.byte	0x30
+ 1288 0532 0E       		.uleb128 0xe
+ 1289 0533 01       		.uleb128 0x1
+ 1290 0534 50       		.byte	0x50
+ 1291 0535 01       		.uleb128 0x1
+ 1292 0536 30       		.byte	0x30
+ 1293 0537 00       		.byte	0
+ 1294 0538 0D       		.uleb128 0xd
+ 1295 0539 F8010000 		.4byte	.LVL77
+ 1296 053d 3C080000 		.4byte	0x83c
+ 1297 0541 4D050000 		.4byte	0x54d
+ 1298 0545 0E       		.uleb128 0xe
+ 1299 0546 01       		.uleb128 0x1
+ 1300 0547 50       		.byte	0x50
+ 1301 0548 03       		.uleb128 0x3
+ 1302 0549 0A       		.byte	0xa
+ 1303 054a E803     		.2byte	0x3e8
+ 1304 054c 00       		.byte	0
+ 1305 054d 0D       		.uleb128 0xd
+ 1306 054e 04020000 		.4byte	.LVL78
+ 1307 0552 5A080000 		.4byte	0x85a
+ 1308 0556 6E050000 		.4byte	0x56e
+ 1309 055a 0E       		.uleb128 0xe
+ 1310 055b 01       		.uleb128 0x1
+ 1311 055c 52       		.byte	0x52
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 33
+
+
+ 1312 055d 03       		.uleb128 0x3
+ 1313 055e 0A       		.byte	0xa
+ 1314 055f EC13     		.2byte	0x13ec
+ 1315 0561 0E       		.uleb128 0xe
+ 1316 0562 01       		.uleb128 0x1
+ 1317 0563 51       		.byte	0x51
+ 1318 0564 02       		.uleb128 0x2
+ 1319 0565 08       		.byte	0x8
+ 1320 0566 38       		.byte	0x38
+ 1321 0567 0E       		.uleb128 0xe
+ 1322 0568 01       		.uleb128 0x1
+ 1323 0569 50       		.byte	0x50
+ 1324 056a 02       		.uleb128 0x2
+ 1325 056b 08       		.byte	0x8
+ 1326 056c 40       		.byte	0x40
+ 1327 056d 00       		.byte	0
+ 1328 056e 0D       		.uleb128 0xd
+ 1329 056f 10020000 		.4byte	.LVL79
+ 1330 0573 5A080000 		.4byte	0x85a
+ 1331 0577 8E050000 		.4byte	0x58e
+ 1332 057b 0E       		.uleb128 0xe
+ 1333 057c 01       		.uleb128 0x1
+ 1334 057d 52       		.byte	0x52
+ 1335 057e 03       		.uleb128 0x3
+ 1336 057f 0A       		.byte	0xa
+ 1337 0580 4001     		.2byte	0x140
+ 1338 0582 0E       		.uleb128 0xe
+ 1339 0583 01       		.uleb128 0x1
+ 1340 0584 51       		.byte	0x51
+ 1341 0585 01       		.uleb128 0x1
+ 1342 0586 44       		.byte	0x44
+ 1343 0587 0E       		.uleb128 0xe
+ 1344 0588 01       		.uleb128 0x1
+ 1345 0589 50       		.byte	0x50
+ 1346 058a 02       		.uleb128 0x2
+ 1347 058b 09       		.byte	0x9
+ 1348 058c FF       		.byte	0xff
+ 1349 058d 00       		.byte	0
+ 1350 058e 0D       		.uleb128 0xd
+ 1351 058f 18020000 		.4byte	.LVL80
+ 1352 0593 75080000 		.4byte	0x875
+ 1353 0597 A6050000 		.4byte	0x5a6
+ 1354 059b 0E       		.uleb128 0xe
+ 1355 059c 01       		.uleb128 0x1
+ 1356 059d 51       		.byte	0x51
+ 1357 059e 01       		.uleb128 0x1
+ 1358 059f 30       		.byte	0x30
+ 1359 05a0 0E       		.uleb128 0xe
+ 1360 05a1 01       		.uleb128 0x1
+ 1361 05a2 50       		.byte	0x50
+ 1362 05a3 01       		.uleb128 0x1
+ 1363 05a4 30       		.byte	0x30
+ 1364 05a5 00       		.byte	0
+ 1365 05a6 0D       		.uleb128 0xd
+ 1366 05a7 20020000 		.4byte	.LVL81
+ 1367 05ab 3C080000 		.4byte	0x83c
+ 1368 05af BB050000 		.4byte	0x5bb
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 34
+
+
+ 1369 05b3 0E       		.uleb128 0xe
+ 1370 05b4 01       		.uleb128 0x1
+ 1371 05b5 50       		.byte	0x50
+ 1372 05b6 03       		.uleb128 0x3
+ 1373 05b7 0A       		.byte	0xa
+ 1374 05b8 E803     		.2byte	0x3e8
+ 1375 05ba 00       		.byte	0
+ 1376 05bb 0D       		.uleb128 0xd
+ 1377 05bc 2C020000 		.4byte	.LVL82
+ 1378 05c0 5A080000 		.4byte	0x85a
+ 1379 05c4 DC050000 		.4byte	0x5dc
+ 1380 05c8 0E       		.uleb128 0xe
+ 1381 05c9 01       		.uleb128 0x1
+ 1382 05ca 52       		.byte	0x52
+ 1383 05cb 03       		.uleb128 0x3
+ 1384 05cc 0A       		.byte	0xa
+ 1385 05cd EC13     		.2byte	0x13ec
+ 1386 05cf 0E       		.uleb128 0xe
+ 1387 05d0 01       		.uleb128 0x1
+ 1388 05d1 51       		.byte	0x51
+ 1389 05d2 02       		.uleb128 0x2
+ 1390 05d3 08       		.byte	0x8
+ 1391 05d4 38       		.byte	0x38
+ 1392 05d5 0E       		.uleb128 0xe
+ 1393 05d6 01       		.uleb128 0x1
+ 1394 05d7 50       		.byte	0x50
+ 1395 05d8 02       		.uleb128 0x2
+ 1396 05d9 08       		.byte	0x8
+ 1397 05da 40       		.byte	0x40
+ 1398 05db 00       		.byte	0
+ 1399 05dc 0D       		.uleb128 0xd
+ 1400 05dd 38020000 		.4byte	.LVL83
+ 1401 05e1 5A080000 		.4byte	0x85a
+ 1402 05e5 FC050000 		.4byte	0x5fc
+ 1403 05e9 0E       		.uleb128 0xe
+ 1404 05ea 01       		.uleb128 0x1
+ 1405 05eb 52       		.byte	0x52
+ 1406 05ec 03       		.uleb128 0x3
+ 1407 05ed 0A       		.byte	0xa
+ 1408 05ee 6801     		.2byte	0x168
+ 1409 05f0 0E       		.uleb128 0xe
+ 1410 05f1 01       		.uleb128 0x1
+ 1411 05f2 51       		.byte	0x51
+ 1412 05f3 01       		.uleb128 0x1
+ 1413 05f4 44       		.byte	0x44
+ 1414 05f5 0E       		.uleb128 0xe
+ 1415 05f6 01       		.uleb128 0x1
+ 1416 05f7 50       		.byte	0x50
+ 1417 05f8 02       		.uleb128 0x2
+ 1418 05f9 09       		.byte	0x9
+ 1419 05fa FF       		.byte	0xff
+ 1420 05fb 00       		.byte	0
+ 1421 05fc 0D       		.uleb128 0xd
+ 1422 05fd 44020000 		.4byte	.LVL84
+ 1423 0601 5A080000 		.4byte	0x85a
+ 1424 0605 1C060000 		.4byte	0x61c
+ 1425 0609 0E       		.uleb128 0xe
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 35
+
+
+ 1426 060a 01       		.uleb128 0x1
+ 1427 060b 52       		.byte	0x52
+ 1428 060c 03       		.uleb128 0x3
+ 1429 060d 0A       		.byte	0xa
+ 1430 060e 6C20     		.2byte	0x206c
+ 1431 0610 0E       		.uleb128 0xe
+ 1432 0611 01       		.uleb128 0x1
+ 1433 0612 51       		.byte	0x51
+ 1434 0613 01       		.uleb128 0x1
+ 1435 0614 4C       		.byte	0x4c
+ 1436 0615 0E       		.uleb128 0xe
+ 1437 0616 01       		.uleb128 0x1
+ 1438 0617 50       		.byte	0x50
+ 1439 0618 02       		.uleb128 0x2
+ 1440 0619 08       		.byte	0x8
+ 1441 061a 40       		.byte	0x40
+ 1442 061b 00       		.byte	0
+ 1443 061c 0D       		.uleb128 0xd
+ 1444 061d 4C020000 		.4byte	.LVL85
+ 1445 0621 75080000 		.4byte	0x875
+ 1446 0625 34060000 		.4byte	0x634
+ 1447 0629 0E       		.uleb128 0xe
+ 1448 062a 01       		.uleb128 0x1
+ 1449 062b 51       		.byte	0x51
+ 1450 062c 01       		.uleb128 0x1
+ 1451 062d 30       		.byte	0x30
+ 1452 062e 0E       		.uleb128 0xe
+ 1453 062f 01       		.uleb128 0x1
+ 1454 0630 50       		.byte	0x50
+ 1455 0631 01       		.uleb128 0x1
+ 1456 0632 30       		.byte	0x30
+ 1457 0633 00       		.byte	0
+ 1458 0634 10       		.uleb128 0x10
+ 1459 0635 54020000 		.4byte	.LVL86
+ 1460 0639 3C080000 		.4byte	0x83c
+ 1461 063d 0E       		.uleb128 0xe
+ 1462 063e 01       		.uleb128 0x1
+ 1463 063f 50       		.byte	0x50
+ 1464 0640 03       		.uleb128 0x3
+ 1465 0641 0A       		.byte	0xa
+ 1466 0642 7017     		.2byte	0x1770
+ 1467 0644 00       		.byte	0
+ 1468 0645 00       		.byte	0
+ 1469 0646 0F       		.uleb128 0xf
+ 1470 0647 08000000 		.4byte	.LVL0
+ 1471 064b 8B080000 		.4byte	0x88b
+ 1472 064f 0F       		.uleb128 0xf
+ 1473 0650 0C000000 		.4byte	.LVL1
+ 1474 0654 92080000 		.4byte	0x892
+ 1475 0658 0D       		.uleb128 0xd
+ 1476 0659 12000000 		.4byte	.LVL2
+ 1477 065d C8070000 		.4byte	0x7c8
+ 1478 0661 6F060000 		.4byte	0x66f
+ 1479 0665 0E       		.uleb128 0xe
+ 1480 0666 01       		.uleb128 0x1
+ 1481 0667 50       		.byte	0x50
+ 1482 0668 05       		.uleb128 0x5
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 36
+
+
+ 1483 0669 03       		.byte	0x3
+ 1484 066a 00000000 		.4byte	.LC0
+ 1485 066e 00       		.byte	0
+ 1486 066f 0D       		.uleb128 0xd
+ 1487 0670 18000000 		.4byte	.LVL3
+ 1488 0674 2B080000 		.4byte	0x82b
+ 1489 0678 82060000 		.4byte	0x682
+ 1490 067c 0E       		.uleb128 0xe
+ 1491 067d 01       		.uleb128 0x1
+ 1492 067e 50       		.byte	0x50
+ 1493 067f 01       		.uleb128 0x1
+ 1494 0680 31       		.byte	0x31
+ 1495 0681 00       		.byte	0
+ 1496 0682 0F       		.uleb128 0xf
+ 1497 0683 1C000000 		.4byte	.LVL4
+ 1498 0687 99080000 		.4byte	0x899
+ 1499 068b 0D       		.uleb128 0xd
+ 1500 068c 24000000 		.4byte	.LVL6
+ 1501 0690 C8070000 		.4byte	0x7c8
+ 1502 0694 A2060000 		.4byte	0x6a2
+ 1503 0698 0E       		.uleb128 0xe
+ 1504 0699 01       		.uleb128 0x1
+ 1505 069a 50       		.byte	0x50
+ 1506 069b 05       		.uleb128 0x5
+ 1507 069c 03       		.byte	0x3
+ 1508 069d 08000000 		.4byte	.LC1
+ 1509 06a1 00       		.byte	0
+ 1510 06a2 0F       		.uleb128 0xf
+ 1511 06a3 28000000 		.4byte	.LVL7
+ 1512 06a7 99080000 		.4byte	0x899
+ 1513 06ab 00       		.byte	0
+ 1514 06ac 11       		.uleb128 0x11
+ 1515 06ad 29020000 		.4byte	.LASF23
+ 1516 06b1 01       		.byte	0x1
+ 1517 06b2 D101     		.2byte	0x1d1
+ 1518 06b4 68000000 		.4byte	0x68
+ 1519 06b8 00000000 		.4byte	.LFB64
+ 1520 06bc 2A000000 		.4byte	.LFE64-.LFB64
+ 1521 06c0 01       		.uleb128 0x1
+ 1522 06c1 9C       		.byte	0x9c
+ 1523 06c2 21070000 		.4byte	0x721
+ 1524 06c6 12       		.uleb128 0x12
+ 1525 06c7 50000000 		.4byte	.LASF22
+ 1526 06cb 01       		.byte	0x1
+ 1527 06cc D101     		.2byte	0x1d1
+ 1528 06ce 68000000 		.4byte	0x68
+ 1529 06d2 AC000000 		.4byte	.LLST4
+ 1530 06d6 13       		.uleb128 0x13
+ 1531 06d7 70747200 		.ascii	"ptr\000"
+ 1532 06db 01       		.byte	0x1
+ 1533 06dc D101     		.2byte	0x1d1
+ 1534 06de C1000000 		.4byte	0xc1
+ 1535 06e2 CD000000 		.4byte	.LLST5
+ 1536 06e6 13       		.uleb128 0x13
+ 1537 06e7 6C656E00 		.ascii	"len\000"
+ 1538 06eb 01       		.byte	0x1
+ 1539 06ec D101     		.2byte	0x1d1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 37
+
+
+ 1540 06ee 68000000 		.4byte	0x68
+ 1541 06f2 01010000 		.4byte	.LLST6
+ 1542 06f6 14       		.uleb128 0x14
+ 1543 06f7 6E00     		.ascii	"n\000"
+ 1544 06f9 01       		.byte	0x1
+ 1545 06fa D401     		.2byte	0x1d4
+ 1546 06fc 68000000 		.4byte	0x68
+ 1547 0700 1F010000 		.4byte	.LLST7
+ 1548 0704 0D       		.uleb128 0xd
+ 1549 0705 16000000 		.4byte	.LVL91
+ 1550 0709 A4080000 		.4byte	0x8a4
+ 1551 070d 17070000 		.4byte	0x717
+ 1552 0711 0E       		.uleb128 0xe
+ 1553 0712 01       		.uleb128 0x1
+ 1554 0713 50       		.byte	0x50
+ 1555 0714 01       		.uleb128 0x1
+ 1556 0715 3D       		.byte	0x3d
+ 1557 0716 00       		.byte	0
+ 1558 0717 0F       		.uleb128 0xf
+ 1559 0718 1E000000 		.4byte	.LVL93
+ 1560 071c A4080000 		.4byte	0x8a4
+ 1561 0720 00       		.byte	0
+ 1562 0721 11       		.uleb128 0x11
+ 1563 0722 44000000 		.4byte	.LASF24
+ 1564 0726 01       		.byte	0x1
+ 1565 0727 DC01     		.2byte	0x1dc
+ 1566 0729 68000000 		.4byte	0x68
+ 1567 072d 00000000 		.4byte	.LFB65
+ 1568 0731 38000000 		.4byte	.LFE65-.LFB65
+ 1569 0735 01       		.uleb128 0x1
+ 1570 0736 9C       		.byte	0x9c
+ 1571 0737 B7070000 		.4byte	0x7b7
+ 1572 073b 12       		.uleb128 0x12
+ 1573 073c 50000000 		.4byte	.LASF22
+ 1574 0740 01       		.byte	0x1
+ 1575 0741 DC01     		.2byte	0x1dc
+ 1576 0743 68000000 		.4byte	0x68
+ 1577 0747 3E010000 		.4byte	.LLST8
+ 1578 074b 13       		.uleb128 0x13
+ 1579 074c 70747200 		.ascii	"ptr\000"
+ 1580 0750 01       		.byte	0x1
+ 1581 0751 DC01     		.2byte	0x1dc
+ 1582 0753 C1000000 		.4byte	0xc1
+ 1583 0757 5F010000 		.4byte	.LLST9
+ 1584 075b 12       		.uleb128 0x12
+ 1585 075c 81020000 		.4byte	.LASF25
+ 1586 0760 01       		.byte	0x1
+ 1587 0761 DC01     		.2byte	0x1dc
+ 1588 0763 68000000 		.4byte	0x68
+ 1589 0767 93010000 		.4byte	.LLST10
+ 1590 076b 14       		.uleb128 0x14
+ 1591 076c 63687300 		.ascii	"chs\000"
+ 1592 0770 01       		.byte	0x1
+ 1593 0771 DE01     		.2byte	0x1de
+ 1594 0773 68000000 		.4byte	0x68
+ 1595 0777 B1010000 		.4byte	.LLST11
+ 1596 077b 14       		.uleb128 0x14
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 38
+
+
+ 1597 077c 636800   		.ascii	"ch\000"
+ 1598 077f 01       		.byte	0x1
+ 1599 0780 DF01     		.2byte	0x1df
+ 1600 0782 B3000000 		.4byte	0xb3
+ 1601 0786 D0010000 		.4byte	.LLST12
+ 1602 078a 0F       		.uleb128 0xf
+ 1603 078b 0E000000 		.4byte	.LVL99
+ 1604 078f B5080000 		.4byte	0x8b5
+ 1605 0793 0D       		.uleb128 0xd
+ 1606 0794 16000000 		.4byte	.LVL100
+ 1607 0798 A4080000 		.4byte	0x8a4
+ 1608 079c A7070000 		.4byte	0x7a7
+ 1609 07a0 0E       		.uleb128 0xe
+ 1610 07a1 01       		.uleb128 0x1
+ 1611 07a2 50       		.byte	0x50
+ 1612 07a3 02       		.uleb128 0x2
+ 1613 07a4 75       		.byte	0x75
+ 1614 07a5 00       		.sleb128 0
+ 1615 07a6 00       		.byte	0
+ 1616 07a7 10       		.uleb128 0x10
+ 1617 07a8 22000000 		.4byte	.LVL103
+ 1618 07ac A4080000 		.4byte	0x8a4
+ 1619 07b0 0E       		.uleb128 0xe
+ 1620 07b1 01       		.uleb128 0x1
+ 1621 07b2 50       		.byte	0x50
+ 1622 07b3 01       		.uleb128 0x1
+ 1623 07b4 3A       		.byte	0x3a
+ 1624 07b5 00       		.byte	0
+ 1625 07b6 00       		.byte	0
+ 1626 07b7 15       		.uleb128 0x15
+ 1627 07b8 8A000000 		.4byte	.LASF46
+ 1628 07bc 0C       		.byte	0xc
+ 1629 07bd 9606     		.2byte	0x696
+ 1630 07bf C3070000 		.4byte	0x7c3
+ 1631 07c3 16       		.uleb128 0x16
+ 1632 07c4 76000000 		.4byte	0x76
+ 1633 07c8 17       		.uleb128 0x17
+ 1634 07c9 0E020000 		.4byte	.LASF47
+ 1635 07cd 0D       		.byte	0xd
+ 1636 07ce 00       		.byte	0
+ 1637 07cf B0020000 		.4byte	.LASF48
+ 1638 07d3 68000000 		.4byte	0x68
+ 1639 07d7 E1070000 		.4byte	0x7e1
+ 1640 07db 18       		.uleb128 0x18
+ 1641 07dc C7000000 		.4byte	0xc7
+ 1642 07e0 00       		.byte	0
+ 1643 07e1 19       		.uleb128 0x19
+ 1644 07e2 F6000000 		.4byte	.LASF30
+ 1645 07e6 09       		.byte	0x9
+ 1646 07e7 0C       		.byte	0xc
+ 1647 07e8 EE070000 		.4byte	0x7ee
+ 1648 07ec 1A       		.uleb128 0x1a
+ 1649 07ed 00       		.byte	0
+ 1650 07ee 1B       		.uleb128 0x1b
+ 1651 07ef C0020000 		.4byte	.LASF34
+ 1652 07f3 05       		.byte	0x5
+ 1653 07f4 D1       		.byte	0xd1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 39
+
+
+ 1654 07f5 1C       		.uleb128 0x1c
+ 1655 07f6 F2010000 		.4byte	.LASF26
+ 1656 07fa 05       		.byte	0x5
+ 1657 07fb 39       		.byte	0x39
+ 1658 07fc 81000000 		.4byte	0x81
+ 1659 0800 0A080000 		.4byte	0x80a
+ 1660 0804 18       		.uleb128 0x18
+ 1661 0805 81000000 		.4byte	0x81
+ 1662 0809 00       		.byte	0
+ 1663 080a 1D       		.uleb128 0x1d
+ 1664 080b B7010000 		.4byte	.LASF37
+ 1665 080f 05       		.byte	0x5
+ 1666 0810 3B       		.byte	0x3b
+ 1667 0811 99000000 		.4byte	0x99
+ 1668 0815 1C       		.uleb128 0x1c
+ 1669 0816 7A020000 		.4byte	.LASF27
+ 1670 081a 06       		.byte	0x6
+ 1671 081b B2       		.byte	0xb2
+ 1672 081c 68000000 		.4byte	0x68
+ 1673 0820 2B080000 		.4byte	0x82b
+ 1674 0824 18       		.uleb128 0x18
+ 1675 0825 C7000000 		.4byte	0xc7
+ 1676 0829 1A       		.uleb128 0x1a
+ 1677 082a 00       		.byte	0
+ 1678 082b 1E       		.uleb128 0x1e
+ 1679 082c 47020000 		.4byte	.LASF28
+ 1680 0830 07       		.byte	0x7
+ 1681 0831 26       		.byte	0x26
+ 1682 0832 3C080000 		.4byte	0x83c
+ 1683 0836 18       		.uleb128 0x18
+ 1684 0837 81000000 		.4byte	0x81
+ 1685 083b 00       		.byte	0
+ 1686 083c 1E       		.uleb128 0x1e
+ 1687 083d D9020000 		.4byte	.LASF29
+ 1688 0841 08       		.byte	0x8
+ 1689 0842 76       		.byte	0x76
+ 1690 0843 4D080000 		.4byte	0x84d
+ 1691 0847 18       		.uleb128 0x18
+ 1692 0848 8D000000 		.4byte	0x8d
+ 1693 084c 00       		.byte	0
+ 1694 084d 19       		.uleb128 0x19
+ 1695 084e E6010000 		.4byte	.LASF31
+ 1696 0852 09       		.byte	0x9
+ 1697 0853 0B       		.byte	0xb
+ 1698 0854 5A080000 		.4byte	0x85a
+ 1699 0858 1A       		.uleb128 0x1a
+ 1700 0859 00       		.byte	0
+ 1701 085a 1E       		.uleb128 0x1e
+ 1702 085b B5020000 		.4byte	.LASF32
+ 1703 085f 09       		.byte	0x9
+ 1704 0860 12       		.byte	0x12
+ 1705 0861 75080000 		.4byte	0x875
+ 1706 0865 18       		.uleb128 0x18
+ 1707 0866 81000000 		.4byte	0x81
+ 1708 086a 18       		.uleb128 0x18
+ 1709 086b 81000000 		.4byte	0x81
+ 1710 086f 18       		.uleb128 0x18
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 40
+
+
+ 1711 0870 8D000000 		.4byte	0x8d
+ 1712 0874 00       		.byte	0
+ 1713 0875 1E       		.uleb128 0x1e
+ 1714 0876 97000000 		.4byte	.LASF33
+ 1715 087a 09       		.byte	0x9
+ 1716 087b 0F       		.byte	0xf
+ 1717 087c 8B080000 		.4byte	0x88b
+ 1718 0880 18       		.uleb128 0x18
+ 1719 0881 81000000 		.4byte	0x81
+ 1720 0885 18       		.uleb128 0x18
+ 1721 0886 8D000000 		.4byte	0x8d
+ 1722 088a 00       		.byte	0
+ 1723 088b 1B       		.uleb128 0x1b
+ 1724 088c 00000000 		.4byte	.LASF35
+ 1725 0890 0A       		.byte	0xa
+ 1726 0891 54       		.byte	0x54
+ 1727 0892 1B       		.uleb128 0x1b
+ 1728 0893 17000000 		.4byte	.LASF36
+ 1729 0897 05       		.byte	0x5
+ 1730 0898 34       		.byte	0x34
+ 1731 0899 1D       		.uleb128 0x1d
+ 1732 089a 97020000 		.4byte	.LASF38
+ 1733 089e 0B       		.byte	0xb
+ 1734 089f 29       		.byte	0x29
+ 1735 08a0 81000000 		.4byte	0x81
+ 1736 08a4 1E       		.uleb128 0x1e
+ 1737 08a5 9B010000 		.4byte	.LASF39
+ 1738 08a9 0A       		.byte	0xa
+ 1739 08aa 8A       		.byte	0x8a
+ 1740 08ab B5080000 		.4byte	0x8b5
+ 1741 08af 18       		.uleb128 0x18
+ 1742 08b0 81000000 		.4byte	0x81
+ 1743 08b4 00       		.byte	0
+ 1744 08b5 1D       		.uleb128 0x1d
+ 1745 08b6 E1020000 		.4byte	.LASF40
+ 1746 08ba 0A       		.byte	0xa
+ 1747 08bb 71       		.byte	0x71
+ 1748 08bc 81000000 		.4byte	0x81
+ 1749 08c0 00       		.byte	0
+ 1750              		.section	.debug_abbrev,"",%progbits
+ 1751              	.Ldebug_abbrev0:
+ 1752 0000 01       		.uleb128 0x1
+ 1753 0001 11       		.uleb128 0x11
+ 1754 0002 01       		.byte	0x1
+ 1755 0003 25       		.uleb128 0x25
+ 1756 0004 0E       		.uleb128 0xe
+ 1757 0005 13       		.uleb128 0x13
+ 1758 0006 0B       		.uleb128 0xb
+ 1759 0007 03       		.uleb128 0x3
+ 1760 0008 0E       		.uleb128 0xe
+ 1761 0009 1B       		.uleb128 0x1b
+ 1762 000a 0E       		.uleb128 0xe
+ 1763 000b 55       		.uleb128 0x55
+ 1764 000c 17       		.uleb128 0x17
+ 1765 000d 11       		.uleb128 0x11
+ 1766 000e 01       		.uleb128 0x1
+ 1767 000f 10       		.uleb128 0x10
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 41
+
+
+ 1768 0010 17       		.uleb128 0x17
+ 1769 0011 00       		.byte	0
+ 1770 0012 00       		.byte	0
+ 1771 0013 02       		.uleb128 0x2
+ 1772 0014 24       		.uleb128 0x24
+ 1773 0015 00       		.byte	0
+ 1774 0016 0B       		.uleb128 0xb
+ 1775 0017 0B       		.uleb128 0xb
+ 1776 0018 3E       		.uleb128 0x3e
+ 1777 0019 0B       		.uleb128 0xb
+ 1778 001a 03       		.uleb128 0x3
+ 1779 001b 0E       		.uleb128 0xe
+ 1780 001c 00       		.byte	0
+ 1781 001d 00       		.byte	0
+ 1782 001e 03       		.uleb128 0x3
+ 1783 001f 16       		.uleb128 0x16
+ 1784 0020 00       		.byte	0
+ 1785 0021 03       		.uleb128 0x3
+ 1786 0022 0E       		.uleb128 0xe
+ 1787 0023 3A       		.uleb128 0x3a
+ 1788 0024 0B       		.uleb128 0xb
+ 1789 0025 3B       		.uleb128 0x3b
+ 1790 0026 0B       		.uleb128 0xb
+ 1791 0027 49       		.uleb128 0x49
+ 1792 0028 13       		.uleb128 0x13
+ 1793 0029 00       		.byte	0
+ 1794 002a 00       		.byte	0
+ 1795 002b 04       		.uleb128 0x4
+ 1796 002c 24       		.uleb128 0x24
+ 1797 002d 00       		.byte	0
+ 1798 002e 0B       		.uleb128 0xb
+ 1799 002f 0B       		.uleb128 0xb
+ 1800 0030 3E       		.uleb128 0x3e
+ 1801 0031 0B       		.uleb128 0xb
+ 1802 0032 03       		.uleb128 0x3
+ 1803 0033 08       		.uleb128 0x8
+ 1804 0034 00       		.byte	0
+ 1805 0035 00       		.byte	0
+ 1806 0036 05       		.uleb128 0x5
+ 1807 0037 16       		.uleb128 0x16
+ 1808 0038 00       		.byte	0
+ 1809 0039 03       		.uleb128 0x3
+ 1810 003a 0E       		.uleb128 0xe
+ 1811 003b 3A       		.uleb128 0x3a
+ 1812 003c 0B       		.uleb128 0xb
+ 1813 003d 3B       		.uleb128 0x3b
+ 1814 003e 05       		.uleb128 0x5
+ 1815 003f 49       		.uleb128 0x49
+ 1816 0040 13       		.uleb128 0x13
+ 1817 0041 00       		.byte	0
+ 1818 0042 00       		.byte	0
+ 1819 0043 06       		.uleb128 0x6
+ 1820 0044 0F       		.uleb128 0xf
+ 1821 0045 00       		.byte	0
+ 1822 0046 0B       		.uleb128 0xb
+ 1823 0047 0B       		.uleb128 0xb
+ 1824 0048 49       		.uleb128 0x49
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 42
+
+
+ 1825 0049 13       		.uleb128 0x13
+ 1826 004a 00       		.byte	0
+ 1827 004b 00       		.byte	0
+ 1828 004c 07       		.uleb128 0x7
+ 1829 004d 26       		.uleb128 0x26
+ 1830 004e 00       		.byte	0
+ 1831 004f 49       		.uleb128 0x49
+ 1832 0050 13       		.uleb128 0x13
+ 1833 0051 00       		.byte	0
+ 1834 0052 00       		.byte	0
+ 1835 0053 08       		.uleb128 0x8
+ 1836 0054 2E       		.uleb128 0x2e
+ 1837 0055 01       		.byte	0x1
+ 1838 0056 3F       		.uleb128 0x3f
+ 1839 0057 19       		.uleb128 0x19
+ 1840 0058 03       		.uleb128 0x3
+ 1841 0059 0E       		.uleb128 0xe
+ 1842 005a 3A       		.uleb128 0x3a
+ 1843 005b 0B       		.uleb128 0xb
+ 1844 005c 3B       		.uleb128 0x3b
+ 1845 005d 0B       		.uleb128 0xb
+ 1846 005e 49       		.uleb128 0x49
+ 1847 005f 13       		.uleb128 0x13
+ 1848 0060 11       		.uleb128 0x11
+ 1849 0061 01       		.uleb128 0x1
+ 1850 0062 12       		.uleb128 0x12
+ 1851 0063 06       		.uleb128 0x6
+ 1852 0064 40       		.uleb128 0x40
+ 1853 0065 18       		.uleb128 0x18
+ 1854 0066 9642     		.uleb128 0x2116
+ 1855 0068 19       		.uleb128 0x19
+ 1856 0069 01       		.uleb128 0x1
+ 1857 006a 13       		.uleb128 0x13
+ 1858 006b 00       		.byte	0
+ 1859 006c 00       		.byte	0
+ 1860 006d 09       		.uleb128 0x9
+ 1861 006e 34       		.uleb128 0x34
+ 1862 006f 00       		.byte	0
+ 1863 0070 03       		.uleb128 0x3
+ 1864 0071 0E       		.uleb128 0xe
+ 1865 0072 3A       		.uleb128 0x3a
+ 1866 0073 0B       		.uleb128 0xb
+ 1867 0074 3B       		.uleb128 0x3b
+ 1868 0075 0B       		.uleb128 0xb
+ 1869 0076 49       		.uleb128 0x49
+ 1870 0077 13       		.uleb128 0x13
+ 1871 0078 02       		.uleb128 0x2
+ 1872 0079 17       		.uleb128 0x17
+ 1873 007a 00       		.byte	0
+ 1874 007b 00       		.byte	0
+ 1875 007c 0A       		.uleb128 0xa
+ 1876 007d 34       		.uleb128 0x34
+ 1877 007e 00       		.byte	0
+ 1878 007f 03       		.uleb128 0x3
+ 1879 0080 08       		.uleb128 0x8
+ 1880 0081 3A       		.uleb128 0x3a
+ 1881 0082 0B       		.uleb128 0xb
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 43
+
+
+ 1882 0083 3B       		.uleb128 0x3b
+ 1883 0084 0B       		.uleb128 0xb
+ 1884 0085 49       		.uleb128 0x49
+ 1885 0086 13       		.uleb128 0x13
+ 1886 0087 02       		.uleb128 0x2
+ 1887 0088 17       		.uleb128 0x17
+ 1888 0089 00       		.byte	0
+ 1889 008a 00       		.byte	0
+ 1890 008b 0B       		.uleb128 0xb
+ 1891 008c 0B       		.uleb128 0xb
+ 1892 008d 01       		.byte	0x1
+ 1893 008e 11       		.uleb128 0x11
+ 1894 008f 01       		.uleb128 0x1
+ 1895 0090 12       		.uleb128 0x12
+ 1896 0091 06       		.uleb128 0x6
+ 1897 0092 01       		.uleb128 0x1
+ 1898 0093 13       		.uleb128 0x13
+ 1899 0094 00       		.byte	0
+ 1900 0095 00       		.byte	0
+ 1901 0096 0C       		.uleb128 0xc
+ 1902 0097 34       		.uleb128 0x34
+ 1903 0098 00       		.byte	0
+ 1904 0099 03       		.uleb128 0x3
+ 1905 009a 0E       		.uleb128 0xe
+ 1906 009b 3A       		.uleb128 0x3a
+ 1907 009c 0B       		.uleb128 0xb
+ 1908 009d 3B       		.uleb128 0x3b
+ 1909 009e 0B       		.uleb128 0xb
+ 1910 009f 49       		.uleb128 0x49
+ 1911 00a0 13       		.uleb128 0x13
+ 1912 00a1 00       		.byte	0
+ 1913 00a2 00       		.byte	0
+ 1914 00a3 0D       		.uleb128 0xd
+ 1915 00a4 898201   		.uleb128 0x4109
+ 1916 00a7 01       		.byte	0x1
+ 1917 00a8 11       		.uleb128 0x11
+ 1918 00a9 01       		.uleb128 0x1
+ 1919 00aa 31       		.uleb128 0x31
+ 1920 00ab 13       		.uleb128 0x13
+ 1921 00ac 01       		.uleb128 0x1
+ 1922 00ad 13       		.uleb128 0x13
+ 1923 00ae 00       		.byte	0
+ 1924 00af 00       		.byte	0
+ 1925 00b0 0E       		.uleb128 0xe
+ 1926 00b1 8A8201   		.uleb128 0x410a
+ 1927 00b4 00       		.byte	0
+ 1928 00b5 02       		.uleb128 0x2
+ 1929 00b6 18       		.uleb128 0x18
+ 1930 00b7 9142     		.uleb128 0x2111
+ 1931 00b9 18       		.uleb128 0x18
+ 1932 00ba 00       		.byte	0
+ 1933 00bb 00       		.byte	0
+ 1934 00bc 0F       		.uleb128 0xf
+ 1935 00bd 898201   		.uleb128 0x4109
+ 1936 00c0 00       		.byte	0
+ 1937 00c1 11       		.uleb128 0x11
+ 1938 00c2 01       		.uleb128 0x1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 44
+
+
+ 1939 00c3 31       		.uleb128 0x31
+ 1940 00c4 13       		.uleb128 0x13
+ 1941 00c5 00       		.byte	0
+ 1942 00c6 00       		.byte	0
+ 1943 00c7 10       		.uleb128 0x10
+ 1944 00c8 898201   		.uleb128 0x4109
+ 1945 00cb 01       		.byte	0x1
+ 1946 00cc 11       		.uleb128 0x11
+ 1947 00cd 01       		.uleb128 0x1
+ 1948 00ce 31       		.uleb128 0x31
+ 1949 00cf 13       		.uleb128 0x13
+ 1950 00d0 00       		.byte	0
+ 1951 00d1 00       		.byte	0
+ 1952 00d2 11       		.uleb128 0x11
+ 1953 00d3 2E       		.uleb128 0x2e
+ 1954 00d4 01       		.byte	0x1
+ 1955 00d5 3F       		.uleb128 0x3f
+ 1956 00d6 19       		.uleb128 0x19
+ 1957 00d7 03       		.uleb128 0x3
+ 1958 00d8 0E       		.uleb128 0xe
+ 1959 00d9 3A       		.uleb128 0x3a
+ 1960 00da 0B       		.uleb128 0xb
+ 1961 00db 3B       		.uleb128 0x3b
+ 1962 00dc 05       		.uleb128 0x5
+ 1963 00dd 27       		.uleb128 0x27
+ 1964 00de 19       		.uleb128 0x19
+ 1965 00df 49       		.uleb128 0x49
+ 1966 00e0 13       		.uleb128 0x13
+ 1967 00e1 11       		.uleb128 0x11
+ 1968 00e2 01       		.uleb128 0x1
+ 1969 00e3 12       		.uleb128 0x12
+ 1970 00e4 06       		.uleb128 0x6
+ 1971 00e5 40       		.uleb128 0x40
+ 1972 00e6 18       		.uleb128 0x18
+ 1973 00e7 9742     		.uleb128 0x2117
+ 1974 00e9 19       		.uleb128 0x19
+ 1975 00ea 01       		.uleb128 0x1
+ 1976 00eb 13       		.uleb128 0x13
+ 1977 00ec 00       		.byte	0
+ 1978 00ed 00       		.byte	0
+ 1979 00ee 12       		.uleb128 0x12
+ 1980 00ef 05       		.uleb128 0x5
+ 1981 00f0 00       		.byte	0
+ 1982 00f1 03       		.uleb128 0x3
+ 1983 00f2 0E       		.uleb128 0xe
+ 1984 00f3 3A       		.uleb128 0x3a
+ 1985 00f4 0B       		.uleb128 0xb
+ 1986 00f5 3B       		.uleb128 0x3b
+ 1987 00f6 05       		.uleb128 0x5
+ 1988 00f7 49       		.uleb128 0x49
+ 1989 00f8 13       		.uleb128 0x13
+ 1990 00f9 02       		.uleb128 0x2
+ 1991 00fa 17       		.uleb128 0x17
+ 1992 00fb 00       		.byte	0
+ 1993 00fc 00       		.byte	0
+ 1994 00fd 13       		.uleb128 0x13
+ 1995 00fe 05       		.uleb128 0x5
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 45
+
+
+ 1996 00ff 00       		.byte	0
+ 1997 0100 03       		.uleb128 0x3
+ 1998 0101 08       		.uleb128 0x8
+ 1999 0102 3A       		.uleb128 0x3a
+ 2000 0103 0B       		.uleb128 0xb
+ 2001 0104 3B       		.uleb128 0x3b
+ 2002 0105 05       		.uleb128 0x5
+ 2003 0106 49       		.uleb128 0x49
+ 2004 0107 13       		.uleb128 0x13
+ 2005 0108 02       		.uleb128 0x2
+ 2006 0109 17       		.uleb128 0x17
+ 2007 010a 00       		.byte	0
+ 2008 010b 00       		.byte	0
+ 2009 010c 14       		.uleb128 0x14
+ 2010 010d 34       		.uleb128 0x34
+ 2011 010e 00       		.byte	0
+ 2012 010f 03       		.uleb128 0x3
+ 2013 0110 08       		.uleb128 0x8
+ 2014 0111 3A       		.uleb128 0x3a
+ 2015 0112 0B       		.uleb128 0xb
+ 2016 0113 3B       		.uleb128 0x3b
+ 2017 0114 05       		.uleb128 0x5
+ 2018 0115 49       		.uleb128 0x49
+ 2019 0116 13       		.uleb128 0x13
+ 2020 0117 02       		.uleb128 0x2
+ 2021 0118 17       		.uleb128 0x17
+ 2022 0119 00       		.byte	0
+ 2023 011a 00       		.byte	0
+ 2024 011b 15       		.uleb128 0x15
+ 2025 011c 34       		.uleb128 0x34
+ 2026 011d 00       		.byte	0
+ 2027 011e 03       		.uleb128 0x3
+ 2028 011f 0E       		.uleb128 0xe
+ 2029 0120 3A       		.uleb128 0x3a
+ 2030 0121 0B       		.uleb128 0xb
+ 2031 0122 3B       		.uleb128 0x3b
+ 2032 0123 05       		.uleb128 0x5
+ 2033 0124 49       		.uleb128 0x49
+ 2034 0125 13       		.uleb128 0x13
+ 2035 0126 3F       		.uleb128 0x3f
+ 2036 0127 19       		.uleb128 0x19
+ 2037 0128 3C       		.uleb128 0x3c
+ 2038 0129 19       		.uleb128 0x19
+ 2039 012a 00       		.byte	0
+ 2040 012b 00       		.byte	0
+ 2041 012c 16       		.uleb128 0x16
+ 2042 012d 35       		.uleb128 0x35
+ 2043 012e 00       		.byte	0
+ 2044 012f 49       		.uleb128 0x49
+ 2045 0130 13       		.uleb128 0x13
+ 2046 0131 00       		.byte	0
+ 2047 0132 00       		.byte	0
+ 2048 0133 17       		.uleb128 0x17
+ 2049 0134 2E       		.uleb128 0x2e
+ 2050 0135 01       		.byte	0x1
+ 2051 0136 3F       		.uleb128 0x3f
+ 2052 0137 19       		.uleb128 0x19
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 46
+
+
+ 2053 0138 03       		.uleb128 0x3
+ 2054 0139 0E       		.uleb128 0xe
+ 2055 013a 3A       		.uleb128 0x3a
+ 2056 013b 0B       		.uleb128 0xb
+ 2057 013c 3B       		.uleb128 0x3b
+ 2058 013d 0B       		.uleb128 0xb
+ 2059 013e 6E       		.uleb128 0x6e
+ 2060 013f 0E       		.uleb128 0xe
+ 2061 0140 27       		.uleb128 0x27
+ 2062 0141 19       		.uleb128 0x19
+ 2063 0142 49       		.uleb128 0x49
+ 2064 0143 13       		.uleb128 0x13
+ 2065 0144 3C       		.uleb128 0x3c
+ 2066 0145 19       		.uleb128 0x19
+ 2067 0146 01       		.uleb128 0x1
+ 2068 0147 13       		.uleb128 0x13
+ 2069 0148 00       		.byte	0
+ 2070 0149 00       		.byte	0
+ 2071 014a 18       		.uleb128 0x18
+ 2072 014b 05       		.uleb128 0x5
+ 2073 014c 00       		.byte	0
+ 2074 014d 49       		.uleb128 0x49
+ 2075 014e 13       		.uleb128 0x13
+ 2076 014f 00       		.byte	0
+ 2077 0150 00       		.byte	0
+ 2078 0151 19       		.uleb128 0x19
+ 2079 0152 2E       		.uleb128 0x2e
+ 2080 0153 01       		.byte	0x1
+ 2081 0154 3F       		.uleb128 0x3f
+ 2082 0155 19       		.uleb128 0x19
+ 2083 0156 03       		.uleb128 0x3
+ 2084 0157 0E       		.uleb128 0xe
+ 2085 0158 3A       		.uleb128 0x3a
+ 2086 0159 0B       		.uleb128 0xb
+ 2087 015a 3B       		.uleb128 0x3b
+ 2088 015b 0B       		.uleb128 0xb
+ 2089 015c 3C       		.uleb128 0x3c
+ 2090 015d 19       		.uleb128 0x19
+ 2091 015e 01       		.uleb128 0x1
+ 2092 015f 13       		.uleb128 0x13
+ 2093 0160 00       		.byte	0
+ 2094 0161 00       		.byte	0
+ 2095 0162 1A       		.uleb128 0x1a
+ 2096 0163 18       		.uleb128 0x18
+ 2097 0164 00       		.byte	0
+ 2098 0165 00       		.byte	0
+ 2099 0166 00       		.byte	0
+ 2100 0167 1B       		.uleb128 0x1b
+ 2101 0168 2E       		.uleb128 0x2e
+ 2102 0169 00       		.byte	0
+ 2103 016a 3F       		.uleb128 0x3f
+ 2104 016b 19       		.uleb128 0x19
+ 2105 016c 03       		.uleb128 0x3
+ 2106 016d 0E       		.uleb128 0xe
+ 2107 016e 3A       		.uleb128 0x3a
+ 2108 016f 0B       		.uleb128 0xb
+ 2109 0170 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 47
+
+
+ 2110 0171 0B       		.uleb128 0xb
+ 2111 0172 27       		.uleb128 0x27
+ 2112 0173 19       		.uleb128 0x19
+ 2113 0174 3C       		.uleb128 0x3c
+ 2114 0175 19       		.uleb128 0x19
+ 2115 0176 00       		.byte	0
+ 2116 0177 00       		.byte	0
+ 2117 0178 1C       		.uleb128 0x1c
+ 2118 0179 2E       		.uleb128 0x2e
+ 2119 017a 01       		.byte	0x1
+ 2120 017b 3F       		.uleb128 0x3f
+ 2121 017c 19       		.uleb128 0x19
+ 2122 017d 03       		.uleb128 0x3
+ 2123 017e 0E       		.uleb128 0xe
+ 2124 017f 3A       		.uleb128 0x3a
+ 2125 0180 0B       		.uleb128 0xb
+ 2126 0181 3B       		.uleb128 0x3b
+ 2127 0182 0B       		.uleb128 0xb
+ 2128 0183 27       		.uleb128 0x27
+ 2129 0184 19       		.uleb128 0x19
+ 2130 0185 49       		.uleb128 0x49
+ 2131 0186 13       		.uleb128 0x13
+ 2132 0187 3C       		.uleb128 0x3c
+ 2133 0188 19       		.uleb128 0x19
+ 2134 0189 01       		.uleb128 0x1
+ 2135 018a 13       		.uleb128 0x13
+ 2136 018b 00       		.byte	0
+ 2137 018c 00       		.byte	0
+ 2138 018d 1D       		.uleb128 0x1d
+ 2139 018e 2E       		.uleb128 0x2e
+ 2140 018f 00       		.byte	0
+ 2141 0190 3F       		.uleb128 0x3f
+ 2142 0191 19       		.uleb128 0x19
+ 2143 0192 03       		.uleb128 0x3
+ 2144 0193 0E       		.uleb128 0xe
+ 2145 0194 3A       		.uleb128 0x3a
+ 2146 0195 0B       		.uleb128 0xb
+ 2147 0196 3B       		.uleb128 0x3b
+ 2148 0197 0B       		.uleb128 0xb
+ 2149 0198 27       		.uleb128 0x27
+ 2150 0199 19       		.uleb128 0x19
+ 2151 019a 49       		.uleb128 0x49
+ 2152 019b 13       		.uleb128 0x13
+ 2153 019c 3C       		.uleb128 0x3c
+ 2154 019d 19       		.uleb128 0x19
+ 2155 019e 00       		.byte	0
+ 2156 019f 00       		.byte	0
+ 2157 01a0 1E       		.uleb128 0x1e
+ 2158 01a1 2E       		.uleb128 0x2e
+ 2159 01a2 01       		.byte	0x1
+ 2160 01a3 3F       		.uleb128 0x3f
+ 2161 01a4 19       		.uleb128 0x19
+ 2162 01a5 03       		.uleb128 0x3
+ 2163 01a6 0E       		.uleb128 0xe
+ 2164 01a7 3A       		.uleb128 0x3a
+ 2165 01a8 0B       		.uleb128 0xb
+ 2166 01a9 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 48
+
+
+ 2167 01aa 0B       		.uleb128 0xb
+ 2168 01ab 27       		.uleb128 0x27
+ 2169 01ac 19       		.uleb128 0x19
+ 2170 01ad 3C       		.uleb128 0x3c
+ 2171 01ae 19       		.uleb128 0x19
+ 2172 01af 01       		.uleb128 0x1
+ 2173 01b0 13       		.uleb128 0x13
+ 2174 01b1 00       		.byte	0
+ 2175 01b2 00       		.byte	0
+ 2176 01b3 00       		.byte	0
+ 2177              		.section	.debug_loc,"",%progbits
+ 2178              	.Ldebug_loc0:
+ 2179              	.LLST0:
+ 2180 0000 0C000000 		.4byte	.LVL1
+ 2181 0004 2E000000 		.4byte	.LVL8
+ 2182 0008 0200     		.2byte	0x2
+ 2183 000a 30       		.byte	0x30
+ 2184 000b 9F       		.byte	0x9f
+ 2185 000c 5A000000 		.4byte	.LVL14
+ 2186 0010 5D000000 		.4byte	.LVL15-1
+ 2187 0014 0100     		.2byte	0x1
+ 2188 0016 50       		.byte	0x50
+ 2189 0017 84010000 		.4byte	.LVL61
+ 2190 001b 87010000 		.4byte	.LVL62-1
+ 2191 001f 0100     		.2byte	0x1
+ 2192 0021 50       		.byte	0x50
+ 2193 0022 00000000 		.4byte	0
+ 2194 0026 00000000 		.4byte	0
+ 2195              	.LLST1:
+ 2196 002a 0C000000 		.4byte	.LVL1
+ 2197 002e 2E000000 		.4byte	.LVL8
+ 2198 0032 0200     		.2byte	0x2
+ 2199 0034 30       		.byte	0x30
+ 2200 0035 9F       		.byte	0x9f
+ 2201 0036 2E000000 		.4byte	.LVL8
+ 2202 003a 46000000 		.4byte	.LVL11
+ 2203 003e 0100     		.2byte	0x1
+ 2204 0040 54       		.byte	0x54
+ 2205 0041 46000000 		.4byte	.LVL11
+ 2206 0045 C4010000 		.4byte	.LVL71
+ 2207 0049 0200     		.2byte	0x2
+ 2208 004b 30       		.byte	0x30
+ 2209 004c 9F       		.byte	0x9f
+ 2210 004d C4010000 		.4byte	.LVL71
+ 2211 0051 80020000 		.4byte	.LFE63
+ 2212 0055 0100     		.2byte	0x1
+ 2213 0057 54       		.byte	0x54
+ 2214 0058 00000000 		.4byte	0
+ 2215 005c 00000000 		.4byte	0
+ 2216              	.LLST2:
+ 2217 0060 0C000000 		.4byte	.LVL1
+ 2218 0064 2E000000 		.4byte	.LVL8
+ 2219 0068 0600     		.2byte	0x6
+ 2220 006a 9E       		.byte	0x9e
+ 2221 006b 04       		.uleb128 0x4
+ 2222 006c 00000000 		.4byte	0
+ 2223 0070 7E000000 		.4byte	.LVL20
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 49
+
+
+ 2224 0074 81000000 		.4byte	.LVL21-1
+ 2225 0078 0100     		.2byte	0x1
+ 2226 007a 50       		.byte	0x50
+ 2227 007b 81000000 		.4byte	.LVL21-1
+ 2228 007f C0010000 		.4byte	.LVL70
+ 2229 0083 0100     		.2byte	0x1
+ 2230 0085 54       		.byte	0x54
+ 2231 0086 00000000 		.4byte	0
+ 2232 008a 00000000 		.4byte	0
+ 2233              	.LLST3:
+ 2234 008e 1C000000 		.4byte	.LVL4
+ 2235 0092 20000000 		.4byte	.LVL5
+ 2236 0096 0100     		.2byte	0x1
+ 2237 0098 50       		.byte	0x50
+ 2238 0099 28000000 		.4byte	.LVL7
+ 2239 009d 2E000000 		.4byte	.LVL8
+ 2240 00a1 0100     		.2byte	0x1
+ 2241 00a3 50       		.byte	0x50
+ 2242 00a4 00000000 		.4byte	0
+ 2243 00a8 00000000 		.4byte	0
+ 2244              	.LLST4:
+ 2245 00ac 00000000 		.4byte	.LVL88
+ 2246 00b0 0A000000 		.4byte	.LVL90
+ 2247 00b4 0100     		.2byte	0x1
+ 2248 00b6 50       		.byte	0x50
+ 2249 00b7 0A000000 		.4byte	.LVL90
+ 2250 00bb 2A000000 		.4byte	.LFE64
+ 2251 00bf 0400     		.2byte	0x4
+ 2252 00c1 F3       		.byte	0xf3
+ 2253 00c2 01       		.uleb128 0x1
+ 2254 00c3 50       		.byte	0x50
+ 2255 00c4 9F       		.byte	0x9f
+ 2256 00c5 00000000 		.4byte	0
+ 2257 00c9 00000000 		.4byte	0
+ 2258              	.LLST5:
+ 2259 00cd 00000000 		.4byte	.LVL88
+ 2260 00d1 0A000000 		.4byte	.LVL90
+ 2261 00d5 0100     		.2byte	0x1
+ 2262 00d7 51       		.byte	0x51
+ 2263 00d8 0A000000 		.4byte	.LVL90
+ 2264 00dc 18000000 		.4byte	.LVL92
+ 2265 00e0 0100     		.2byte	0x1
+ 2266 00e2 54       		.byte	0x54
+ 2267 00e3 18000000 		.4byte	.LVL92
+ 2268 00e7 22000000 		.4byte	.LVL95
+ 2269 00eb 0100     		.2byte	0x1
+ 2270 00ed 56       		.byte	0x56
+ 2271 00ee 22000000 		.4byte	.LVL95
+ 2272 00f2 2A000000 		.4byte	.LFE64
+ 2273 00f6 0100     		.2byte	0x1
+ 2274 00f8 54       		.byte	0x54
+ 2275 00f9 00000000 		.4byte	0
+ 2276 00fd 00000000 		.4byte	0
+ 2277              	.LLST6:
+ 2278 0101 00000000 		.4byte	.LVL88
+ 2279 0105 0A000000 		.4byte	.LVL90
+ 2280 0109 0100     		.2byte	0x1
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 50
+
+
+ 2281 010b 52       		.byte	0x52
+ 2282 010c 0A000000 		.4byte	.LVL90
+ 2283 0110 2A000000 		.4byte	.LFE64
+ 2284 0114 0100     		.2byte	0x1
+ 2285 0116 57       		.byte	0x57
+ 2286 0117 00000000 		.4byte	0
+ 2287 011b 00000000 		.4byte	0
+ 2288              	.LLST7:
+ 2289 011f 06000000 		.4byte	.LVL89
+ 2290 0123 0A000000 		.4byte	.LVL90
+ 2291 0127 0200     		.2byte	0x2
+ 2292 0129 30       		.byte	0x30
+ 2293 012a 9F       		.byte	0x9f
+ 2294 012b 0A000000 		.4byte	.LVL90
+ 2295 012f 2A000000 		.4byte	.LFE64
+ 2296 0133 0100     		.2byte	0x1
+ 2297 0135 55       		.byte	0x55
+ 2298 0136 00000000 		.4byte	0
+ 2299 013a 00000000 		.4byte	0
+ 2300              	.LLST8:
+ 2301 013e 00000000 		.4byte	.LVL96
+ 2302 0142 0A000000 		.4byte	.LVL98
+ 2303 0146 0100     		.2byte	0x1
+ 2304 0148 50       		.byte	0x50
+ 2305 0149 0A000000 		.4byte	.LVL98
+ 2306 014d 38000000 		.4byte	.LFE65
+ 2307 0151 0400     		.2byte	0x4
+ 2308 0153 F3       		.byte	0xf3
+ 2309 0154 01       		.uleb128 0x1
+ 2310 0155 50       		.byte	0x50
+ 2311 0156 9F       		.byte	0x9f
+ 2312 0157 00000000 		.4byte	0
+ 2313 015b 00000000 		.4byte	0
+ 2314              	.LLST9:
+ 2315 015f 00000000 		.4byte	.LVL96
+ 2316 0163 0A000000 		.4byte	.LVL98
+ 2317 0167 0100     		.2byte	0x1
+ 2318 0169 51       		.byte	0x51
+ 2319 016a 0A000000 		.4byte	.LVL98
+ 2320 016e 26000000 		.4byte	.LVL105
+ 2321 0172 0100     		.2byte	0x1
+ 2322 0174 57       		.byte	0x57
+ 2323 0175 26000000 		.4byte	.LVL105
+ 2324 0179 30000000 		.4byte	.LVL107
+ 2325 017d 0100     		.2byte	0x1
+ 2326 017f 53       		.byte	0x53
+ 2327 0180 30000000 		.4byte	.LVL107
+ 2328 0184 34000000 		.4byte	.LVL108
+ 2329 0188 0100     		.2byte	0x1
+ 2330 018a 57       		.byte	0x57
+ 2331 018b 00000000 		.4byte	0
+ 2332 018f 00000000 		.4byte	0
+ 2333              	.LLST10:
+ 2334 0193 00000000 		.4byte	.LVL96
+ 2335 0197 0A000000 		.4byte	.LVL98
+ 2336 019b 0100     		.2byte	0x1
+ 2337 019d 52       		.byte	0x52
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 51
+
+
+ 2338 019e 0A000000 		.4byte	.LVL98
+ 2339 01a2 38000000 		.4byte	.LFE65
+ 2340 01a6 0100     		.2byte	0x1
+ 2341 01a8 54       		.byte	0x54
+ 2342 01a9 00000000 		.4byte	0
+ 2343 01ad 00000000 		.4byte	0
+ 2344              	.LLST11:
+ 2345 01b1 06000000 		.4byte	.LVL97
+ 2346 01b5 0A000000 		.4byte	.LVL98
+ 2347 01b9 0200     		.2byte	0x2
+ 2348 01bb 30       		.byte	0x30
+ 2349 01bc 9F       		.byte	0x9f
+ 2350 01bd 0A000000 		.4byte	.LVL98
+ 2351 01c1 38000000 		.4byte	.LFE65
+ 2352 01c5 0100     		.2byte	0x1
+ 2353 01c7 56       		.byte	0x56
+ 2354 01c8 00000000 		.4byte	0
+ 2355 01cc 00000000 		.4byte	0
+ 2356              	.LLST12:
+ 2357 01d0 0E000000 		.4byte	.LVL99
+ 2358 01d4 15000000 		.4byte	.LVL100-1
+ 2359 01d8 0100     		.2byte	0x1
+ 2360 01da 50       		.byte	0x50
+ 2361 01db 1C000000 		.4byte	.LVL102
+ 2362 01df 24000000 		.4byte	.LVL104
+ 2363 01e3 0200     		.2byte	0x2
+ 2364 01e5 3A       		.byte	0x3a
+ 2365 01e6 9F       		.byte	0x9f
+ 2366 01e7 24000000 		.4byte	.LVL104
+ 2367 01eb 30000000 		.4byte	.LVL107
+ 2368 01ef 0100     		.2byte	0x1
+ 2369 01f1 55       		.byte	0x55
+ 2370 01f2 00000000 		.4byte	0
+ 2371 01f6 00000000 		.4byte	0
+ 2372              		.section	.debug_aranges,"",%progbits
+ 2373 0000 2C000000 		.4byte	0x2c
+ 2374 0004 0200     		.2byte	0x2
+ 2375 0006 00000000 		.4byte	.Ldebug_info0
+ 2376 000a 04       		.byte	0x4
+ 2377 000b 00       		.byte	0
+ 2378 000c 0000     		.2byte	0
+ 2379 000e 0000     		.2byte	0
+ 2380 0010 00000000 		.4byte	.LFB63
+ 2381 0014 80020000 		.4byte	.LFE63-.LFB63
+ 2382 0018 00000000 		.4byte	.LFB64
+ 2383 001c 2A000000 		.4byte	.LFE64-.LFB64
+ 2384 0020 00000000 		.4byte	.LFB65
+ 2385 0024 38000000 		.4byte	.LFE65-.LFB65
+ 2386 0028 00000000 		.4byte	0
+ 2387 002c 00000000 		.4byte	0
+ 2388              		.section	.debug_ranges,"",%progbits
+ 2389              	.Ldebug_ranges0:
+ 2390 0000 00000000 		.4byte	.LFB63
+ 2391 0004 80020000 		.4byte	.LFE63
+ 2392 0008 00000000 		.4byte	.LFB64
+ 2393 000c 2A000000 		.4byte	.LFE64
+ 2394 0010 00000000 		.4byte	.LFB65
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 52
+
+
+ 2395 0014 38000000 		.4byte	.LFE65
+ 2396 0018 00000000 		.4byte	0
+ 2397 001c 00000000 		.4byte	0
+ 2398              		.section	.debug_line,"",%progbits
+ 2399              	.Ldebug_line0:
+ 2400 0000 6D020000 		.section	.debug_str,"MS",%progbits,1
+ 2400      0200AA01 
+ 2400      00000201 
+ 2400      FB0E0D00 
+ 2400      01010101 
+ 2401              	.LASF35:
+ 2402 0000 55415254 		.ascii	"UART_1_Start\000"
+ 2402      5F315F53 
+ 2402      74617274 
+ 2402      00
+ 2403              	.LASF9:
+ 2404 000d 5F5F696E 		.ascii	"__int32_t\000"
+ 2404      7433325F 
+ 2404      7400
+ 2405              	.LASF36:
+ 2406 0017 4144435F 		.ascii	"ADC_Battery_Start\000"
+ 2406      42617474 
+ 2406      6572795F 
+ 2406      53746172 
+ 2406      7400
+ 2407              	.LASF3:
+ 2408 0029 73686F72 		.ascii	"short unsigned int\000"
+ 2408      7420756E 
+ 2408      7369676E 
+ 2408      65642069 
+ 2408      6E7400
+ 2409              	.LASF10:
+ 2410 003c 696E7433 		.ascii	"int32_t\000"
+ 2410      325F7400 
+ 2411              	.LASF24:
+ 2412 0044 5F726561 		.ascii	"_read\000"
+ 2412      6400
+ 2413              	.LASF14:
+ 2414 004a 666C6F61 		.ascii	"float\000"
+ 2414      7400
+ 2415              	.LASF22:
+ 2416 0050 66696C65 		.ascii	"file\000"
+ 2416      00
+ 2417              	.LASF1:
+ 2418 0055 756E7369 		.ascii	"unsigned char\000"
+ 2418      676E6564 
+ 2418      20636861 
+ 2418      7200
+ 2419              	.LASF45:
+ 2420 0063 49525F76 		.ascii	"IR_val\000"
+ 2420      616C00
+ 2421              	.LASF13:
+ 2422 006a 696E7431 		.ascii	"int16\000"
+ 2422      3600
+ 2423              	.LASF5:
+ 2424 0070 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2424      20756E73 
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 53
+
+
+ 2424      69676E65 
+ 2424      6420696E 
+ 2424      7400
+ 2425              	.LASF20:
+ 2426 0082 766F6C74 		.ascii	"voltage\000"
+ 2426      61676500 
+ 2427              	.LASF46:
+ 2428 008a 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2428      52784275 
+ 2428      66666572 
+ 2428      00
+ 2429              	.LASF33:
+ 2430 0097 6D6F746F 		.ascii	"motor_forward\000"
+ 2430      725F666F 
+ 2430      72776172 
+ 2430      6400
+ 2431              	.LASF43:
+ 2432 00a5 433A5C55 		.ascii	"C:\\Users\\Nike\\Documents\\GitHub\\Zumo_Bot\\Zumo."
+ 2432      73657273 
+ 2432      5C4E696B 
+ 2432      655C446F 
+ 2432      63756D65 
+ 2433 00d2 72656C65 		.ascii	"release\\Zumo01\\ZumoBot.cydsn\000"
+ 2433      6173655C 
+ 2433      5A756D6F 
+ 2433      30315C5A 
+ 2433      756D6F42 
+ 2434              	.LASF15:
+ 2435 00ef 646F7562 		.ascii	"double\000"
+ 2435      6C6500
+ 2436              	.LASF30:
+ 2437 00f6 6D6F746F 		.ascii	"motor_stop\000"
+ 2437      725F7374 
+ 2437      6F7000
+ 2438              	.LASF44:
+ 2439 0101 6D61696E 		.ascii	"main\000"
+ 2439      00
+ 2440              	.LASF12:
+ 2441 0106 75696E74 		.ascii	"uint32\000"
+ 2441      333200
+ 2442              	.LASF41:
+ 2443 010d 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 2443      4320342E 
+ 2443      392E3320 
+ 2443      32303135 
+ 2443      30333033 
+ 2444 0140 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 2444      20726576 
+ 2444      6973696F 
+ 2444      6E203232 
+ 2444      31323230 
+ 2445 0173 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2445      66756E63 
+ 2445      74696F6E 
+ 2445      2D736563 
+ 2445      74696F6E 
+ 2446              	.LASF39:
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 54
+
+
+ 2447 019b 55415254 		.ascii	"UART_1_PutChar\000"
+ 2447      5F315F50 
+ 2447      75744368 
+ 2447      617200
+ 2448              	.LASF8:
+ 2449 01aa 756E7369 		.ascii	"unsigned int\000"
+ 2449      676E6564 
+ 2449      20696E74 
+ 2449      00
+ 2450              	.LASF37:
+ 2451 01b7 4144435F 		.ascii	"ADC_Battery_GetResult16\000"
+ 2451      42617474 
+ 2451      6572795F 
+ 2451      47657452 
+ 2451      6573756C 
+ 2452              	.LASF7:
+ 2453 01cf 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2453      206C6F6E 
+ 2453      6720756E 
+ 2453      7369676E 
+ 2453      65642069 
+ 2454              	.LASF31:
+ 2455 01e6 6D6F746F 		.ascii	"motor_start\000"
+ 2455      725F7374 
+ 2455      61727400 
+ 2456              	.LASF26:
+ 2457 01f2 4144435F 		.ascii	"ADC_Battery_IsEndConversion\000"
+ 2457      42617474 
+ 2457      6572795F 
+ 2457      4973456E 
+ 2457      64436F6E 
+ 2458              	.LASF47:
+ 2459 020e 5F5F6275 		.ascii	"__builtin_puts\000"
+ 2459      696C7469 
+ 2459      6E5F7075 
+ 2459      747300
+ 2460              	.LASF18:
+ 2461 021d 6C6F6E67 		.ascii	"long double\000"
+ 2461      20646F75 
+ 2461      626C6500 
+ 2462              	.LASF23:
+ 2463 0229 5F777269 		.ascii	"_write\000"
+ 2463      746500
+ 2464              	.LASF17:
+ 2465 0230 73697A65 		.ascii	"sizetype\000"
+ 2465      74797065 
+ 2465      00
+ 2466              	.LASF6:
+ 2467 0239 6C6F6E67 		.ascii	"long long int\000"
+ 2467      206C6F6E 
+ 2467      6720696E 
+ 2467      7400
+ 2468              	.LASF28:
+ 2469 0247 42617474 		.ascii	"BatteryLed_Write\000"
+ 2469      6572794C 
+ 2469      65645F57 
+ 2469      72697465 
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 55
+
+
+ 2469      00
+ 2470              	.LASF42:
+ 2471 0258 6D61696E 		.ascii	"main.c\000"
+ 2471      2E6300
+ 2472              	.LASF16:
+ 2473 025f 63686172 		.ascii	"char\000"
+ 2473      00
+ 2474              	.LASF19:
+ 2475 0264 61646372 		.ascii	"adcresult\000"
+ 2475      6573756C 
+ 2475      7400
+ 2476              	.LASF0:
+ 2477 026e 7369676E 		.ascii	"signed char\000"
+ 2477      65642063 
+ 2477      68617200 
+ 2478              	.LASF27:
+ 2479 027a 7072696E 		.ascii	"printf\000"
+ 2479      746600
+ 2480              	.LASF25:
+ 2481 0281 636F756E 		.ascii	"count\000"
+ 2481      7400
+ 2482              	.LASF2:
+ 2483 0287 73686F72 		.ascii	"short int\000"
+ 2483      7420696E 
+ 2483      7400
+ 2484              	.LASF11:
+ 2485 0291 75696E74 		.ascii	"uint8\000"
+ 2485      3800
+ 2486              	.LASF38:
+ 2487 0297 5357315F 		.ascii	"SW1_Read\000"
+ 2487      52656164 
+ 2487      00
+ 2488              	.LASF4:
+ 2489 02a0 6C6F6E67 		.ascii	"long int\000"
+ 2489      20696E74 
+ 2489      00
+ 2490              	.LASF21:
+ 2491 02a9 62757474 		.ascii	"button\000"
+ 2491      6F6E00
+ 2492              	.LASF48:
+ 2493 02b0 70757473 		.ascii	"puts\000"
+ 2493      00
+ 2494              	.LASF32:
+ 2495 02b5 6D6F746F 		.ascii	"motor_turn\000"
+ 2495      725F7475 
+ 2495      726E00
+ 2496              	.LASF34:
+ 2497 02c0 4144435F 		.ascii	"ADC_Battery_StartConvert\000"
+ 2497      42617474 
+ 2497      6572795F 
+ 2497      53746172 
+ 2497      74436F6E 
+ 2498              	.LASF29:
+ 2499 02d9 43794465 		.ascii	"CyDelay\000"
+ 2499      6C617900 
+ 2500              	.LASF40:
+ 2501 02e1 55415254 		.ascii	"UART_1_GetChar\000"
+ARM GAS  C:\Users\Nike\AppData\Local\Temp\cc333Fij.s 			page 56
+
+
+ 2501      5F315F47 
+ 2501      65744368 
+ 2501      617200
+ 2502              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

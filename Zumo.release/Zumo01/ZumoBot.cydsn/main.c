@@ -146,8 +146,21 @@ int main()
     
         unsigned int IR_val; 
     
-        printf("Paalla\n");
+        printf("Let's roll\n");
         motor_start();
+        motor_turn(64,56,7000);
+        motor_turn(255,20,320);
+        motor_forward(0,0);
+        CyDelay(1000);
+        motor_turn(64,56,5100);
+        motor_turn(255,20,320);
+        motor_forward(0,0);
+        CyDelay(1000);
+        motor_turn(64,56,5100);
+        motor_turn(255,20,360);
+        motor_turn(64,28,8300);
+        motor_forward(0,0);
+        CyDelay(6000);
         /*
         motor_start();
         CyDelay(50);
