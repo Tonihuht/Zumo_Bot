@@ -66,6 +66,7 @@ int main()
     int16 adcresult =0;
     //float volts = 0.0;
     int k = 0;
+    int stop = 0;
     float voltage = 0;
 
     printf("\nBoot\n");
@@ -152,7 +153,7 @@ int main()
     
         printf("Let's roll\n");
         motor_start();
-        
+        CyDelay(5000);
         while(1) {
 //        reflectance_read(&ref);
 //        printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);
@@ -161,26 +162,60 @@ int main()
             
             
             while(dig.l3 == 0) {
-                motor_turn(1,200,250);
+                motor_turn(1,230,210);
                 reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                stop++;
+                CyDelay(200);       
+            }
+                if(stop > 2) {
+                    motor_stop();
+            }
             }
             while(dig.r3 == 0) {
-                motor_turn(200,1,250);
+                motor_turn(230,1,210);
                 reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                stop++;
+                CyDelay(200);       
+            }
+                if(stop > 2) {
+                motor_stop();
+            }
             }
             while(dig.r1 == 0 && dig.l1 == 0 && dig.r3 == 1 && dig.l3 == 1) {
-                motor_forward(140,4); 
+                motor_forward(220,3); 
                 reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                stop++;  
+                CyDelay(200);       
+            }
+            if(stop > 2) {
+                motor_stop();
+            }
             }
             while(dig.r1 == 0) {
-                motor_turn(170,70,4);
+                motor_turn(220,90,3);
                 reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                stop++;
+                CyDelay(200);   
+            }
+            if(stop > 2) {
+                motor_stop();
+            }
             }
             while(dig.l1 == 0) {
-                motor_turn(70,170,4);
+                motor_turn(90,220,3);
                 reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                stop++;
+                CyDelay(200);    
             }
-            
+            if(stop > 2) {
+                motor_stop();
+            }
+            }
 //            while(dig.l1 == 0 && dig.l3 == 0 && dig.r1 == 0) {
 //                motor_turn(1,255,200);
 //                reflectance_digital(&dig);
