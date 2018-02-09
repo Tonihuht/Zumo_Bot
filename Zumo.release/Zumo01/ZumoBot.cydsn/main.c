@@ -158,49 +158,79 @@ int main()
 //        printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);
             reflectance_digital(&dig);
             printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-        
-            while(dig.l1 == 0) {
-                motor_turn(40,150,1);
-                reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-            }
-            while(dig.r1 == 0) {
-                motor_turn(150,40,1);    
-                reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-            }
+            
+            
             while(dig.l3 == 0) {
-                motor_turn(5,130,1);    
+                motor_turn(1,200,250);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-                while(dig.l3 == 1 && dig.l1 == 1){
-                    motor_turn(160,4,1);
-                    reflectance_digital(&dig);
-                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//                    if(dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {
-//                        motor_backward(150,500);  
-//                        reflectance_digital(&dig);
-//            }
-                }
             }
             while(dig.r3 == 0) {
-                motor_turn(130,5,1);    
+                motor_turn(200,1,250);
                 reflectance_digital(&dig);
-                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-                while(dig.r3 == 1 && dig.r1 == 1) {
-                    motor_turn(4,160,1);
-                    reflectance_digital(&dig);
-                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//                    if(dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {
-//                        motor_backward(150,500);  
-//                        reflectance_digital(&dig);
+            }
+            while(dig.r1 == 0 && dig.l1 == 0 && dig.r3 == 1 && dig.l3 == 1) {
+                motor_forward(140,4); 
+                reflectance_digital(&dig);
+            }
+            while(dig.r1 == 0) {
+                motor_turn(170,70,4);
+                reflectance_digital(&dig);
+            }
+            while(dig.l1 == 0) {
+                motor_turn(70,170,4);
+                reflectance_digital(&dig);
+            }
+            
+//            while(dig.l1 == 0 && dig.l3 == 0 && dig.r1 == 0) {
+//                motor_turn(1,255,200);
+//                reflectance_digital(&dig);
 //            }
-                }
-            }
-            while(dig.r1 == 0 && dig.l1 == 0) {
-                motor_forward(150,1);
-                reflectance_digital(&dig);
-            }
+//            while(dig.r1 == 0 && dig.r3 == 0 && dig.l1 == 0) {
+//                motor_turn(255,1,200);
+//                reflectance_digital(&dig);
+//            }
+//            while(dig.l1 == 0 && dig.l3 == 0) {
+//                motor_turn(1,200,200);
+//                reflectance_digital(&dig);
+//            }
+//            while(dig.r1 == 0 && dig.r3 == 0) {
+//                motor_turn(1,200,200);
+//                reflectance_digital(&dig);
+//            }
+//            while(dig.l1 == 0) {
+//                motor_turn(40,150,30);
+//                reflectance_digital(&dig);
+//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//            }
+//            while(dig.r1 == 0) {
+//                motor_turn(150,40,30);    
+//                reflectance_digital(&dig);
+//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//            }
+//            while(dig.l3 == 0 && dig.l1 == 1) {
+//                motor_turn(3,160,10);    
+//                reflectance_digital(&dig);
+//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//               while(dig.l3 == 1 && dig.l1 == 1){
+//                    motor_turn(160,4,1);
+//                    reflectance_digital(&dig);
+//                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//                }
+//            }
+//            while(dig.r3 == 0 && dig.r1 == 1) {
+//                motor_turn(160,3,10);    
+//                reflectance_digital(&dig);
+//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//              while(dig.r3 == 1 && dig.r1 == 1) {
+//                    motor_turn(4,160,1);
+//                    reflectance_digital(&dig);
+//                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//                }
+//            }
+//            while(dig.r1 == 0 && dig.l1 == 0) {
+//                motor_forward(150,1);
+//                reflectance_digital(&dig);
+//            }
         
         }
 
