@@ -54,15 +54,22 @@ int rread(void);
 //battery level//
 int main()
 {
+    struct sensors_ ref;
+    struct sensors_ dig;
     CyGlobalIntEnable; 
     UART_1_Start();
-    ADC_Battery_Start();        
+    ADC_Battery_Start(); 
+    sensor_isr_StartEx(sensor_isr_handler);
+    
+    reflectance_start();
+    IR_led_Write(1);
     int16 adcresult =0;
     //float volts = 0.0;
     int k = 0;
     float voltage = 0;
 
     printf("\nBoot\n");
+    CyDelay(1000);
 
     //BatteryLed_Write(1); // Switch led on 
     BatteryLed_Write(1); // Switch led off 
@@ -71,6 +78,7 @@ int main()
     
     while(button == 1) {
         printf("While loop\n");
+        CyDelay(1000);
         button = SW1_Read();    
     }
 
@@ -144,21 +152,58 @@ int main()
     
         printf("Let's roll\n");
         motor_start();
-        motor_forward(0,0);
-        CyDelay(3000);
-        motor_turn(192,190,2133);
-        motor_turn(255,20,320);
-        motor_forward(0,0);
-        CyDelay(200);
-        motor_turn(192,190,1600);
-        motor_turn(255,20,320);
-        motor_forward(0,0);
-        CyDelay(200);
-        motor_turn(192,190,1560);
-        motor_turn(255,20,360);
-        motor_turn(192,150,1900);
-        motor_forward(0,0);
-        CyDelay(3000);
+        
+        while(1) {
+//        reflectance_read(&ref);
+//        printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);
+            reflectance_digital(&dig);
+            printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+        
+            while(dig.l1 == 0) {
+                motor_turn(40,150,1);
+                reflectance_digital(&dig);
+                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+            }
+            while(dig.r1 == 0) {
+                motor_turn(150,40,1);    
+                reflectance_digital(&dig);
+                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+            }
+            while(dig.l3 == 0) {
+                motor_turn(5,130,1);    
+                reflectance_digital(&dig);
+                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+                while(dig.l3 == 1 && dig.l1 == 1){
+                    motor_turn(160,4,1);
+                    reflectance_digital(&dig);
+                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//                    if(dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {
+//                        motor_backward(150,500);  
+//                        reflectance_digital(&dig);
+//            }
+                }
+            }
+            while(dig.r3 == 0) {
+                motor_turn(130,5,1);    
+                reflectance_digital(&dig);
+                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+                while(dig.r3 == 1 && dig.r1 == 1) {
+                    motor_turn(4,160,1);
+                    reflectance_digital(&dig);
+                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+//                    if(dig.l3 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r3 == 1) {
+//                        motor_backward(150,500);  
+//                        reflectance_digital(&dig);
+//            }
+                }
+            }
+            while(dig.r1 == 0 && dig.l1 == 0) {
+                motor_forward(150,1);
+                reflectance_digital(&dig);
+            }
+        
+        }
+
         /*
         motor_start();
         CyDelay(50);
