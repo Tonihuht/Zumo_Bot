@@ -152,8 +152,19 @@ int main()
         
     
         printf("Let's roll\n");
+//        BatteryLed_Write(0);
+//        CyDelay(1000);
+//        BatteryLed_Write(1);
+//        CyDelay(1000);
+//        BatteryLed_Write(0);
         motor_start();
-        CyDelay(5000);
+        motor_forward(0,1);
+        BatteryLed_Write(0);
+        CyDelay(1000);
+        BatteryLed_Write(1);
+        CyDelay(1000);
+        BatteryLed_Write(0);
+        
         while(1) {
 //        reflectance_read(&ref);
 //        printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);
@@ -166,7 +177,7 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(200);       
+                CyDelay(100);       
             }
                 if(stop > 2) {
                     motor_stop();
@@ -177,7 +188,7 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(200);       
+                CyDelay(100);       
             }
                 if(stop > 2) {
                 motor_stop();
@@ -188,7 +199,7 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;  
-                CyDelay(200);       
+                CyDelay(100);       
             }
             if(stop > 2) {
                 motor_stop();
@@ -199,7 +210,7 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(200);   
+                CyDelay(100);   
             }
             if(stop > 2) {
                 motor_stop();
@@ -210,7 +221,7 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(200);    
+                CyDelay(100);    
             }
             if(stop > 2) {
                 motor_stop();
