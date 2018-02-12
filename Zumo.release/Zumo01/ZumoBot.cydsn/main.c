@@ -173,55 +173,55 @@ int main()
             
             
             while(dig.l3 == 0) {
-                motor_turn(1,230,210);
+                motor_turn(8,255,1);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(100);       
+                CyDelay(50);       
             }
                 if(stop > 2) {
                     motor_stop();
             }
             }
             while(dig.r3 == 0) {
-                motor_turn(230,1,210);
+                motor_turn(255,8,1);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(100);       
+                CyDelay(50);       
             }
                 if(stop > 2) {
                 motor_stop();
             }
             }
             while(dig.r1 == 0 && dig.l1 == 0 && dig.r3 == 1 && dig.l3 == 1) {
-                motor_forward(220,3); 
+                motor_forward(220,2); 
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;  
-                CyDelay(100);       
+                CyDelay(50);       
             }
             if(stop > 2) {
                 motor_stop();
             }
             }
             while(dig.r1 == 0) {
-                motor_turn(220,90,3);
+                motor_turn(255,180,2);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(100);   
+                CyDelay(50);   
             }
             if(stop > 2) {
                 motor_stop();
             }
             }
             while(dig.l1 == 0) {
-                motor_turn(90,220,3);
+                motor_turn(180,255,2);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(100);    
+                CyDelay(50);    
             }
             if(stop > 2) {
                 motor_stop();
