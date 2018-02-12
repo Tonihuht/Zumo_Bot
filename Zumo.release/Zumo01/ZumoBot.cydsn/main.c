@@ -173,59 +173,117 @@ int main()
             
             
             while(dig.l3 == 0) {
-                motor_turn(8,255,1);
+                motor_turn(25,255,1);
                 reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
-                stop++;
-                CyDelay(50);       
-            }
+                while (dig.l3 == 1 && dig.l1 == 1 && dig.r3 == 1 && dig.r1 == 1){
+                    motor_turn(8,255,1);
+                    reflectance_digital(&dig);
+                }
+                    if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                        stop++;
+                        CyDelay(50);       
+                        }
                 if(stop > 2) {
                     motor_stop();
+                }
             }
-            }
+            
             while(dig.r3 == 0) {
-                motor_turn(255,8,1);
+                motor_turn(255,25,1);
                 reflectance_digital(&dig);
+                while (dig.l3 == 1 && dig.l1 == 1 && dig.r3 == 1 && dig.r1 == 1){
+                    motor_turn(255,8,1);
+                    reflectance_digital(&dig);
+                }
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
-                stop++;
-                CyDelay(50);       
-            }
+                    stop++;
+                    CyDelay(50);       
+                }
                 if(stop > 2) {
                 motor_stop();
+                }
             }
+            
+            while(dig.l3 == 0 && dig.l1 == 0){
+                motor_turn(55,255,1);
+                reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
             }
+            
+            while(dig.r3 == 0 && dig.r1 == 0){
+                motor_turn(255,55,1);
+                reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
+            }
+            
+            while(dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 0){
+                motor_turn(55,255,1);
+                reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
+            }
+            
+            while(dig.r3 == 0 && dig.r1 == 0 && dig.l1 == 0){
+                motor_turn(255,55,1);
+                reflectance_digital(&dig);
+                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
+            }
+            
             while(dig.r1 == 0 && dig.l1 == 0 && dig.r3 == 1 && dig.l3 == 1) {
-                motor_forward(220,2); 
+                motor_forward(255,0); 
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;  
                 CyDelay(50);       
-            }
-            if(stop > 2) {
-                motor_stop();
-            }
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
             }
             while(dig.r1 == 0) {
-                motor_turn(255,180,2);
+                motor_turn(255,100,0);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
                 CyDelay(50);   
             }
-            if(stop > 2) {
-                motor_stop();
-            }
+                if(stop > 2) {
+                    motor_stop();
+                }
             }
             while(dig.l1 == 0) {
-                motor_turn(180,255,2);
+                motor_turn(100,255,0);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
                 CyDelay(50);    
             }
-            if(stop > 2) {
-                motor_stop();
-            }
+                if(stop > 2) {
+                    motor_stop();
+                }
             }
 //            while(dig.l1 == 0 && dig.l3 == 0 && dig.r1 == 0) {
 //                motor_turn(1,255,200);

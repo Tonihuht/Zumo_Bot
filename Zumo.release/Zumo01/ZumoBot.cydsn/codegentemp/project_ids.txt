@@ -1,5 +1,5 @@
-C:\Users\Nike\Documents\GitHub\Zumo_Bot\Zumo.release\Zumo01\ZumoBot.cydsn\ZumoBot.cyprj|4d4f939b-6e00-4969-80ca-1bec37da8aa0
-C:\Program Files (x86)\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|91f14684-1812-4535-836c-e463f7b4126f
-C:\Program Files (x86)\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|f375fa14-ebde-4438-9e6d-dd5666fa8045
-C:\Program Files (x86)\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b077d530-6376-4636-b932-020cce648529
-C:\Program Files (x86)\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|e5fff200-838c-4519-95a1-57cce0fea65b
+C:\Users\loone\Documents\GitHub\Zumo_Bot\Zumo.release\Zumo01\ZumoBot.cydsn\ZumoBot.cyprj|bb499b0e-c71e-458c-8485-0c67b23f2ab0
+D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|9e593fe9-781c-4852-981e-7ae423603249
+D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|c07fd4dc-3a6f-4c74-bb99-e2361b9c6785
+D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b3b2c86f-0b99-42d9-a201-8f1e37bc7c46
+D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|524628a1-3794-40f2-8c8a-3ba478dc182d
