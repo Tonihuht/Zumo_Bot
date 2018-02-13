@@ -6,7 +6,7 @@
 
 #Build Date:         Apr 29 2016 09:00:55
 
-#File Generated:     Feb 12 2018 15:32:13
+#File Generated:     Feb 13 2018 12:52:33
 
 #Purpose:            
 
@@ -14,7 +14,7 @@
 
 #***************************************************************************
 
-Executing : D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\bin/sjplacer.exe --proj-name ZumoBot --netlist-vh2 ZumoBot_p.vh2 --arch-file D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file ZumoBot_p.lib --sdc-file ZumoBot.sdc --io-pcf ZumoBot.pci --outdir .
+Executing : D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\bin/sjplacer.exe --proj-name ZumoBot --netlist-vh2 ZumoBot_p.vh2 --arch-file D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark --rrg-file D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/route_arch-rrg.cydata --irq-file D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/irqconn.cydata --drq-file D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dmaconn.cydata --dsi-conn-file D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/psoc5/psoc5lp/dsiconn.cydata --pins-file pins_68-QFN.xml --lib-file ZumoBot_p.lib --sdc-file ZumoBot.sdc --io-pcf ZumoBot.pci --outdir .
 
 		Softjin Techologies Placer, Version 1.1
 
@@ -23,7 +23,7 @@ Build Date : Apr 29 2016	08:58:44
 D2004: Option and Settings Summary
 =============================================================
 Netlist vh2 file          - ZumoBot_p.vh2
-Architecture file         - D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark
+Architecture file         - D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark
 Package                   - 
 Defparam file             - 
 SDC file                  - ZumoBot.sdc
@@ -34,7 +34,7 @@ IO Placement file         - ZumoBot.pci
 D2050: Starting reading inputs for placer
 =============================================================
 D2065: Reading netlist file : "ZumoBot_p.vh2"
-D2065: Reading arch file : "D:\Program Files\PSoC creator 4\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark"
+D2065: Reading arch file : "D:\Program Files (x86)\Laitteet\Cypress\PSoC Creator\4.0\PSoC Creator\dev/arch/p35_udb4x6.ark"
 D2051: Reading of inputs for placer completed successfully
 
 D2053: Starting placement of the design
@@ -176,5 +176,5 @@ D2088: Phase 8, elapsed time : 0.0 (sec)
 
 D2054: Placement of the design completed successfully
 
-I2076: Total run-time: 1.2 sec.
+I2076: Total run-time: 1.4 sec.
 

@@ -67,6 +67,7 @@ int main()
     //float volts = 0.0;
     int k = 0;
     int stop = 0;
+    int gate = 0;
     float voltage = 0;
 
     printf("\nBoot\n");
@@ -268,14 +269,14 @@ int main()
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
-                CyDelay(50);   
+                CyDelay(50);
             }
                 if(stop > 2) {
                     motor_stop();
                 }
             }
             while(dig.l1 == 0) {
-                motor_turn(100,255,0);
+                motor_turn(255,100,0);
                 reflectance_digital(&dig);
                 if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
                 stop++;
