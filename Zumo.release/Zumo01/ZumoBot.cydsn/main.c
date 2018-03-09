@@ -160,10 +160,10 @@ int main()
             printf("%d %d %d %d \r\n", ref.l3,ref.l1,ref.r1,ref.r3);
             
             //Jyrkkä vasen
-            while(ref.l3 >= 8000) {
+            while(ref.l3 >= 9000) {
                 motor_turn(10,255,1);
                 reflectance_read(&ref);
-                while (ref.l3 < 8000 && ref.l1 < 7000 && ref.r3 < 10000 && ref.r1 < 8000){
+                while (ref.l3 < 9000 && ref.l1 < 8000 && ref.r3 < 11000 && ref.r1 < 9000){
                     motor_turn(6,255,1);
                     reflectance_read(&ref);
                 }
@@ -176,10 +176,10 @@ int main()
                 }
             }
             //Jyrkkä Oikea
-            while(ref.r3 >= 10000) {
+            while(ref.r3 >= 11000) {
                 motor_turn(255,10,1);
                 reflectance_read(&ref);
-                while (ref.l3 < 8000 && ref.l1 < 7000 && ref.r3 < 10000 && ref.r1 < 8000){
+                while (ref.l3 < 9000 && ref.l1 < 8000 && ref.r3 < 11000 && ref.r1 < 9000){
                     motor_turn(255,6,1);
                     reflectance_read (&ref);
                 }
@@ -192,7 +192,7 @@ int main()
                 }
             }
             //Semi jyrkkä vasen 2
-            while(ref.l3 >= 8000 && ref.l1 >= 7000){
+            while(ref.l3 >= 9000 && ref.l1 >= 8000){
                 motor_turn(65,255,1);
                 reflectance_read(&ref);
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -204,7 +204,7 @@ int main()
                 }
             }
             //Semi jyrkkä oikea 2
-            while(ref.r3 >= 10000 && ref.r1 >= 8000){
+            while(ref.r3 >= 11000 && ref.r1 >= 9000){
                 motor_turn(255,65,1);
                 reflectance_read(&ref);
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -216,7 +216,7 @@ int main()
                 }
             }
             //Semi jyrkkä vasen 3
-            while(ref.l3 >= 8000 && ref.l1 >= 7000 && ref.r1 >= 8000){
+            while(ref.l3 >= 9000 && ref.l1 >= 8000 && ref.r1 >= 9000){
                 motor_turn(55,255,1);
                 reflectance_read(&ref);
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -228,7 +228,7 @@ int main()
                 }
             }
             //Semi jyrkkä oikea 3
-            while(ref.r3 >= 10000 && ref.r1 >= 8000 && ref.l1 >= 7000){
+            while(ref.r3 >= 11000 && ref.r1 >= 9000 && ref.l1 >= 8000){
                 motor_turn(255,55,1);
                 reflectance_read(&ref);
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -240,7 +240,7 @@ int main()
                 }
             }
             //Suoraan
-            while(ref.r1 >= 8000 && ref.l1 >= 7000 && ref.r3 < 10000 && ref.l3 < 8000) {
+            while(ref.r1 >= 9000 && ref.l1 >= 8000 && ref.r3 < 11000 && ref.l3 < 9000) {
                 motor_forward(255,0); 
                 reflectance_read(&ref);
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -252,11 +252,11 @@ int main()
                 }
             }
             //Loiva oikea
-            while(ref.r1 >= 8000) {
+            while(ref.r1 >= 9000) {
                 motor_turn(255,200,0);
                 reflectance_read(&ref);
-                while(ref.l3 < 8000 && ref.l1 < 7000 && ref.r1 < 8000 && ref.r3 < 10000){
-                    motor_turn(255,140,0);
+                while(ref.l3 < 9000 && ref.l1 < 8000 && ref.r1 < 9000 && ref.r3 < 11000){
+                    motor_turn(255,120,0);
                     reflectance_read(&ref);
                 }
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
@@ -268,11 +268,11 @@ int main()
                 }
             }
             //Loiva vasen
-            while(ref.l1 >= 7000) {
+            while(ref.l1 >= 8000) {
                 motor_turn(200,255,0);
                 reflectance_read(&ref);
-                while(ref.l3 < 8000 && ref.l1 < 7000 && ref.r1 < 8000 && ref.r3 < 10000){
-                    motor_turn(140,255,0);
+                while(ref.l3 < 9000 && ref.l1 < 8000 && ref.r1 < 9000 && ref.r3 < 11000){
+                    motor_turn(120,255,0);
                     reflectance_read(&ref);
                 }
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
