@@ -67,7 +67,6 @@ int main()
     //float volts = 0.0;
     int k = 0;
     int stop = 0;
-    int gate = 0;
     float voltage = 0;
 
     printf("\nBoot\n");
@@ -79,8 +78,6 @@ int main()
     int button = SW1_Read(); // read SW1 on pSoC board
     
     while(button == 1) {
-        printf("While loop\n");
-        CyDelay(1000);
         button = SW1_Read();    
     }
 
@@ -151,87 +148,78 @@ int main()
         }
         }
         
-    
-        printf("Let's roll\n");
-//        BatteryLed_Write(0);
-//        CyDelay(1000);
-//        BatteryLed_Write(1);
-//        CyDelay(1000);
-//        BatteryLed_Write(0);
+        //IR Remote Start
+        get_IR();
         motor_start();
         motor_forward(0,1);
-        BatteryLed_Write(0);
-        CyDelay(1000);
-        BatteryLed_Write(1);
-        CyDelay(1000);
-        BatteryLed_Write(0);
         
         while(1) {
 //        reflectance_read(&ref);
 //        printf("%d %d %d %d \r\n", ref.l3, ref.l1, ref.r1, ref.r3);
-            reflectance_digital(&dig);
-            printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
+            reflectance_read(&ref);
+            printf("%d %d %d %d \r\n", ref.l3,ref.l1,ref.r1,ref.r3);
             
-            
-            while(dig.l3 == 0) 
-            {
-                if (dig.l1 == 0)
-                {
-                    motor_turn(180,255,1);
+            //Jyrkkä vasen
+            while(ref.l3 >= 8000) {
+                motor_turn(10,255,1);
+                reflectance_read(&ref);
+                while (ref.l3 < 8000 && ref.l1 < 7000 && ref.r3 < 10000 && ref.r1 < 8000){
+                    motor_turn(6,255,1);
+                    reflectance_read(&ref);
                 }
-                else
-                {
-                    motor_turn(25,255,1);
-                    reflectance_digital(&dig);
-                }
-                
-                
-                while (dig.l3 == 1 && dig.l1 == 1 && dig.r3 == 1 && dig.r1 == 1)
-                {
-                    motor_turn(8,255,1);
-                    reflectance_digital(&dig);
-                }
-                    if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                    if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                         stop++;
                         CyDelay(50);       
                         }
                 if(stop > 2) {
                     motor_stop();
                 }
-                reflectance_digital(&dig);
             }
-            
-            while(dig.r3 == 0) 
-            {
-                if (dig.r1 == 0)
-                {
-                    motor_turn(255,180,1);
+            //Jyrkkä Oikea
+            while(ref.r3 >= 10000) {
+                motor_turn(255,10,1);
+                reflectance_read(&ref);
+                while (ref.l3 < 8000 && ref.l1 < 7000 && ref.r3 < 10000 && ref.r1 < 8000){
+                    motor_turn(255,6,1);
+                    reflectance_read (&ref);
                 }
-                else
-                {
-                    motor_turn(255,25,1);
-                    reflectance_digital(&dig);
-                }
-                
-                while (dig.l3 == 1 && dig.l1 == 1 && dig.r3 == 1 && dig.r1 == 1)
-                {
-                    motor_turn(255,8,1);
-                    reflectance_digital(&dig);
-                }
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++;
                     CyDelay(50);       
                 }
                 if(stop > 2) {
                 motor_stop();
                 }
-                reflectance_digital(&dig);
             }
-            
-            while(dig.l3 == 0 && dig.l1 == 0){
+            //Semi jyrkkä vasen 2
+            while(ref.l3 >= 8000 && ref.l1 >= 7000){
+                motor_turn(65,255,1);
+                reflectance_read(&ref);
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
+            }
+            //Semi jyrkkä oikea 2
+            while(ref.r3 >= 10000 && ref.r1 >= 8000){
+                motor_turn(255,65,1);
+                reflectance_read(&ref);
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                    stop++;
+                    CyDelay(50);       
+                }
+                if(stop > 2) {
+                    motor_stop();
+                }
+            }
+            //Semi jyrkkä vasen 3
+            while(ref.l3 >= 8000 && ref.l1 >= 7000 && ref.r1 >= 8000){
                 motor_turn(55,255,1);
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                reflectance_read(&ref);
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++;
                     CyDelay(50);       
                 }
@@ -239,11 +227,11 @@ int main()
                     motor_stop();
                 }
             }
-            
-            while(dig.r3 == 0 && dig.r1 == 0){
+            //Semi jyrkkä oikea 3
+            while(ref.r3 >= 10000 && ref.r1 >= 8000 && ref.l1 >= 7000){
                 motor_turn(255,55,1);
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                reflectance_read(&ref);
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++;
                     CyDelay(50);       
                 }
@@ -251,35 +239,11 @@ int main()
                     motor_stop();
                 }
             }
-            
-            while(dig.l3 == 0 && dig.l1 == 0 && dig.r1 == 0){
-                motor_turn(55,255,1);
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
-                    stop++;
-                    CyDelay(50);       
-                }
-                if(stop > 2) {
-                    motor_stop();
-                }
-            }
-            
-            while(dig.r3 == 0 && dig.r1 == 0 && dig.l1 == 0){
-                motor_turn(255,55,1);
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
-                    stop++;
-                    CyDelay(50);       
-                }
-                if(stop > 2) {
-                    motor_stop();
-                }
-            }
-            
-            while(dig.r1 == 0 && dig.l1 == 0 && dig.r3 == 1 && dig.l3 == 1) {
+            //Suoraan
+            while(ref.r1 >= 8000 && ref.l1 >= 7000 && ref.r3 < 10000 && ref.l3 < 8000) {
                 motor_forward(255,0); 
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+                reflectance_read(&ref);
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                 stop++;  
                 CyDelay(50);       
                 }
@@ -287,117 +251,40 @@ int main()
                     motor_stop();
                 }
             }
-            while(dig.r1 == 0) {
-                        if (dig.r1 == 0 || dig.l1 == 0)
-                        {
-                        while (dig.r3 == 1 && dig.l3 == 1)
-                        {
-                            motor_forward(255,1);
-                            reflectance_digital(&dig);
-                        }
-                        }
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+            //Loiva oikea
+            while(ref.r1 >= 8000) {
+                motor_turn(255,200,0);
+                reflectance_read(&ref);
+                while(ref.l3 < 8000 && ref.l1 < 7000 && ref.r1 < 8000 && ref.r3 < 10000){
+                    motor_turn(255,140,0);
+                    reflectance_read(&ref);
+                }
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                 stop++;
-                CyDelay(50);
+                CyDelay(50);   
             }
                 if(stop > 2) {
                     motor_stop();
                 }
             }
-            while(dig.l1 == 0) {
-                        if (dig.r1 == 0 || dig.l1 == 0)
-                        {
-                        while (dig.r3 == 1 && dig.l3 == 1)
-                        {
-                            motor_forward(255,1);
-                            reflectance_digital(&dig);
-                        }
-                        }
-                reflectance_digital(&dig);
-                if(dig.l3 == 0 && dig.l1 == 0 && dig.r3 == 0 && dig.r1 == 0) {
+            //Loiva vasen
+            while(ref.l1 >= 7000) {
+                motor_turn(200,255,0);
+                reflectance_read(&ref);
+                while(ref.l3 < 8000 && ref.l1 < 7000 && ref.r1 < 8000 && ref.r3 < 10000){
+                    motor_turn(140,255,0);
+                    reflectance_read(&ref);
+                }
+                if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                 stop++;
                 CyDelay(50);    
-            }
+                }
                 if(stop > 2) {
                     motor_stop();
                 }
             }
-//            while(dig.l1 == 0 && dig.l3 == 0 && dig.r1 == 0) {
-//                motor_turn(1,255,200);
-//                reflectance_digital(&dig);
-//            }
-//            while(dig.r1 == 0 && dig.r3 == 0 && dig.l1 == 0) {
-//                motor_turn(255,1,200);
-//                reflectance_digital(&dig);
-//            }
-//            while(dig.l1 == 0 && dig.l3 == 0) {
-//                motor_turn(1,200,200);
-//                reflectance_digital(&dig);
-//            }
-//            while(dig.r1 == 0 && dig.r3 == 0) {
-//                motor_turn(1,200,200);
-//                reflectance_digital(&dig);
-//            }
-//            while(dig.l1 == 0) {
-//                motor_turn(40,150,30);
-//                reflectance_digital(&dig);
-//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//            }
-//            while(dig.r1 == 0) {
-//                motor_turn(150,40,30);    
-//                reflectance_digital(&dig);
-//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//            }
-//            while(dig.l3 == 0 && dig.l1 == 1) {
-//                motor_turn(3,160,10);    
-//                reflectance_digital(&dig);
-//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//               while(dig.l3 == 1 && dig.l1 == 1){
-//                    motor_turn(160,4,1);
-//                    reflectance_digital(&dig);
-//                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//                }
-//            }
-//            while(dig.r3 == 0 && dig.r1 == 1) {
-//                motor_turn(160,3,10);    
-//                reflectance_digital(&dig);
-//                printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//              while(dig.r3 == 1 && dig.r1 == 1) {
-//                    motor_turn(4,160,1);
-//                    reflectance_digital(&dig);
-//                    printf("%d %d %d %d \r\n", dig.l3,dig.l1,dig.r1,dig.r3);
-//                }
-//            }
-//            while(dig.r1 == 0 && dig.l1 == 0) {
-//                motor_forward(150,1);
-//                reflectance_digital(&dig);
-//            }
-        
         }
-
-        /*
-        motor_start();
-        CyDelay(50);
-        motor_turn(140,50,4000);
-        CyDelay(50);
-        motor_stop();
-        CyDelay(500);
-        motor_turn(50,140,4000);
-        CyDelay(50);
-        motor_stop();
-        CyDelay(500);
-        
-        motor_forward(240,1000);
-        CyDelay(1000);
-        motor_backward(240,1000);   
-        CyDelay(1000);
-        motor_turn(50,140,2000);
-        motor_stop();
-        CyDelay(500);
-        */
         k++;
-        //printf("%d", k);
     }
  }   
 //*/
