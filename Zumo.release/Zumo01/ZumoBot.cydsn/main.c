@@ -25,7 +25,6 @@ int main()
     reflectance_start();
     IR_led_Write(1);
     int16 adcresult =0;
-    motor_start();
     
     //Luodaan muuttujat pysähtymeselle ja napille
     int stop = 0;
@@ -36,6 +35,7 @@ int main()
     while(button == 1) {
         button = SW1_Read();    
     }
+    motor_start();
     //Viivalle ajo ja ...
     reflectance_read(&ref);
     while(ref.l3 < 20000 || ref.l1 < 20000 || ref.r3 < 20000 || ref.r1 < 20000){
@@ -48,13 +48,14 @@ int main()
         motor_forward(0,1);
         //Odottaa käyttäjän kaukosäätimen napin painallusta liikkeelle lähtö varten
         get_IR();
+        motor_forward(255,50);
         //Ajo ohjelma alkaa
         while(1) {
             
             reflectance_read(&ref);
             
             //Jyrkkä vasen
-            while(ref.l3 >= 9000) {
+            while(ref.l3 >= 9000 && ref.r1 < 9000) {
                 motor_turn(10,255,1);
                 reflectance_read(&ref);
                 //Hätäkäännös, jyrkempi vasen jos robotti tippuu radalta
@@ -65,7 +66,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -73,7 +74,7 @@ int main()
             }
             
             //Jyrkkä Oikea
-            while(ref.r3 >= 11000) {
+            while(ref.r3 >= 11000 && ref.l1 < 8000) {
                 motor_turn(255,10,1);
                 reflectance_read(&ref);
                 //Hätäkäännös, jyrkempi oikea jos robotti tippuu radalta
@@ -84,7 +85,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -97,7 +98,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -111,7 +112,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -125,7 +126,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -139,7 +140,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -153,7 +154,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -172,7 +173,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
@@ -191,7 +192,7 @@ int main()
                 //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>2){
+                    if(stop>1){
                         motor_stop();
                     }
                     CyDelay(50);
