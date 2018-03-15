@@ -49,8 +49,9 @@ int main()
         //Odottaa käyttäjän kaukosäätimen napin painallusta liikkeelle lähtö varten
         get_IR();
         motor_forward(255,50);
+        int i = 0;
         //Ajo ohjelma alkaa
-        while(1) {
+        while(i==0) {
             
             reflectance_read(&ref);
             
@@ -62,14 +63,26 @@ int main()
                 while (ref.l3 < 9000 && ref.l1 < 8000 && ref.r3 < 11000 && ref.r1 < 9000){
                     motor_turn(6,255,1);
                     reflectance_read(&ref);
+                    //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
+                    if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                        stop++; 
+                        if(stop>0){
+                            motor_forward(255,120);
+                            motor_forward(0,1);
+                            i++;
+                        }
+                        CyDelay(30);
+                    }
                 }
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
@@ -81,69 +94,89 @@ int main()
                 while (ref.l3 < 9000 && ref.l1 < 8000 && ref.r3 < 11000 && ref.r1 < 9000){
                     motor_turn(255,6,1);
                     reflectance_read (&ref);
+                    //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
+                    if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                        stop++; 
+                        if(stop>0){
+                            motor_forward(255,120);
+                            motor_forward(0,1);
+                            i++;
+                        }
+                        CyDelay(30);
+                    }
                 }
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             //Semi jyrkkä vasen 1
             while(ref.l3 >= 9000 && ref.l1 >= 8000){
-                motor_turn(65,255,1);
+                motor_turn(80,255,1);
                 reflectance_read(&ref);
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
             //Semi jyrkkä oikea 1
             while(ref.r3 >= 11000 && ref.r1 >= 9000){
-                motor_turn(255,65,1);
+                motor_turn(255,80,1);
                 reflectance_read(&ref);
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
             //Semi jyrkkä vasen 2
             while(ref.l3 >= 9000 && ref.l1 >= 8000 && ref.r1 >= 9000){
-                motor_turn(55,255,1);
+                motor_turn(70,255,1);
                 reflectance_read(&ref);
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
             //Semi jyrkkä oikea 2
             while(ref.r3 >= 11000 && ref.r1 >= 9000 && ref.l1 >= 8000){
-                motor_turn(255,55,1);
+                motor_turn(255,70,1);
                 reflectance_read(&ref);
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
@@ -151,13 +184,15 @@ int main()
             while(ref.r1 >= 9000 && ref.l1 >= 8000 && ref.r3 < 11000 && ref.l3 < 9000) {
                 motor_forward(255,0); 
                 reflectance_read(&ref);
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
@@ -167,16 +202,28 @@ int main()
                 reflectance_read(&ref);
                 //Loivan vasemman tippuessa radalta niin että kaikki sensorit näkevät valkoista, pieni korjausliike jotta päätään takaisin radalle
                 while(ref.l3 < 9000 && ref.l1 < 8000 && ref.r1 < 9000 && ref.r3 < 11000){
-                    motor_turn(255,120,0);
+                    motor_turn(255,150,0);
                     reflectance_read(&ref);
+                    //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
+                    if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                        stop++; 
+                        if(stop>0){
+                            motor_forward(255,120);
+                            motor_forward(0,1);
+                            i++;
+                        }
+                        CyDelay(30);
+                    }
                 }
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
             
@@ -186,16 +233,28 @@ int main()
                 reflectance_read(&ref);
                 //Loivan oikean tippuessa radalta niin että kaikki sensorit näkevät valkoista, pieni korjausliike jotta päätään takaisin radalle
                 while(ref.l3 < 9000 && ref.l1 < 8000 && ref.r1 < 9000 && ref.r3 < 11000){
-                    motor_turn(120,255,0);
+                    motor_turn(150,255,0);
                     reflectance_read(&ref);
+                    //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
+                    if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
+                        stop++; 
+                        if(stop>0){
+                            motor_forward(255,120);
+                            motor_forward(0,1);
+                            i++;
+                        }
+                        CyDelay(30);
+                    }
                 }
-                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 2 niin pysäyttää mootorit
+                //Tarkistaa jos kaikki sensorit mustalla ja lisää stop muuttujaan yhden, jos stop enemmän kuin 1 niin pysäyttää mootorit
                 if(ref.l3 >= 20000 && ref.l1 >= 20000 && ref.r3 >= 20000 && ref.r1 >= 20000) {
                     stop++; 
-                    if(stop>1){
-                        motor_stop();
+                    if(stop>0){
+                        motor_forward(255,120);
+                        motor_forward(0,1);
+                        i++;
                     }
-                    CyDelay(50);
+                    CyDelay(30);
                 }
             }
         }

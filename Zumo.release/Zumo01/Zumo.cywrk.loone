@@ -453,9 +453,6 @@
 <v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\IR_led.lst</v>
 <v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\IR_receiver.lst</v>
 <v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\L1.lst</v>
-<v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\L3.lst</v>
-<v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\Magnet.lst</v>
-<v>Zumo\ZumoBot\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -470,25 +467,6 @@
 <v>Zumo\ZumoBot\PSoC 5LP Architecture TRM</v>
 <v>Zumo\ZumoBot\CY8C58LP Family Datasheet</v>
 <v>Zumo\ZumoBot\System Reference Guides</v>
-<v>Zumo\ZumoBot\System Reference Guides\cy_boot_v5_50</v>
-<v>Zumo\ZumoBot\ADC_SAR_v3_0.pdf</v>
-<v>Zumo\ZumoBot\and_v1_0.pdf</v>
-<v>Zumo\ZumoBot\cy_clock_v2_20</v>
-<v>Zumo\ZumoBot\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>Zumo\ZumoBot\cy_isr_v1_70</v>
-<v>Zumo\ZumoBot\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>Zumo\ZumoBot\cy_pins_v2_20</v>
-<v>Zumo\ZumoBot\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Zumo\ZumoBot\I2C_v3_50.pdf</v>
-<v>Zumo\ZumoBot\not_v1_0</v>
-<v>Zumo\ZumoBot\not_v1_0\not_v1_0.pdf</v>
-<v>Zumo\ZumoBot\PWM_v3_30</v>
-<v>Zumo\ZumoBot\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>Zumo\ZumoBot\Timer_v2_70</v>
-<v>Zumo\ZumoBot\Timer_v2_70\Timer_v2_70.pdf</v>
-<v>Zumo\ZumoBot\UART_v2_50.pdf</v>
-<v>Zumo\ZumoBot\ZeroTerminal</v>
-<v>Zumo\ZumoBot\ZeroTerminal\ZeroTerminal.pdf</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
 <v>Zumo</v>
@@ -496,25 +474,6 @@
 <v>Zumo\ZumoBot\PSoC 5LP Architecture TRM</v>
 <v>Zumo\ZumoBot\CY8C58LP Family Datasheet</v>
 <v>Zumo\ZumoBot\System Reference Guides</v>
-<v>Zumo\ZumoBot\System Reference Guides\cy_boot_v5_50</v>
-<v>Zumo\ZumoBot\ADC_SAR_v3_0.pdf</v>
-<v>Zumo\ZumoBot\and_v1_0.pdf</v>
-<v>Zumo\ZumoBot\cy_clock_v2_20</v>
-<v>Zumo\ZumoBot\cy_clock_v2_20\cy_clock_v2_20.pdf</v>
-<v>Zumo\ZumoBot\cy_isr_v1_70</v>
-<v>Zumo\ZumoBot\cy_isr_v1_70\cy_isr_v1_70.pdf</v>
-<v>Zumo\ZumoBot\cy_pins_v2_20</v>
-<v>Zumo\ZumoBot\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
-<v>Zumo\ZumoBot\I2C_v3_50.pdf</v>
-<v>Zumo\ZumoBot\not_v1_0</v>
-<v>Zumo\ZumoBot\not_v1_0\not_v1_0.pdf</v>
-<v>Zumo\ZumoBot\PWM_v3_30</v>
-<v>Zumo\ZumoBot\PWM_v3_30\PWM_v3_30.pdf</v>
-<v>Zumo\ZumoBot\Timer_v2_70</v>
-<v>Zumo\ZumoBot\Timer_v2_70\Timer_v2_70.pdf</v>
-<v>Zumo\ZumoBot\UART_v2_50.pdf</v>
-<v>Zumo\ZumoBot\ZeroTerminal</v>
-<v>Zumo\ZumoBot\ZeroTerminal\ZeroTerminal.pdf</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStatesV2>
@@ -524,16 +483,10 @@
 <CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
 <indicators>
 <CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
-<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="61" DocumentName=".\ZumoBot.cydsn\main.c" />
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="22" DocumentName="..\..\..\..\..\Desktop\mainUusi.c" />
 </CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
 <CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
-<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="80" DocumentName=".\ZumoBot.cydsn\main.c" />
-</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
-<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
-<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="80" DocumentName=".\ZumoBot.cydsn\main.c" />
-</CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
-<CyGuid_67999771-01c6-4f62-90b3-2054bb36a318 type_name="CyDesigner.Framework.CyBookmark" version="1">
-<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="85" DocumentName=".\ZumoBot.cydsn\main.c" />
+<CyGuid_a1027fc4-3497-43a6-85d7-b91ffa0029b7 type_name="CyDesigner.Framework.CySerializableMarginIndicator" version="1" LineNumber="36" DocumentName="..\..\..\..\..\Desktop\mainUusi.c" />
 </CyGuid_67999771-01c6-4f62-90b3-2054bb36a318>
 </indicators>
 </CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
@@ -550,7 +503,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Vertical"><TabbedMdiContainer Size="1551, 780" SelectedTabbedMdiWindow="329829c0-474d-43b6-9db6-6a4ddb5bcea1"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f7e1d6e2-33a5-467e-9098-8d748ad8a0e5" /><DocumentWindow Key="54ebac73-3809-4777-b503-fcbaee3883ef" Guid="329829c0-474d-43b6-9db6-6a4ddb5bcea1" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1625, 739" SelectedTabbedMdiWindow="11a152ab-aedd-4aaf-9e94-38f8086765ac"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="f7e1d6e2-33a5-467e-9098-8d748ad8a0e5" /><DocumentWindow Key="3339e7c8-0d19-477a-be39-e68232d8bae3" Guid="11a152ab-aedd-4aaf-9e94-38f8086765ac" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
